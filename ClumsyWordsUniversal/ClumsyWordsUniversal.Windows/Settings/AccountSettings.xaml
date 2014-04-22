@@ -1,0 +1,38 @@
+﻿<SettingsFlyout
+    x:Class="ClumsyWordsUniversal.Settings.AccountSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ClumsyWords.Settings_Flyouts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    IconSource="Assets/SmallLogo.png"
+    Title="Account"
+    d:DesignWidth="346">
+
+    <!-- This StackPanel acts as a root panel for vertical layout of the content sections -->
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+        <!-- The StackPanel(s) below define individual content sections -->
+
+        <!-- Content Section 1-->
+        <StackPanel x:Name="accountName">
+            <StackPanel>
+                <TextBlock Name="userName" Text="{Binding}" Style="{StaticResource BodyTextBlockStyle}" TextWrapping="Wrap" 
+            Margin="0,0,0,25"/>
+                <!-- both buttons are defined to occupy the same place in the UI -->
+                <!-- however only one is visible at a time, to prevent flicker or confusion -->
+                <!-- they are defined as Collapsed so neither is visibly by default -->
+                <Button x:Name="signInBtn" Click="SignInClick" Content="Sign in" Visibility="Visible"/>
+                <Button x:Name="signOutBtn" Click="SignOutClick" Content="Sign out" Visibility="Collapsed"/>
+                <TextBlock x:Name="permissions" Style="{StaticResource BodyTextBlockStyle}" TextWrapping="Wrap" Margin="0,12,0,12" />
+                <TextBlock x:Name="cannotSignOutMessage" Style="{StaticResource BodyTextBlockStyle}" Foreground="Red"
+                           TextWrapping="Wrap" Margin="0,15,0,0" Visibility="Collapsed"
+                           Text="Cannot sign out. You are logged in  with a Microsoft account or a local or domain account that is connected to a Microsoft account."/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Define more Content Sections below as necessary -->
+
+    </StackPanel>
+</SettingsFlyout>

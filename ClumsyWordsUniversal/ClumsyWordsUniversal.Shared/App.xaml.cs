@@ -16,6 +16,11 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 using ClumsyWordsUniversal.Common;
+using Windows.Storage;
+using System.Threading.Tasks;
+#if WINDOWS_APP
+using Microsoft.Live;
+#endif
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -39,6 +44,176 @@ namespace ClumsyWordsUniversal
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
         }
+
+        // Currently, Live SDK is not supported in Windows Phone 8.1
+#if WINDOWS_APP
+        #region LiveAccount
+
+        private static LiveConnectSession _session;
+        /// <summary>
+        /// A static property which provides access to the current session across the app
+        /// </summary>
+        public static LiveConnectSession Session
+        {
+            get
+            {
+                return _session;
+            }
+            set
+            {
+                _session = value;
+
+            }
+        }
+
+        //private static string _permissions = "none";
+        public static string Permissions { get; set; }
+
+        private static string _userName = "You're not signed in.";
+        /// <summary>
+        /// The user's Live account user name
+        /// </summary>
+        public static string UserName
+        {
+            get
+            {
+                return _userName;
+            }
+            set
+            {
+                _userName = value;
+
+            }
+        }
+
+        private static string _accountState = "signedOut";
+        public static string AccountState
+        {
+            get { return _accountState; }
+            set { _accountState = value; }
+        }
+
+        public static string FirstName { get; set; }
+        public static string LastName { get; set; }
+        public static string ProfilePictureSource { get; set; }
+
+        /// <summary>
+        /// Tries signing in the user with their Microsoft account
+        /// </summary>
+        /// <param name="signIn">Shows wether the user should try to sign in or just load the current session state.</param>
+        /// <returns></returns>
+        public static async Task UpdateUserName(Boolean signIn)
+        {
+            try
+            {
+                // Open Live Connect SDK client.
+                LiveAuthClient LCAuth = new LiveAuthClient();
+                LiveLoginResult LCLoginResult = await LCAuth.InitializeAsync();
+                try
+                {
+                    LiveLoginResult loginResult = null;
+                    if (signIn)
+                    {
+                        // Sign in to the user's Microsoft account with the required scope.
+                        //  
+                        //  This call will display the Microsoft account sign-in screen if 
+                        //   the user is not already signed in to their Microsoft account 
+                        //   through Windows 8.
+                        // 
+                        //  This call will also display the consent dialog, if the user has 
+                        //   has not already given consent to this app to access the data 
+                        //   described by the scope.
+
+                        List<string> scopes = new List<string>() { "wl.basic" };
+
+                        ApplicationDataContainer roamingSettings = ApplicationData.Current.RoamingSettings;
+
+                        // Check if user has given consent to save data into their SkyDrive storage.
+                        if (roamingSettings.Values.ContainsKey("saveSkyDrive"))
+                        {
+                            if ((bool)roamingSettings.Values["saveSkyDrive"])
+                            {
+                                scopes.Add("wl.skydrive");
+                                scopes.Add("wl.skydrive_upload");
+                            }
+                        }
+
+                        // Sign in the user with the given scopes
+                        loginResult = await LCAuth.LoginAsync(scopes);
+                    }
+                    else
+                    {
+                        // If we don't want the user to sign in, continue with the current 
+                        //  sign-in state.
+                        loginResult = LCLoginResult;
+                    }
+                    if (loginResult.Status == LiveConnectSessionStatus.Connected)
+                    {
+                        // Create a client session to get the profile data.
+                        LiveConnectClient connect = new LiveConnectClient(LCAuth.Session);
+
+                        // Get the profile info of the user.
+                        LiveOperationResult operationResult = await connect.GetAsync("me");
+                        dynamic result = operationResult.Result;
+                        App.UserName = result.name;
+                        App.FirstName = result.first_name;
+                        App.LastName = result.last_name;
+                        App.Session = LCAuth.Session;
+
+                        LiveOperationResult pictureOperationResult = await connect.GetAsync("me/picture");
+                        dynamic pictureResult = pictureOperationResult.Result;
+                        App.ProfilePictureSource = pictureResult.location;
+
+                        if (result != null)
+                        {
+                            // Create a personalised hello-message using the user's name.
+                            App.UserName = string.Join(" ", "Hello,", result.name, "!");
+                        }
+                        else
+                        {
+                            // Handle the case where the user name was not returned.
+                            App.UserName = "Couldn't get user name.";
+                        }
+
+                        // Get the permissions given by the user to the app.
+                        LiveOperationResult permissionsResult = await connect.GetAsync("me/permissions");
+                        dynamic res = permissionsResult.RawResult;
+                        App.Permissions = res;
+
+                    }
+                    else
+                    {
+                        // The user hasn't signed in so display this text 
+                        //  in place of his or her name.
+                        App.UserName = "You're not signed in.";
+                    }
+
+                }
+                catch (LiveAuthException ex)
+                {
+                    // Handle the exception
+                    string errorMessage = ex.Message;
+                    App.UserName = "Couldn't sign in. Please, try again later.";
+                }
+            }
+            catch (LiveAuthException ex)
+            {
+                // Handle the exception. 
+                string errorMessage = ex.Message;
+                App.UserName = "Couldn't sign in. Please, try again later.";
+
+            }
+            catch (LiveConnectException ex)
+            {
+                // Handle the exception.
+                string errorMessage = ex.Message;
+                App.UserName = "Couldn't sign in. Please, try again later.";
+
+            }
+        }
+
+        #endregion
+#endif
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
