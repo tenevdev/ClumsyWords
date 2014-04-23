@@ -18,9 +18,7 @@ using Windows.UI.Xaml.Navigation;
 using ClumsyWordsUniversal.Common;
 using Windows.Storage;
 using System.Threading.Tasks;
-#if WINDOWS_APP
 using Microsoft.Live;
-#endif
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -45,8 +43,6 @@ namespace ClumsyWordsUniversal
             this.Suspending += this.OnSuspending;
         }
 
-        // Currently, Live SDK is not supported in Windows Phone 8.1
-#if WINDOWS_APP
         #region LiveAccount
 
         private static LiveConnectSession _session;
@@ -213,7 +209,6 @@ namespace ClumsyWordsUniversal
         }
 
         #endregion
-#endif
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
