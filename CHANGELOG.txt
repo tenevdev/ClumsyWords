@@ -1,6 +1,0 @@
-CHANGELOG
-
-1. Added BindableBase.cs to Common
-2. Added SearchService.cs to Common
-3. Added Data folder to DataModel with classes for the builing blocks of the project
-4. Added DataSource.cs with data models for item and group and abstract implementation of a data source class
