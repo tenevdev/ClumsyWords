@@ -60,10 +60,13 @@ namespace ClumsyWordsUniversal.Data
                 }
                 catch (LiveAuthException)
                 {
-                    //Could not authenticate
-                    //Redirect user to account settings
+                    // Could not authenticate
+                    // Redirect user to account settings
+#if WINDOWS_APP
                     AccountSettings settings = new AccountSettings();
                     settings.ShowIndependent();
+#endif
+                    // TODO: Handle this exception for WindowsPhone scenario
 
                 }
             }
