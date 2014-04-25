@@ -5,7 +5,7 @@ ClumsyWords
 
 ###Description
 
-**We are currently working on building the app using the new Universal App template for Windows applications.
+**We are currently working on building the app using the new Universal App template for Windows applications.**
 
 ClumsyWords is a light and responsive app that let's users search for a word and find different definitions of it. The app stores all recent search requests and let's the user decide on adding some of them to the "Favourites" section. There is no account needed to take advantage of the full capabilities of the app.
 
