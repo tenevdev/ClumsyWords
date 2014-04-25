@@ -19,6 +19,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Common\SearchService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSources\CloudDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSources\LocalDataSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\Model\CommonGroup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\Model\PartOfSpeech.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\Model\TermDefinition.cs" />
