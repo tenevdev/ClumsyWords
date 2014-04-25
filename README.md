@@ -5,7 +5,9 @@ ClumsyWords
 
 ###Description
 
-Clumsy words is a light and responsive app that let's users search for a word and find different definitions of it. The app stores all recent search requests and let's the user decide on adding some of them to the "Favourites" section. There is no account needed to take advantage of the full capabilities of the app itself. However, this software won't establish connection with the Definitions API unless you have a developer account. In case you have just replace the strings "DEVELOPER_KEY" with your own key and, of course, read the LICENSE.txt;
+**We are currently working on building the app using the new Universal App template for Windows applications.**
+
+ClumsyWords is a light and responsive app that let's users search for a word and find different definitions of it. The app stores all recent search requests and let's the user decide on adding some of them to the "Favourites" section. There is no account needed to take advantage of the full capabilities of the app.
 
 ###Aim of the app
 
