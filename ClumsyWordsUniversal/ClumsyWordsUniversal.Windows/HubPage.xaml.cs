@@ -64,9 +64,34 @@ namespace ClumsyWordsUniversal
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
-            var sampleDataGroup = await SampleDataSource.GetGroupAsync("Group-4");
-            this.DefaultViewModel["Section3Items"] = sampleDataGroup;
+            var sampleDataGroups = await SampleDefinitionsSource.GetGroupsAsync();
+            this.DefaultViewModel["GroupsCollection"] = sampleDataGroups;
         }
+
+        #region NavigationHelper registration
+
+        /// <summary>
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="Common.NavigationHelper.LoadState"/>
+        /// and <see cref="Common.NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the LoadState method 
+        /// in addition to page state preserved during an earlier session.
+        /// </summary>
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            this.navigationHelper.OnNavigatedTo(e);
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            this.navigationHelper.OnNavigatedFrom(e);
+        }
+
+        #endregion
+
+        #region EventHandlers
 
         /// <summary>
         /// Invoked when a HubSection header is clicked.
@@ -93,26 +118,88 @@ namespace ClumsyWordsUniversal
             var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
             this.Frame.Navigate(typeof(ItemPage), itemId);
         }
-        #region NavigationHelper registration
+
+        #region SemanticZoom
+
+        //private void OnSemanticZoomViewChangeStarted(object sender, SemanticZoomViewChangedEventArgs e)
+        //{
+        //    if (e.IsSourceZoomedInView == true)
+        //        this.BottomAppBar.Visibility = Visibility.Collapsed;
+        //    else
+        //        this.BottomAppBar.Visibility = Visibility.Visible;
+        //}
+
+        #endregion
+        #region Selection
+
+        //private void OnGridViewSelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    #region Maintain Selection Across View States
+        //    foreach (var item in e.RemovedItems)
+        //    {
+        //        this.itemListView.SelectedItems.Remove(item);
+        //    }
+
+        //    foreach (var item in e.AddedItems)
+        //    {
+        //        this.itemListView.SelectedItems.Add(item);
+        //    }
+        //    #endregion
+
+        //    if (this.itemGridView.SelectedItems.Count == 0)
+        //    {
+        //        //this.BottomAppBar.IsSticky = false;
+        //        this.BottomAppBar.IsOpen = false;
+        //    }
+        //    else
+        //    {
+        //        this.BottomAppBar.IsOpen = true;
+        //        //this.BottomAppBar.IsSticky = true;
+        //    }
+        //}
+
+        //private void OnListViewSelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    #region Maintain Selection Across View States
+        //    foreach (var item in e.RemovedItems)
+        //    {
+        //        this.itemGridView.SelectedItems.Remove(item);
+        //    }
+
+        //    foreach (var item in e.AddedItems)
+        //    {
+        //        this.itemGridView.SelectedItems.Add(item);
+        //    }
+        //    #endregion
+
+        //    if (this.itemGridView.SelectedItems.Count == 0)
+        //    {
+        //        this.BottomAppBar.IsOpen = false;
+        //    }
+        //    else
+        //    {
+        //        this.BottomAppBar.IsOpen = true;
+        //    }
+        //}
+
+        #endregion
+        #region Click
 
         /// <summary>
-        /// The methods provided in this section are simply used to allow
-        /// NavigationHelper to respond to the page's navigation methods.
-        /// Page specific logic should be placed in event handlers for the  
-        /// <see cref="Common.NavigationHelper.LoadState"/>
-        /// and <see cref="Common.NavigationHelper.SaveState"/>.
-        /// The navigation parameter is available in the LoadState method 
-        /// in addition to page state preserved during an earlier session.
+        /// Invoked when a group header is clicked.
         /// </summary>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        /// <param name="sender">The Button used as a group header for the selected group.</param>
+        /// <param name="e">Event data that describes how the click was initiated.</param>
+        void Header_Click(object sender, RoutedEventArgs e)
         {
-            this.navigationHelper.OnNavigatedTo(e);
-        }
+            // Determine what group the Button instance represents
+            var group = (sender as FrameworkElement).DataContext;
 
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
-            this.navigationHelper.OnNavigatedFrom(e);
+            // Navigate to the appropriate destination page, configuring the new page
+            // by passing required information as a navigation parameter
+            this.Frame.Navigate(typeof(SectionPage), ((DefinitionsDataGroup)group).Key);
         }
+        #endregion
 
         #endregion
     }
