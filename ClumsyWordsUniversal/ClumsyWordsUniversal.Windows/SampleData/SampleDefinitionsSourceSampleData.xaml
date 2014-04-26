@@ -1,4 +1,4 @@
-﻿<DataModel:SampleDefinitionsSource xmlns:DataModel="using:ClumsyWordsUniversal.DataModel" xmlns:Data="using:ClumsyWordsUniversal.Data" xmlns:System="using:System">
+﻿<DataModel:SampleDefinitionsSource xmlns:DataModel="using:ClumsyWordsUniversal.Data" xmlns:Data="using:ClumsyWordsUniversal.Data" xmlns:System="using:System">
 	<DataModel:SampleDefinitionsSource.GroupsCollection>
 		<Data:DefinitionsDataGroup ColorCode="Aaberg, Jesper" Key="Aaberg, Jesper" Title="Aaberg, Jesper">
 			<Data:DefinitionsDataGroup.Items>
