@@ -1,0 +1,1692 @@
+﻿{
+   "Recent":{
+      "ColorCode":null,
+      "Key":"Recent",
+      "Title":"Recent",
+      "Items":[
+         {
+            "Id":"f4cb5344-3013-4791-be49-502adce54b22",
+            "Term":"sample",
+            "Items":[
+               {
+                  "Key":"noun",
+                  "Title":"noun",
+                  "Items":[
+                     {
+                        "Term":"sample",
+                        "Definition":"a small part of something intended as representative of the whole",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"sample distribution, sample, sampling",
+                        "Definition":"items selected at random from a population and used to test hypotheses about the population",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"sample",
+                        "Definition":"A part of anything taken or presented for inspection, or shown as evidence of the quality of the whole; a specimen; as, goods are often purchased by samples.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"sample",
+                        "Definition":"A subset of a population selected for measurement, observation or questioning, to provide statistical information about the population.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"sample",
+                        "Definition":"Gratuitous borrowing of easily recognised phases (or moments) from other music (or movies) in a recording, used to emphasize a particular point by implying a certain context.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"sample",
+                        "Definition":"Example; pattern.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"verb",
+                  "Title":"verb",
+                  "Items":[
+                     {
+                        "Term":"sample",
+                        "Definition":"all or part of a natural object that is collected and preserved as an example of its class",
+                        "PartOfSpeech":1,
+                        "Example":""
+                     },
+                     {
+                        "Term":"sample, try, try out, taste",
+                        "Definition":"take a sample of",
+                        "PartOfSpeech":1,
+                        "Example":"\"Try these new crackers\"; \"Sample the regional dishes\""
+                     },
+                     {
+                        "Term":"sample",
+                        "Definition":"To make or show something similar to; to match.",
+                        "PartOfSpeech":1,
+                        "Example":""
+                     },
+                     {
+                        "Term":"sample",
+                        "Definition":"To take or to test a sample or samples of; as, to sample sugar, teas, wool, cloth.",
+                        "PartOfSpeech":1,
+                        "Example":""
+                     },
+                     {
+                        "Term":"sample",
+                        "Definition":"To reduce a continuous signal (such as a sound wave) to a discrete signal.",
+                        "PartOfSpeech":1,
+                        "Example":""
+                     },
+                     {
+                        "Term":"sample",
+                        "Definition":"To reuse a portion of (an existing sound recording) in a new song.",
+                        "PartOfSpeech":1,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"other",
+                  "Title":"other",
+                  "Items":[
+                     {
+                        "Term":"Sample",
+                        "Definition":"In statistics and quantitative research methodology, a data sample is a set of data collected and/or selected from a population by a defined procedure.",
+                        "PartOfSpeech":16,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"83666a15-0d60-4489-968a-f0d10bc5445a",
+            "Term":"clumsy",
+            "Items":[
+               {
+                  "Key":"noun",
+                  "Title":"noun",
+                  "Items":[
+                     {
+                        "Term":"clumsy",
+                        "Definition":"A clumsy person.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"adjective",
+                  "Title":"adjective",
+                  "Items":[
+                     {
+                        "Term":"gawky, clumsy, clunky, ungainly, unwieldy",
+                        "Definition":"lacking grace in movement or posture",
+                        "PartOfSpeech":3,
+                        "Example":"\"a gawky lad with long ungainly legs\"; \"clumsy fingers\"; \"what an ungainly creature a giraffe is\"; \"heaved his unwieldy figure out of his chair\""
+                     },
+                     {
+                        "Term":"awkward, clumsy, cumbersome, inapt, inept, ill-chosen",
+                        "Definition":"not elegant or graceful in expression",
+                        "PartOfSpeech":3,
+                        "Example":"\"an awkward prose style\"; \"a clumsy apology\"; \"his cumbersome writing style\"; \"if the rumor is true, can anything be more inept than to repeat it now?\""
+                     },
+                     {
+                        "Term":"awkward, bunglesome, clumsy, ungainly",
+                        "Definition":"difficult to handle or manage especially because of shape",
+                        "PartOfSpeech":3,
+                        "Example":"\"an awkward bundle to carry\"; \"a load of bunglesome paraphernalia\"; \"clumsy wooden shoes\"; \"the cello, a rather ungainly instrument for a girl\""
+                     },
+                     {
+                        "Term":"bungling, clumsy, fumbling, incompetent",
+                        "Definition":"showing lack of skill or aptitude",
+                        "PartOfSpeech":3,
+                        "Example":"\"a bungling workman\"; \"did a clumsy job\"; \"his fumbling attempt to put up a shelf\""
+                     },
+                     {
+                        "Term":"clumsy",
+                        "Definition":"awkward, lacking coordination, not graceful, not dextrous",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"clumsy",
+                        "Definition":"Not elegant or well-planned, lacking tact or subtlety",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"clumsy",
+                        "Definition":"awkward or inefficient in use or construction, difficult to handle or manage especially because of shape",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"other",
+                  "Title":"other",
+                  "Items":[
+                     {
+                        "Term":"Clumsy",
+                        "Definition":"\"Clumsy\" is a song by American recording artist Fergie from her debut album, The Dutchess. The song was released as the album's fifth single on September 25, 2007. It was written by Fergie, Bobby Troup and will.i.am, who also produced the track. It was partially recorded in Los Angeles and in the John Lennon Educational Tour Bus. The song's lyrics about being clumsy and in love flow alongside its computerized and bleeping beat taken from \"The Bubble Bunch\" by Jimmy Spicer, as well as a sample of \"The Girl Can't Help It\", originally performed by Little Richard.\nThe song received generally mixed to positive reviews. Critics praised the Little Richard sample and the goofy lyrics on feelings of love. Some critics deemed it to be the album's highlight and pop at its finest, while others considered it flat. \"Clumsy\" peaked at number five on the US Billboard Hot 100 chart, becoming Fergie's fifth straight top five hit in the US. The single was certified platinum by the Recording Industry Association of America and has sold over two million downloads in the country. Internationally, the song peaked in the top five in Australia, Canada and New Zealand. The song's music video, directed by Marc Webb and Rich Lee, is stylized like a pop-up book and features Swedish model Alex Lundqvist as Fergie's love interest.",
+                        "PartOfSpeech":16,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"8255b713-a432-4f5b-b56e-80dc50b3d118",
+            "Term":"word",
+            "Items":[
+               {
+                  "Key":"noun",
+                  "Title":"noun",
+                  "Items":[
+                     {
+                        "Term":"word",
+                        "Definition":"a unit of language that native speakers can identify",
+                        "PartOfSpeech":0,
+                        "Example":"\"words are the blocks from which sentences are made\"; \"he hardly said ten words all morning\""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"a brief statement",
+                        "PartOfSpeech":0,
+                        "Example":"\"he didn't say a word about it\""
+                     },
+                     {
+                        "Term":"news, intelligence, tidings, word",
+                        "Definition":"information about recent and important events",
+                        "PartOfSpeech":0,
+                        "Example":"\"they awaited news of the outcome\""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"a verbal command for action",
+                        "PartOfSpeech":0,
+                        "Example":"\"when I give the word, charge!\""
+                     },
+                     {
+                        "Term":"discussion, give-and-take, word",
+                        "Definition":"an exchange of views on some topic",
+                        "PartOfSpeech":0,
+                        "Example":"\"we had a good discussion\"; \"we had a word or two about it\""
+                     },
+                     {
+                        "Term":"parole, word, word of honor",
+                        "Definition":"a promise",
+                        "PartOfSpeech":0,
+                        "Example":"\"he gave his word\""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"a word is a string of bits stored in computer memory",
+                        "PartOfSpeech":0,
+                        "Example":"\"large computers use words up to 64 bits long\""
+                     },
+                     {
+                        "Term":"Son, Word, Logos",
+                        "Definition":"the divine word of God; the second person in the Trinity (incarnate in Jesus)",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"password, watchword, word, parole, countersign",
+                        "Definition":"a secret word or phrase known only to a restricted group",
+                        "PartOfSpeech":0,
+                        "Example":"\"he forgot the password\""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"The fact or action of speaking, as opposed to writing or to action.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"Something which has been said; a comment, utterance; speech.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"A distinct unit  of language (sounds in speech or written letters) with a particular meaning, composed of one or more morphemes, and also of one or more phonemes that determine its sound pattern.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"A distinct unit of language which is approved by some authority.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"News; tidings.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"An order; a request or instruction.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"A promise; an oath or guarantee.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"Christ.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"Communication from god; the message of the Christian gospel; the Bible.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"A brief discussion or conversation.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"Angry debate or conversation; argument.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"Any sequence of letters or characters considered as a discrete entity.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"A unit of text equivalent to five characters and one space.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"A fixed-size group of bits handled as a unit by a machine. On many 16-bit machines a word is 16 bits or two bytes.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"A finite string which is not a command or operator.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"A group element, expressed as a product of group elements.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"Different symbols, written or spoken, arranged together in a unique sequence that approximates a thought in a person's mind.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"Word",
+                        "Definition":"Scripture; The Bible",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"Word",
+                        "Definition":"The creative word of God; logos",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"verb",
+                  "Title":"verb",
+                  "Items":[
+                     {
+                        "Term":"Bible, Christian Bible, Book, Good Book, Holy Scripture, Holy Writ, Scripture, Word of God, Word",
+                        "Definition":"the sacred writings of the Christian religions",
+                        "PartOfSpeech":1,
+                        "Example":"\"he went to carry the Word to the heathen\""
+                     },
+                     {
+                        "Term":"give voice, formulate, word, phrase, articulate",
+                        "Definition":"put into words or an expression",
+                        "PartOfSpeech":1,
+                        "Example":"\"He formulated his concerns to the board of trustees\""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"To say or write (something) using particular words.",
+                        "PartOfSpeech":1,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"interjection",
+                  "Title":"interjection",
+                  "Items":[
+                     {
+                        "Term":"word",
+                        "Definition":"truth, to tell or speak the truth; the shortened form of the statement, \"My word is my bond,\" an expression eventually shortened to \"Word is bond,\" before it finally got cut to just \"Word,\" which is its most commonly used form.",
+                        "PartOfSpeech":7,
+                        "Example":""
+                     },
+                     {
+                        "Term":"word",
+                        "Definition":"An abbreviated form of word up; a statement of the acknowledgment of fact with a hint of nonchalant approval.",
+                        "PartOfSpeech":7,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"other",
+                  "Title":"other",
+                  "Items":[
+                     {
+                        "Term":"Word",
+                        "Definition":"In language, a word is the smallest element that may be uttered in isolation with semantic or pragmatic content. This contrasts with a morpheme, which is the smallest unit of meaning but will not necessarily stand on its own. A word may consist of a single morpheme, or several, whereas a morpheme may not be able to stand on its own as a word. A complex word will typically include a root and one or more affixes, or more than one root in a compound. Words can be put together to build larger elements of language, such as phrases, clauses, and sentences.\nThe term word may refer to a spoken word or to a written word, or sometimes to the abstract concept behind either. Spoken words are made up of units of sound called phonemes, and written words of symbols called graphemes, such as the letters of the English alphabet.",
+                        "PartOfSpeech":16,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"0fdc7c18-5744-4cde-990f-aa99fe42bc66",
+            "Term":"smooth",
+            "Items":[
+               {
+                  "Key":"noun",
+                  "Title":"noun",
+                  "Items":[
+                     {
+                        "Term":"smooth",
+                        "Definition":"Something which is smooth or easy.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"A smoothing action.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"A domestic animal having a smooth coat.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"A member of an anti-hippie fashion movement in 1970s Britain.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"The analysis obtained through a smoothing procedure.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"verb",
+                  "Title":"verb",
+                  "Items":[
+                     {
+                        "Term":"placid, quiet, still, tranquil, smooth, unruffled",
+                        "Definition":"(of a body of water) free from disturbance by heavy waves",
+                        "PartOfSpeech":1,
+                        "Example":"\"a ribbon of sand between the angry sea and the placid bay\"; \"the quiet waters of a lagoon\"; \"a lake of tranquil blue water reflecting a tranquil blue sky\"; \"a smooth channel crossing\"; \"scarcely a ripple on the still water\"; \"unruffled water\""
+                     },
+                     {
+                        "Term":"smooth, smoothen",
+                        "Definition":"make smooth or smoother, as if by rubbing",
+                        "PartOfSpeech":1,
+                        "Example":"\"smooth the surface of the wood\""
+                     },
+                     {
+                        "Term":"polish, smooth, smoothen, shine",
+                        "Definition":"make (a surface) shine",
+                        "PartOfSpeech":1,
+                        "Example":"\"shine the silver, please\"; \"polish my shoes\""
+                     },
+                     {
+                        "Term":"smooth, smooth out",
+                        "Definition":"free from obstructions",
+                        "PartOfSpeech":1,
+                        "Example":"\"smooth the way towards peace negotiations\""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"To make smooth.",
+                        "PartOfSpeech":1,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"To capture important patterns in the data, while leaving out noise.",
+                        "PartOfSpeech":1,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"adjective",
+                  "Title":"adjective",
+                  "Items":[
+                     {
+                        "Term":"smooth",
+                        "Definition":"the act of smoothing",
+                        "PartOfSpeech":3,
+                        "Example":"\"he gave his hair a quick smooth\""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"having a surface free from roughness or bumps or ridges or irregularities",
+                        "PartOfSpeech":3,
+                        "Example":"\"smooth skin\"; \"a smooth tabletop\"; \"smooth fabric\"; \"a smooth road\"; \"water as smooth as a mirror\""
+                     },
+                     {
+                        "Term":"politic, smooth, suave, bland",
+                        "Definition":"smoothly agreeable and courteous with a degree of sophistication",
+                        "PartOfSpeech":3,
+                        "Example":"\"he was too politic to quarrel with so important a personage\"; \"the manager pacified the customer with a smooth apology for the error\""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"of the margin of a leaf shape; not broken up into teeth",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluent, fluid, liquid, smooth",
+                        "Definition":"smooth and unconstrained in movement",
+                        "PartOfSpeech":3,
+                        "Example":"\"a long, smooth stride\"; \"the fluid motion of a cat\"; \"the liquid grace of a ballerina\""
+                     },
+                     {
+                        "Term":"legato, smooth",
+                        "Definition":"(music) without breaks between notes; smooth and connected",
+                        "PartOfSpeech":3,
+                        "Example":"\"a legato passage\""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"of motion that runs or flows or proceeds without jolts or turbulence",
+                        "PartOfSpeech":3,
+                        "Example":"\"a smooth ride\""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"lacking obstructions or difficulties",
+                        "PartOfSpeech":3,
+                        "Example":"\"the bill's path through the legislature was smooth and orderly\""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Having a texture that lacks friction. Not rough.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Without difficulty, problems, or unexpected consequences or incidents.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"bland; glib",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"suave; sophisticated",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"natural; unconstrained",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"unbroken",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"placid, calm.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Lacking projections or indentations; not serrated.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Not grainy; having an even texture.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Having a pleasantly rounded flavor; neither rough nor astringent.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Having derivatives of all finite orders at all points within the functionu2019s domain.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Lacking marked aspiration.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"adverb",
+                  "Title":"adverb",
+                  "Items":[
+                     {
+                        "Term":"smooth",
+                        "Definition":"Smoothly.",
+                        "PartOfSpeech":4,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"other",
+                  "Title":"other",
+                  "Items":[
+                     {
+                        "Term":"Smooth",
+                        "Definition":"\"Smooth\" is a collaboration between Latin rock band Santana and Rob Thomas of the rock group Matchbox Twenty. The song was written by Thomas and Itaal Shur, sung by Thomas, produced by Matt Serletic and won three Grammy Awards, including Record of the Year, Song of the Year, and Best Pop Collaboration with Vocals.",
+                        "PartOfSpeech":16,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"7fefe836-6b86-471c-acfb-769dc1d15997",
+            "Term":"fluid",
+            "Items":[
+               {
+                  "Key":"noun",
+                  "Title":"noun",
+                  "Items":[
+                     {
+                        "Term":"fluid",
+                        "Definition":"a substance that is fluid at room temperature and pressure",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluid",
+                        "Definition":"Any substance which can flow with relative ease, tends to assume the shape of its container, and obeys Bernoulli's principle; a liquid, gas or plasma",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"adjective",
+                  "Title":"adjective",
+                  "Items":[
+                     {
+                        "Term":"fluid",
+                        "Definition":"continuous amorphous matter that tends to flow and to conform to the outline of its container: a liquid or a gas",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluid, unstable",
+                        "Definition":"subject to change; variable",
+                        "PartOfSpeech":3,
+                        "Example":"\"a fluid situation fraught with uncertainty\"; \"everything was unstable following the coup\""
+                     },
+                     {
+                        "Term":"fluid, runny",
+                        "Definition":"characteristic of a fluid; capable of flowing and easily changing shape",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluent, fluid, liquid, smooth",
+                        "Definition":"smooth and unconstrained in movement",
+                        "PartOfSpeech":3,
+                        "Example":"\"a long, smooth stride\"; \"the fluid motion of a cat\"; \"the liquid grace of a ballerina\""
+                     },
+                     {
+                        "Term":"fluid, liquid",
+                        "Definition":"in cash or easily convertible to cash",
+                        "PartOfSpeech":3,
+                        "Example":"\"liquid (or fluid) assets\""
+                     },
+                     {
+                        "Term":"fluid, mobile",
+                        "Definition":"affording change (especially in social status)",
+                        "PartOfSpeech":3,
+                        "Example":"\"Britain is not a truly fluid society\"; \"upwardly mobile\""
+                     },
+                     {
+                        "Term":"fluid",
+                        "Definition":"Of, or relating to fluid.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluid",
+                        "Definition":"In a state of flux; subject to change.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluid",
+                        "Definition":"Moving smoothly, or giving the impression of a liquid in motion.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluid",
+                        "Definition":"Convertible into cash.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"other",
+                  "Title":"other",
+                  "Items":[
+                     {
+                        "Term":"Fluid",
+                        "Definition":"In physics, a fluid is a substance that continually deforms under an applied shear stress. Fluids are a super set of the phases of matter and include liquids, gases, plasmas and, to some extent, plastic solids.\nAlthough the term \"fluid\" includes both the liquid and gas phases, in common usage, \"fluid\" is often used as a synonym for \"liquid\", with no implication that gas could also be present. For example, \"brake fluid\" is hydraulic oil and will not perform its required function if there is gas in it. This colloquial usage of the term is also common in medicine and in nutrition.\nLiquids form a free surface while gases do not. The distinction between solids and fluid is not entirely obvious. The distinction is made by evaluating the viscosity of the substance. Silly Putty can be considered to behave like a solid or a fluid, depending on the time period over which it is observed. It is best described as a viscoelastic fluid. There are many examples of substances proving difficult to classify. A particularly interesting one is pitch, as demonstrated in the pitch drop experiment currently running at the University of Queensland.",
+                        "PartOfSpeech":16,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"590a798a-1d65-47e0-b628-30190227bceb",
+            "Term":"modern",
+            "Items":[
+               {
+                  "Key":"noun",
+                  "Title":"noun",
+                  "Items":[
+                     {
+                        "Term":"modern",
+                        "Definition":"a contemporary person",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"modern",
+                        "Definition":"Someone who lives in modern times.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"adjective",
+                  "Title":"adjective",
+                  "Items":[
+                     {
+                        "Term":"modern, modern font, Bodoni, Bodoni font",
+                        "Definition":"a typeface (based on an 18th century design by Gianbattista Bodoni) distinguished by regular shape and hairline serifs and heavy downstrokes",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"modern",
+                        "Definition":"belonging to the modern era; since the Middle Ages",
+                        "PartOfSpeech":3,
+                        "Example":"\"modern art\"; \"modern furniture\"; \"modern history\"; \"totem poles are modern rather than prehistoric\""
+                     },
+                     {
+                        "Term":"mod, modern, modernistic",
+                        "Definition":"relating to a recently developed fashion or style",
+                        "PartOfSpeech":3,
+                        "Example":"\"their offices are in a modern skyscraper\"; \"tables in modernistic designs\";"
+                     },
+                     {
+                        "Term":"modern",
+                        "Definition":"characteristic of present-day art and music and literature and architecture",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"advanced, forward-looking, innovative, modern",
+                        "Definition":"ahead of the times",
+                        "PartOfSpeech":3,
+                        "Example":"\"the advanced teaching methods\"; \"had advanced views on the subject\"; \"a forward-looking corporation\"; \"is British industry innovative enough?\""
+                     },
+                     {
+                        "Term":"Modern, New",
+                        "Definition":"used of a living language; being the current stage in its development",
+                        "PartOfSpeech":3,
+                        "Example":"\"Modern English\"; \"New Hebrew is Israeli Hebrew\""
+                     },
+                     {
+                        "Term":"modern",
+                        "Definition":"Pertaining to the current time and style.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"other",
+                  "Title":"other",
+                  "Items":[
+                     {
+                        "Term":"Modern",
+                        "Definition":"Modern is the sixth studio album by punk rock band Buzzcocks. It was released in 1999. It was arranged and produced by Tony Barber.",
+                        "PartOfSpeech":16,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"c9659ca9-a1be-492d-b215-db7bcd8593aa",
+            "Term":"elegant",
+            "Items":[
+               {
+                  "Key":"adjective",
+                  "Title":"adjective",
+                  "Items":[
+                     {
+                        "Term":"elegant",
+                        "Definition":"refined and tasteful in appearance or behavior or style",
+                        "PartOfSpeech":3,
+                        "Example":"\"elegant handwriting\"; \"an elegant dark suit\"; \"she was elegant to her fingertips\"; \"small churches with elegant white spires\"; \"an elegant mathematical solution--simple and precise and lucid\""
+                     },
+                     {
+                        "Term":"elegant, graceful, refined",
+                        "Definition":"suggesting taste, ease, and wealth",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"elegant",
+                        "Definition":"displaying effortless beauty and simplicity in movement or execution",
+                        "PartOfSpeech":3,
+                        "Example":"\"an elegant dancer\"; \"an elegant mathematical solution -- simple and precise\""
+                     },
+                     {
+                        "Term":"elegant",
+                        "Definition":"Characterised by or exhibiting elegance.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"elegant",
+                        "Definition":"Characterised by minimalism and intuitiveness while preserving exactness and precision.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"26751c2f-bd05-4a25-80e3-c73ba7739249",
+            "Term":"synchronized, synchronised",
+            "Items":[
+               {
+                  "Key":"adjective",
+                  "Title":"adjective",
+                  "Items":[
+                     {
+                        "Term":"synchronized, synchronised",
+                        "Definition":"operating in unison",
+                        "PartOfSpeech":3,
+                        "Example":"\"the synchronized flapping of a bird's wings\""
+                     },
+                     {
+                        "Term":"synchronised",
+                        "Definition":"Operating in unison, in a state of synchronization.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"1592888c-ce0a-464d-ac2e-6d3fc8ddbdcc",
+            "Term":"simple",
+            "Items":[
+               {
+                  "Key":"noun",
+                  "Title":"noun",
+                  "Items":[
+                     {
+                        "Term":"simple",
+                        "Definition":"any herbaceous plant having medicinal properties",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"A preparation made from one plant, as opposed to something made from more than one plant.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"A simple or atomic proposition",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"verb",
+                  "Title":"verb",
+                  "Items":[
+                     {
+                        "Term":"simple",
+                        "Definition":"To gather simples, ie, medicinal herbs.",
+                        "PartOfSpeech":1,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"adjective",
+                  "Title":"adjective",
+                  "Items":[
+                     {
+                        "Term":"simpleton, simple",
+                        "Definition":"a person lacking intelligence or common sense",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"having few parts; not complex or complicated or involved",
+                        "PartOfSpeech":3,
+                        "Example":"\"a simple problem\"; \"simple mechanisms\"; \"a simple design\"; \"a simple substance\""
+                     },
+                     {
+                        "Term":"elementary, simple, uncomplicated, unproblematic",
+                        "Definition":"easy and not involved or complicated",
+                        "PartOfSpeech":3,
+                        "Example":"\"an elementary problem in statistics\"; \"elementary, my dear Watson\"; \"a simple game\"; \"found an uncomplicated solution to the problem\""
+                     },
+                     {
+                        "Term":"bare(a), mere(a), simple(a)",
+                        "Definition":"apart from anything else; without additions or modifications",
+                        "PartOfSpeech":3,
+                        "Example":"\"only the bare facts\"; \"shocked by the mere idea\"; \"the simple passage of time was enough\"; \"the simple truth\""
+                     },
+                     {
+                        "Term":"childlike, wide-eyed, round-eyed, dewy-eyed, simple",
+                        "Definition":"exhibiting childlike simplicity and credulity",
+                        "PartOfSpeech":3,
+                        "Example":"\"childlike trust\"; \"dewy-eyed innocence\"; \"listened in round-eyed wonder\""
+                     },
+                     {
+                        "Term":"dim-witted, simple, simple-minded",
+                        "Definition":"lacking mental capacity and subtlety",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple, unsubdivided",
+                        "Definition":"(botany) of leaf shapes; of leaves having no divisions or subdivisions",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"unornamented",
+                        "PartOfSpeech":3,
+                        "Example":"\"a simple country schoolhouse\"; \"her black dress--simple to austerity\""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"Uncomplicated; taken by itself, with nothing added.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"Without ornamentation; plain.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"Free from duplicity; guileless, innocent, straightforward.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"Undistinguished in social condition; of no special rank.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"Trivial; insignificant.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"Feeble-minded; foolish.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"Consisting of one single substance; uncompounded.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"Of a group: having no normal subgroup.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"simple",
+                        "Definition":"Not compound, but possibly lobed.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"other",
+                  "Title":"other",
+                  "Items":[
+                     {
+                        "Term":"SIMPLE",
+                        "Definition":"SIMPLE, the session initiation protocol for instant messaging and presence leveraging extensions, is an instant messaging and presence protocol suite based on Session Initiation Protocol managed by the IETF. Contrary to the vast majority of IM and presence protocols used by software deployed today, SIMPLE is an open standard like XMPP.",
+                        "PartOfSpeech":16,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"d1f4f4ce-98e9-48bd-a111-4ca75e26899c",
+            "Term":"Website",
+            "Items":[
+               {
+                  "Key":"other",
+                  "Title":"other",
+                  "Items":[
+                     {
+                        "Term":"Website",
+                        "Definition":"A website, also written as Web site, web site, or simply site, is a set of related web pages served from a single web domain. A website is hosted on at least one web server, accessible via a network such as the Internet or a private local area network through an Internet address known as a Uniform Resource Locator. All publicly accessible websites collectively constitute the World Wide Web.\nA webpage is a document, typically written in plain text interspersed with formatting instructions of Hypertext Markup Language. A webpage may incorporate elements from other websites with suitable markup anchors.\nWebpages are accessed and transported with the Hypertext Transfer Protocol, which may optionally employ encryption to provide security and privacy for the user of the webpage content. The user's application, often a web browser, renders the page content according to its HTML markup instructions onto a display terminal.\nThe pages of a website can usually be accessed from a simple Uniform Resource Locator called the web address. The URLs of the pages organize them into a hierarchy, although hyperlinking between them conveys the reader's perceived site structure and guides the reader's navigation of the site which generally includes a home page with most of the links to the site's web content, and a supplementary about, contact and link page.",
+                        "PartOfSpeech":16,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   "Favourites":{
+      "ColorCode":null,
+      "Key":"Favourites",
+      "Title":"Favourites",
+      "Items":[
+         {
+            "Id":"11d8484e-82ba-41e5-be9b-937b20cc2e08",
+            "Term":"smooth",
+            "Items":[
+               {
+                  "Key":"noun",
+                  "Title":"noun",
+                  "Items":[
+                     {
+                        "Term":"smooth",
+                        "Definition":"Something which is smooth or easy.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"A smoothing action.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"A domestic animal having a smooth coat.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"A member of an anti-hippie fashion movement in 1970s Britain.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"The analysis obtained through a smoothing procedure.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"verb",
+                  "Title":"verb",
+                  "Items":[
+                     {
+                        "Term":"placid, quiet, still, tranquil, smooth, unruffled",
+                        "Definition":"(of a body of water) free from disturbance by heavy waves",
+                        "PartOfSpeech":1,
+                        "Example":"\"a ribbon of sand between the angry sea and the placid bay\"; \"the quiet waters of a lagoon\"; \"a lake of tranquil blue water reflecting a tranquil blue sky\"; \"a smooth channel crossing\"; \"scarcely a ripple on the still water\"; \"unruffled water\""
+                     },
+                     {
+                        "Term":"smooth, smoothen",
+                        "Definition":"make smooth or smoother, as if by rubbing",
+                        "PartOfSpeech":1,
+                        "Example":"\"smooth the surface of the wood\""
+                     },
+                     {
+                        "Term":"polish, smooth, smoothen, shine",
+                        "Definition":"make (a surface) shine",
+                        "PartOfSpeech":1,
+                        "Example":"\"shine the silver, please\"; \"polish my shoes\""
+                     },
+                     {
+                        "Term":"smooth, smooth out",
+                        "Definition":"free from obstructions",
+                        "PartOfSpeech":1,
+                        "Example":"\"smooth the way towards peace negotiations\""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"To make smooth.",
+                        "PartOfSpeech":1,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"To capture important patterns in the data, while leaving out noise.",
+                        "PartOfSpeech":1,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"adjective",
+                  "Title":"adjective",
+                  "Items":[
+                     {
+                        "Term":"smooth",
+                        "Definition":"the act of smoothing",
+                        "PartOfSpeech":3,
+                        "Example":"\"he gave his hair a quick smooth\""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"having a surface free from roughness or bumps or ridges or irregularities",
+                        "PartOfSpeech":3,
+                        "Example":"\"smooth skin\"; \"a smooth tabletop\"; \"smooth fabric\"; \"a smooth road\"; \"water as smooth as a mirror\""
+                     },
+                     {
+                        "Term":"politic, smooth, suave, bland",
+                        "Definition":"smoothly agreeable and courteous with a degree of sophistication",
+                        "PartOfSpeech":3,
+                        "Example":"\"he was too politic to quarrel with so important a personage\"; \"the manager pacified the customer with a smooth apology for the error\""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"of the margin of a leaf shape; not broken up into teeth",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluent, fluid, liquid, smooth",
+                        "Definition":"smooth and unconstrained in movement",
+                        "PartOfSpeech":3,
+                        "Example":"\"a long, smooth stride\"; \"the fluid motion of a cat\"; \"the liquid grace of a ballerina\""
+                     },
+                     {
+                        "Term":"legato, smooth",
+                        "Definition":"(music) without breaks between notes; smooth and connected",
+                        "PartOfSpeech":3,
+                        "Example":"\"a legato passage\""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"of motion that runs or flows or proceeds without jolts or turbulence",
+                        "PartOfSpeech":3,
+                        "Example":"\"a smooth ride\""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"lacking obstructions or difficulties",
+                        "PartOfSpeech":3,
+                        "Example":"\"the bill's path through the legislature was smooth and orderly\""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Having a texture that lacks friction. Not rough.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Without difficulty, problems, or unexpected consequences or incidents.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"bland; glib",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"suave; sophisticated",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"natural; unconstrained",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"unbroken",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"placid, calm.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Lacking projections or indentations; not serrated.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Not grainy; having an even texture.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Having a pleasantly rounded flavor; neither rough nor astringent.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Having derivatives of all finite orders at all points within the functionu2019s domain.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"Lacking marked aspiration.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"adverb",
+                  "Title":"adverb",
+                  "Items":[
+                     {
+                        "Term":"smooth",
+                        "Definition":"Smoothly.",
+                        "PartOfSpeech":4,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"other",
+                  "Title":"other",
+                  "Items":[
+                     {
+                        "Term":"Smooth",
+                        "Definition":"\"Smooth\" is a collaboration between Latin rock band Santana and Rob Thomas of the rock group Matchbox Twenty. The song was written by Thomas and Itaal Shur, sung by Thomas, produced by Matt Serletic and won three Grammy Awards, including Record of the Year, Song of the Year, and Best Pop Collaboration with Vocals.",
+                        "PartOfSpeech":16,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"f2553af7-9d2d-469e-b78b-1ae62b808b9c",
+            "Term":"elegant",
+            "Items":[
+               {
+                  "Key":"adjective",
+                  "Title":"adjective",
+                  "Items":[
+                     {
+                        "Term":"elegant",
+                        "Definition":"refined and tasteful in appearance or behavior or style",
+                        "PartOfSpeech":3,
+                        "Example":"\"elegant handwriting\"; \"an elegant dark suit\"; \"she was elegant to her fingertips\"; \"small churches with elegant white spires\"; \"an elegant mathematical solution--simple and precise and lucid\""
+                     },
+                     {
+                        "Term":"elegant, graceful, refined",
+                        "Definition":"suggesting taste, ease, and wealth",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"elegant",
+                        "Definition":"displaying effortless beauty and simplicity in movement or execution",
+                        "PartOfSpeech":3,
+                        "Example":"\"an elegant dancer\"; \"an elegant mathematical solution -- simple and precise\""
+                     },
+                     {
+                        "Term":"elegant",
+                        "Definition":"Characterised by or exhibiting elegance.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"elegant",
+                        "Definition":"Characterised by minimalism and intuitiveness while preserving exactness and precision.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"7dcb60d7-005f-4ed8-902c-282c0dda9ba4",
+            "Term":"modern",
+            "Items":[
+               {
+                  "Key":"noun",
+                  "Title":"noun",
+                  "Items":[
+                     {
+                        "Term":"modern",
+                        "Definition":"a contemporary person",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"modern",
+                        "Definition":"Someone who lives in modern times.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"adjective",
+                  "Title":"adjective",
+                  "Items":[
+                     {
+                        "Term":"modern, modern font, Bodoni, Bodoni font",
+                        "Definition":"a typeface (based on an 18th century design by Gianbattista Bodoni) distinguished by regular shape and hairline serifs and heavy downstrokes",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"modern",
+                        "Definition":"belonging to the modern era; since the Middle Ages",
+                        "PartOfSpeech":3,
+                        "Example":"\"modern art\"; \"modern furniture\"; \"modern history\"; \"totem poles are modern rather than prehistoric\""
+                     },
+                     {
+                        "Term":"mod, modern, modernistic",
+                        "Definition":"relating to a recently developed fashion or style",
+                        "PartOfSpeech":3,
+                        "Example":"\"their offices are in a modern skyscraper\"; \"tables in modernistic designs\";"
+                     },
+                     {
+                        "Term":"modern",
+                        "Definition":"characteristic of present-day art and music and literature and architecture",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"advanced, forward-looking, innovative, modern",
+                        "Definition":"ahead of the times",
+                        "PartOfSpeech":3,
+                        "Example":"\"the advanced teaching methods\"; \"had advanced views on the subject\"; \"a forward-looking corporation\"; \"is British industry innovative enough?\""
+                     },
+                     {
+                        "Term":"Modern, New",
+                        "Definition":"used of a living language; being the current stage in its development",
+                        "PartOfSpeech":3,
+                        "Example":"\"Modern English\"; \"New Hebrew is Israeli Hebrew\""
+                     },
+                     {
+                        "Term":"modern",
+                        "Definition":"Pertaining to the current time and style.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"other",
+                  "Title":"other",
+                  "Items":[
+                     {
+                        "Term":"Modern",
+                        "Definition":"Modern is the sixth studio album by punk rock band Buzzcocks. It was released in 1999. It was arranged and produced by Tony Barber.",
+                        "PartOfSpeech":16,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"5c4ee86c-e529-4dce-b79f-65a3470716c6",
+            "Term":"smooth",
+            "Items":[
+               {
+                  "Key":"noun",
+                  "Title":"noun",
+                  "Items":[
+                     {
+                        "Term":"smooth",
+                        "Definition":"Something which is smooth or easy.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"A smoothing action.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"The analysis obtained through a smoothing procedure.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"smooth",
+                        "Definition":"A domestic animal having a smooth coat.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"8c731695-5027-4d5f-a5a8-7fbb62f40a87",
+            "Term":"modern",
+            "Items":[
+               {
+                  "Key":"noun",
+                  "Title":"noun",
+                  "Items":[
+                     {
+                        "Term":"modern",
+                        "Definition":"a contemporary person",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"modern",
+                        "Definition":"Someone who lives in modern times.",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"adjective",
+                  "Title":"adjective",
+                  "Items":[
+                     {
+                        "Term":"modern, modern font, Bodoni, Bodoni font",
+                        "Definition":"a typeface (based on an 18th century design by Gianbattista Bodoni) distinguished by regular shape and hairline serifs and heavy downstrokes",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"modern",
+                        "Definition":"belonging to the modern era; since the Middle Ages",
+                        "PartOfSpeech":3,
+                        "Example":"\"modern art\"; \"modern furniture\"; \"modern history\"; \"totem poles are modern rather than prehistoric\""
+                     },
+                     {
+                        "Term":"mod, modern, modernistic",
+                        "Definition":"relating to a recently developed fashion or style",
+                        "PartOfSpeech":3,
+                        "Example":"\"their offices are in a modern skyscraper\"; \"tables in modernistic designs\";"
+                     },
+                     {
+                        "Term":"modern",
+                        "Definition":"characteristic of present-day art and music and literature and architecture",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"advanced, forward-looking, innovative, modern",
+                        "Definition":"ahead of the times",
+                        "PartOfSpeech":3,
+                        "Example":"\"the advanced teaching methods\"; \"had advanced views on the subject\"; \"a forward-looking corporation\"; \"is British industry innovative enough?\""
+                     },
+                     {
+                        "Term":"Modern, New",
+                        "Definition":"used of a living language; being the current stage in its development",
+                        "PartOfSpeech":3,
+                        "Example":"\"Modern English\"; \"New Hebrew is Israeli Hebrew\""
+                     },
+                     {
+                        "Term":"modern",
+                        "Definition":"Pertaining to the current time and style.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"other",
+                  "Title":"other",
+                  "Items":[
+                     {
+                        "Term":"Modern",
+                        "Definition":"Modern is the sixth studio album by punk rock band Buzzcocks. It was released in 1999. It was arranged and produced by Tony Barber.",
+                        "PartOfSpeech":16,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Id":"9d7bc12f-9795-4834-b582-a87c1e350b83",
+            "Term":"fluid",
+            "Items":[
+               {
+                  "Key":"noun",
+                  "Title":"noun",
+                  "Items":[
+                     {
+                        "Term":"fluid",
+                        "Definition":"a substance that is fluid at room temperature and pressure",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluid",
+                        "Definition":"Any substance which can flow with relative ease, tends to assume the shape of its container, and obeys Bernoulli's principle; a liquid, gas or plasma",
+                        "PartOfSpeech":0,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"adjective",
+                  "Title":"adjective",
+                  "Items":[
+                     {
+                        "Term":"fluid",
+                        "Definition":"continuous amorphous matter that tends to flow and to conform to the outline of its container: a liquid or a gas",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluid, unstable",
+                        "Definition":"subject to change; variable",
+                        "PartOfSpeech":3,
+                        "Example":"\"a fluid situation fraught with uncertainty\"; \"everything was unstable following the coup\""
+                     },
+                     {
+                        "Term":"fluid, runny",
+                        "Definition":"characteristic of a fluid; capable of flowing and easily changing shape",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluent, fluid, liquid, smooth",
+                        "Definition":"smooth and unconstrained in movement",
+                        "PartOfSpeech":3,
+                        "Example":"\"a long, smooth stride\"; \"the fluid motion of a cat\"; \"the liquid grace of a ballerina\""
+                     },
+                     {
+                        "Term":"fluid, liquid",
+                        "Definition":"in cash or easily convertible to cash",
+                        "PartOfSpeech":3,
+                        "Example":"\"liquid (or fluid) assets\""
+                     },
+                     {
+                        "Term":"fluid, mobile",
+                        "Definition":"affording change (especially in social status)",
+                        "PartOfSpeech":3,
+                        "Example":"\"Britain is not a truly fluid society\"; \"upwardly mobile\""
+                     },
+                     {
+                        "Term":"fluid",
+                        "Definition":"Of, or relating to fluid.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluid",
+                        "Definition":"In a state of flux; subject to change.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluid",
+                        "Definition":"Moving smoothly, or giving the impression of a liquid in motion.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     },
+                     {
+                        "Term":"fluid",
+                        "Definition":"Convertible into cash.",
+                        "PartOfSpeech":3,
+                        "Example":""
+                     }
+                  ]
+               },
+               {
+                  "Key":"other",
+                  "Title":"other",
+                  "Items":[
+                     {
+                        "Term":"Fluid",
+                        "Definition":"In physics, a fluid is a substance that continually deforms under an applied shear stress. Fluids are a super set of the phases of matter and include liquids, gases, plasmas and, to some extent, plastic solids.\nAlthough the term \"fluid\" includes both the liquid and gas phases, in common usage, \"fluid\" is often used as a synonym for \"liquid\", with no implication that gas could also be present. For example, \"brake fluid\" is hydraulic oil and will not perform its required function if there is gas in it. This colloquial usage of the term is also common in medicine and in nutrition.\nLiquids form a free surface while gases do not. The distinction between solids and fluid is not entirely obvious. The distinction is made by evaluating the viscosity of the substance. Silly Putty can be considered to behave like a solid or a fluid, depending on the time period over which it is observed. It is best described as a viscoelastic fluid. There are many examples of substances proving difficult to classify. A particularly interesting one is pitch, as demonstrated in the pitch drop experiment currently running at the University of Queensland.",
+                        "PartOfSpeech":16,
+                        "Example":""
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   },
+   "Tips":{
+      "ColorCode":null,
+      "Key":"Tips",
+      "Title":"Tips",
+      "Items":[
+         {
+            "Id":"613ffce1-4ee4-4497-885a-63a89c9abb68",
+            "Term":"",
+            "Items":[
+
+            ]
+         }
+      ]
+   }
+}
