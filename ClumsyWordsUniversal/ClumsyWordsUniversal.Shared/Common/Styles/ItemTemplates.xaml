@@ -1,0 +1,43 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ClumsyWordsUniversal.Common">
+
+    <DataTemplate x:Key="definitionDataCustomItemTemplate">
+        <Grid HorizontalAlignment="Left" Background="{Binding Group.ColorCode, FallbackValue={StaticResource ClumsyOrangeBrush}}" Width="250" Height="250">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Row="0" Text="{Binding Term}"
+                       VerticalAlignment="Top"
+                       FontSize="24"
+                       Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}"
+                       Style="{StaticResource TitleTextBlockStyle}"
+                       Height="60"
+                       Margin="15,25,15,0"/>
+            <TextBlock Grid.Row="1" Grid.ColumnSpan="2"
+                       Text="{Binding FirstDefinition.Definition}" TextTrimming="WordEllipsis"
+                       Foreground="White"
+                       Style="{StaticResource BaseTextBlockStyle}"
+                       TextWrapping="Wrap"
+                       Height="Auto"
+                       Margin="15,0,15,10"
+                       FontSize="16"/>
+            <TextBlock Grid.Row="0" Grid.Column="1"
+                       Text="{Binding DefinitionsCount}"
+                       HorizontalAlignment="Right"
+                       FontSize="24"
+                       Foreground="White"
+                       Style="{StaticResource TitleTextBlockStyle}"
+                       Margin="0,25,15,0"/>
+        </Grid>
+    </DataTemplate>
+
+
+</ResourceDictionary>

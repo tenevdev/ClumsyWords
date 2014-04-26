@@ -20,6 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSources\CloudDataSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSources\LocalDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSources\Sample\SampleDefinitionsSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\Model\CommonGroup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\Model\PartOfSpeech.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\Model\TermDefinition.cs" />
@@ -28,6 +29,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Settings\AccountSettings.xaml.cs">
       <DependentUpon>AccountSettings.xaml</DependentUpon>
     </Compile>
+    <Content Include="$(MSBuildThisFileDirectory)DataModel\DataSources\Sample\SampleDefinitions.json" />
     <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData.json" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\LightGray.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\MediumGray.png" />
@@ -39,6 +41,18 @@
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en-US\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Common\Styles\Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Common\Styles\ItemTemplates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Common\Styles\TextStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Settings\AccountSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
