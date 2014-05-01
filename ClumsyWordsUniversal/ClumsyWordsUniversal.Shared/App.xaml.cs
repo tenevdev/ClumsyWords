@@ -20,6 +20,11 @@ using Windows.Storage;
 using System.Threading.Tasks;
 using Microsoft.Live;
 using ClumsyWordsUniversal.Data;
+using ClumsyWordsUniversal.Settings;
+
+#if WINDOWS_APP
+using Windows.UI.ApplicationSettings;
+#endif
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -248,6 +253,82 @@ namespace ClumsyWordsUniversal
         }
 
         #endregion
+
+        #region Settings
+
+#if WINDOWS_APP
+        void App_CommandsRequested(SettingsPane sender, SettingsPaneCommandsRequestedEventArgs args)
+        {
+            // General Settings
+            args.Request.ApplicationCommands.Add(new SettingsCommand(
+                "general", "General", (handler) => ShowGeneralSettings()));
+
+            // Account Settings
+            args.Request.ApplicationCommands.Add(new SettingsCommand(
+                "account", "Account", (handler) => ShowAccountSettings()));
+
+            // Privacy Statement Settings
+            args.Request.ApplicationCommands.Add(new SettingsCommand(
+                "privacy", "Privacy", (handler) => ShowPrivacyStatement()));
+
+            // About Settings
+            args.Request.ApplicationCommands.Add(new SettingsCommand(
+                "about", "About", (handler) => ShowAboutSettings()));
+
+            // Help Settings
+            args.Request.ApplicationCommands.Add(new SettingsCommand(
+                "help", "Help", (handler) => ShowHelpSettings()));
+        }
+
+        public void ShowGeneralSettings()
+        {
+            GeneralSettings settings = new GeneralSettings();
+            settings.Show();
+        }
+
+        public void ShowAccountSettings()
+        {
+            AccountSettings settings = new AccountSettings();
+            settings.Show();
+        }
+
+        public void ShowPrivacyStatement()
+        {
+            PrivacyStatement settings = new PrivacyStatement();
+            settings.Show();
+        }
+
+        public void ShowAboutSettings()
+        {
+            AboutSettings settings = new AboutSettings();
+            settings.Show();
+        }
+
+        public void ShowHelpSettings()
+        {
+            HelpSettings settings = new HelpSettings();
+            settings.Show();
+        }
+#endif
+
+        #endregion
+
+        protected override void OnWindowCreated(WindowCreatedEventArgs args)
+        {
+#if WINDOWS_APP
+            // Register for Settings commands
+            SettingsPane.GetForCurrentView().CommandsRequested += App_CommandsRequested;
+
+            // Register for Search suggestions
+            //SearchPane.GetForCurrentView().SuggestionsRequested += OnSuggestionsRequested;
+
+            //SearchPane.GetForCurrentView().QuerySubmitted += OnQuerySubmitted;
+
+            //SearchPane.GetForCurrentView().PlaceholderText = "Search for a word";
+            //SearchPane.GetForCurrentView().ShowOnKeyboardInput = true;
+#endif
+            base.OnWindowCreated(args);
+        }
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
