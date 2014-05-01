@@ -107,26 +107,38 @@ namespace ClumsyWordsUniversal.Data
     /// </summary>
     public class DefinitionsDataGroup : CommonGroup<DefinitionsDataItem>
     {
+        private static readonly string _colorCode = "FFFA6800";
+
         public DefinitionsDataGroup(string key)
-            : this(key, key, "FFFA6800") { }
+            : this(key, key, key, _colorCode) { }
 
         public DefinitionsDataGroup(string key, string title)
-            : this(key, title, "#FFFA6800") { }
+            : this(key, title, title, _colorCode) { }
 
-        public DefinitionsDataGroup(string key, string title, string colorCode)
+        public DefinitionsDataGroup(string key, string title, string subtitle)
+            : this(key, title, subtitle, _colorCode) { }
+
+        public DefinitionsDataGroup(string key, string title, string subtitle, string colorCode)
             : base(key, title)
         {
             this.ColorCode = colorCode;
+            this.Subtitle = subtitle;
         }
 
         [JsonConstructor]
-        public DefinitionsDataGroup(string key, string title, ObservableCollection<DefinitionsDataItem> items, bool isTopItemsSupported, string colorCode)
+        public DefinitionsDataGroup(string key, string title, string subtitle, ObservableCollection<DefinitionsDataItem> items, bool isTopItemsSupported, string colorCode)
             : base(key, title, items, isTopItemsSupported)
         {
             this.ColorCode = colorCode;
+            this.Subtitle = subtitle;
         }
 
         public string ColorCode { get; set; }
+
+        /// <summary>
+        /// Personalized message describing the group in more than one word
+        /// </summary>
+        public string Subtitle { get; set; }
 
         public bool ContainsSimilar(DefinitionsDataItem compare)
         {
@@ -185,15 +197,15 @@ namespace ClumsyWordsUniversal.Data
         /// Finds the a group for each of the given keys or creates a new one if it doesn't exist
         /// </summary>
         /// <param name="keys">A collection of group keys</param>
-        /// <returns>A collection of groups with the given keys</returns>
+        /// <returns>A collection of all existing groups with new groups for the given keys if they do not exist</returns>
         public virtual IEnumerable<DefinitionsDataGroup> GetGroups(IList<string> keys)
         {
-            List<DefinitionsDataGroup> groups = new List<DefinitionsDataGroup>();
             foreach (var k in keys)
             {
-                groups.Add(this.GetGroup(k));
+                if (!groupsMap.Keys.Contains(k))
+                    this.AddGroup(k, k, "#FFFA6800");
             }
-            return groups;
+            return groupsMap.Values;
         }
 
         /// <summary>
@@ -218,9 +230,11 @@ namespace ClumsyWordsUniversal.Data
         /// Creates a new group inside the groupsMap
         /// </summary>
         /// <param name="groupName">The name of the new group</param>
-        public virtual void AddGroup(string groupName, string colorCode)
+        /// <param name="details">Detailed information about the group to set the subtitle</param>
+        /// <param name="colorCode">The color to set the theme color for the new group</param>
+        public virtual void AddGroup(string groupName, string details, string colorCode)
         {
-            this.groupsMap.Add(groupName, new DefinitionsDataGroup(groupName, groupName, colorCode));
+            this.groupsMap.Add(groupName, new DefinitionsDataGroup(groupName, groupName, details, colorCode));
         }
 
         /// <summary>
