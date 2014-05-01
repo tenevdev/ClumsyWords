@@ -274,4 +274,10 @@
   <data name="NavigationFailedExceptionMessage" xml:space="preserve">
     <value>Navigation failed.</value>
   </data>
+  <data name="AppName.Text" xml:space="preserve">
+    <value>Clumsy Words</value>
+  </data>
+  <data name="GroupDetailDescription.Text" xml:space="preserve">
+    <value>You can modify items in this collection and your changes will affect it across all pages. You can see up to 12 items from this collection in your main page so this is the only way to check if there are some more.</value>
+  </data>
 </root>
