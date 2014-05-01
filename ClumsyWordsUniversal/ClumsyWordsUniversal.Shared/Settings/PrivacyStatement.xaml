@@ -1,0 +1,67 @@
+﻿<SettingsFlyout
+    x:Class="ClumsyWordsUniversal.Settings.PrivacyStatement"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ClumsyWords.Settings_Flyouts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    IconSource="Assets/SmallLogo.png"
+    Title="Privacy Policy"
+    d:DesignWidth="346">
+
+    <!-- This StackPanel acts as a root panel for vertical layout of the content sections -->
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+        <!-- The StackPanel(s) below define individual content sections -->
+
+        <!-- Content Section 1-->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!-- Section 1 header -->
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Use of information" />
+
+            <!-- Section 1 body -->
+            <StackPanel Margin="0,20,0,0">
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,5" TextWrapping="Wrap">
+                    <TextBlock.Text>
+                        We use the information we collect to provide the services you request.
+                    Our services may include the display of personalized content and advertising.
+                    </TextBlock.Text>
+                </TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,5" TextWrapping="Wrap">
+                    <TextBlock.Text>
+                        We do not sell, rent, or lease our customer lists to third parties.
+                    </TextBlock.Text>
+                </TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,5" TextWrapping="Wrap">
+                    <TextBlock.Text>
+                        We use the conventional ways when signing you in your Microsoft account used in most other applications.
+                    </TextBlock.Text>
+                </TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,5" TextWrapping="Wrap">
+                    <TextBlock.Text>
+                        We do not store personal information of any kind when the user is not signed in with their Microsoft account.
+                    </TextBlock.Text>
+                </TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,5" TextWrapping="Wrap">
+                    <TextBlock.Text>
+                        We always store users’ data in their private OneDrive directory when this feature is enabled.
+                        No data is stored in public locations.
+                    </TextBlock.Text>
+                </TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,5" TextWrapping="Wrap">
+                    <TextBlock.Text>
+                        We store data in JSON(Java Script Object Notation) format borh locally and in the cloud.
+                        Thus, all application data files have .json extension and are completely harmless.
+                    </TextBlock.Text>
+                </TextBlock>
+            </StackPanel>
+            
+
+        </StackPanel>
+
+        <!-- Define more Content Sections below as necessary -->
+
+    </StackPanel>
+</SettingsFlyout>

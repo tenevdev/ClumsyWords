@@ -29,8 +29,20 @@
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\Model\TermDefinition.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\Model\TermProperties.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\SampleDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Settings\AboutSettings.xaml.cs">
+      <DependentUpon>AboutSettings.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Settings\AccountSettings.xaml.cs">
       <DependentUpon>AccountSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Settings\GeneralSettings.xaml.cs">
+      <DependentUpon>GeneralSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Settings\HelpSettings.xaml.cs">
+      <DependentUpon>HelpSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Settings\PrivacyStatement.xaml.cs">
+      <DependentUpon>PrivacyStatement.xaml</DependentUpon>
     </Compile>
     <Content Include="$(MSBuildThisFileDirectory)DataModel\DataSources\Sample\SampleDefinitions.json" />
     <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData.json" />
@@ -60,7 +72,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Settings\AboutSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Settings\AccountSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Settings\GeneralSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Settings\HelpSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Settings\PrivacyStatement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,64 @@
+﻿<SettingsFlyout
+    x:Class="ClumsyWordsUniversal.Settings.GeneralSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ClumsyWords.Settings_Flyouts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    IconSource="Assets/SmallLogo.png"
+    Title="General"
+    d:DesignWidth="346">
+
+    <!-- This StackPanel acts as a root panel for vertical layout of the content sections -->
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+        <!-- The StackPanel(s) below define individual content sections -->
+
+        <!-- Content Section 1-->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!-- Section Data header -->
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Data" />
+
+            <!-- Section Data body -->
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,15" Text="Choose where to save data"/>
+            <ToggleSwitch x:Name="localSwitch" Header="Save data to local storage"
+                          ToolTipService.ToolTip="Can be turned off only if some of the others is on."
+                          Toggled="SaveLocalSwitch_Toggled" />
+
+            <ToggleSwitch x:Name="skyDriveSwitch" Header="Save data on Sky Drive (recommended)"
+                          ToolTipService.ToolTip="Sync data across devices"
+                          Toggled="SaveSkyDriveSwitch_Toggled">
+                <ToggleSwitch.HeaderTemplate>
+                    <DataTemplate>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding}"/>
+                    </DataTemplate>
+                </ToggleSwitch.HeaderTemplate>
+            </ToggleSwitch>
+            
+            <!--<ToggleSwitch x:Name="roamingSwitch" Header="Enable data roaming (recommended)"
+                          ToolTipService.ToolTip="Sync settings and data across devices"
+                          Toggled="EnableRoamingSwitch_Toggled"/>-->
+        </StackPanel>
+
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+            <!-- Section Preferences header -->
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="0,25,0,0" Text="Preferences" />
+
+            <!-- Section Preferences body -->
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,15" Text="Personalize your app"/>
+            <!--TODO: Add support for different themes-->
+
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,15,0,15" Text="Other"/>
+
+            <ToggleSwitch x:Name="tooltipsSwitch" Header="Display tooltips"
+                          Toggled="TooltipsSwitch_Toggled" />
+            <ToggleSwitch x:Name="tipsSwitch" Header="Display Tips section"
+                          Toggled="DisplayTipsSwitch_Toggled"/>
+        </StackPanel>
+
+        <!-- Define more Content Sections below as necessary -->
+
+    </StackPanel>
+</SettingsFlyout>
