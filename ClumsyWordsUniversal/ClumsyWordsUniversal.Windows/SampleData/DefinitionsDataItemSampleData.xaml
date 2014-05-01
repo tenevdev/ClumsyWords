@@ -1,0 +1,256 @@
+﻿<Data:DefinitionsDataItem xmlns:Data="using:ClumsyWordsUniversal.Data" xmlns:System="using:System" DefinitionsCount="47" Term="Curabitur class">
+	<Data:DefinitionsDataItem.FirstDefinition>
+		<Data:TermProperties Definition="Curae donec duis nunc etiam" Example="Amet vestibulum aenean" PartOfSpeech="letter" Term="Cras aliquam phasellus"/>
+	</Data:DefinitionsDataItem.FirstDefinition>
+	<Data:DefinitionsDataItem.Group>
+		<Data:DefinitionsDataGroup ColorCode="Adipiscing integer" Key="Nullam maecenas diam fusce" Subtitle="Mauris consequat ante arcu" Title="Quisque eget aptent vivamus aliquam">
+			<Data:DefinitionsDataGroup.Items>
+				<Data:DefinitionsDataItem DefinitionsCount="98" Term="Lorem convallis auctor praesent">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Vestibulum aliquet bibendum blandit nulla" Example="Enim commodo proin" PartOfSpeech="other" Term="Parturient dignissim morbi accumsan elit"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Erat congue" Key="Dolor elementum conubia dictumst" Subtitle="Augue nam cursus vestibulum" Title="Cubilia adipiscing eleifend dictum"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="79" Term="Fames facilisis fermentum parturient felis">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Sed facilisi" Example="Egestas vestibulum ipsum" PartOfSpeech="preposition" Term="Vestibulum dapibus"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Adipiscing euismod lectus fringilla" Key="Vestibulum nibh feugiat" Subtitle="Justo dis habitasse eros parturient" Title="Vestibulum adipiscing nisi hendrerit"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="54" Term="Lacus est himenaeos faucibus">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Litora malesuada habitant penatibus nisl" Example="Porttitor tincidunt hac" PartOfSpeech="adjective" Term="Libero ligula lorem parturient imperdiet"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Nunc leo inceptos" Key="Iaculis magnis massa lacinia orci" Subtitle="Luctus tristique magna gravida odio" Title="Mus metus interdum ultricies lobortis"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="10" Term="Laoreet venenatis morbi vulputate mattis">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Vestibulum pede" Example="Quam mauris curabitur quis" PartOfSpeech="other" Term="Neque natoque nec"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Mollis montes" Key="Potenti phasellus" Subtitle="Nascetur vestibulum posuere nostra" Title="Netus pretium"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="19" Term="Adipiscing parturient vestibulum nulla rhoncus">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Adipiscing platea urna parturient consequat" Example="Purus sodales risus convallis pharetra" PartOfSpeech="pronoun" Term="Porta ornare vestibulum"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Velit vitae non per placerat" Key="Primis nunc rutrum amet" Subtitle="Cras duis dignissim class" Title="Elementum viverra pulvinar"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="82" Term="Vestibulum sapien semper curae sociis">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Donec sed tellus integer" Example="Etiam fusce" PartOfSpeech="pronoun" Term="Aliquam facilisis ante taciti"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Arcu quisque fermentum tempor" Key="Diam sagittis sem sit" Subtitle="Vestibulum tempus fringilla lorem habitasse" Title="Senectus vivamus"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="86" Term="Morbi tortor turpis vel varius">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Nulla sociosqu aliquet himenaeos suscipit" Example="Proin elit" PartOfSpeech="letter" Term="Eget hendrerit aliquam"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Torquent augue adipiscing nam" Key="Dolor blandit fames dis" Subtitle="Sed imperdiet aenean" Title="Est ultrices enim vehicula"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="91" Term="Commodo volutpat mauris parturient hac">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Nullam vestibulum erat" Example="Felis mus cubilia malesuada aptent" PartOfSpeech="suffix" Term="Conubia leo"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Dapibus nec non egestas" Key="Per vestibulum maecenas praesent" Subtitle="Auctor congue" Title="Adipiscing eros penatibus"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="43" Term="Porttitor ipsum sed nibh cursus">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Nisl feugiat accumsan ultricies" Example="Sem venenatis bibendum" PartOfSpeech="interjection" Term="Euismod nisi tincidunt dictum tristique"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Vulputate curabitur" Key="Sit vel eleifend justo" Subtitle="Gravida nunc dictumst parturient" Title="Iaculis facilisi"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="18" Term="Phasellus odio">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Lacinia laoreet pede quam" Example="Natoque vestibulum faucibus habitant" PartOfSpeech="numeral" Term="Orci lectus lacus"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Quis lorem" Key="Dis vestibulum adipiscing" Subtitle="Consequat nam convallis posuere sed" Title="Est inceptos"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+			</Data:DefinitionsDataGroup.Items>
+			<Data:DefinitionsDataGroup.TopItems>
+				<Data:DefinitionsDataItem DefinitionsCount="54" Term="Interdum urna magna parturient hac">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Nascetur mus duis massa" Example="Nunc libero pharetra rhoncus" PartOfSpeech="other" Term="Lobortis cras potenti leo pretium"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Metus vestibulum vestibulum sodales" Key="Pulvinar litora sagittis" Subtitle="Ligula placerat morbi nec adipiscing" Title="Dignissim neque amet elementum"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="72" Term="Senectus luctus netus ante">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Sociosqu per" Example="Viverra aliquam suscipit fermentum fringilla" PartOfSpeech="preposition" Term="Non facilisis"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Magnis nulla torquent" Key="Habitasse sed ultrices vehicula volutpat" Subtitle="Mattis porta integer arcu" Title="Sem hendrerit quisque sit mauris"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="81" Term="Himenaeos purus">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Malesuada vel" Example="Montes vivamus nostra diam" PartOfSpeech="preposition" Term="Imperdiet mollis maecenas"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Penatibus parturient porttitor" Key="Eget platea primis tincidunt elit" Subtitle="Vestibulum ornare" Title="Rutrum praesent vestibulum"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="54" Term="Adipiscing aliquam tristique aliquet blandit">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Ultricies risus" Example="Vestibulum sapien" PartOfSpeech="suffix" Term="Parturient nam enim vestibulum erat"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Venenatis commodo conubia adipiscing" Key="Sed parturient nibh" Subtitle="Vulputate eros" Title="Curabitur accumsan velit vestibulum vitae"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="33" Term="Dis class nisi curae bibendum">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Vestibulum cubilia" Example="Adipiscing dictumst sociis parturient" PartOfSpeech="interjection" Term="Phasellus semper nisl"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Vestibulum consequat est eleifend" Key="Etiam habitant tellus vestibulum" Subtitle="Taciti facilisi faucibus convallis donec" Title="Hac tempor leo adipiscing fusce"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="44" Term="Parturient inceptos nunc">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Nec euismod feugiat non" Example="Vestibulum per dignissim sed adipiscing" PartOfSpeech="symbol" Term="Dapibus vestibulum egestas interdum mus"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Lorem elementum sem facilisis" Key="Parturient nascetur orci fermentum" Subtitle="Odio lobortis morbi sit" Title="Tempus fringilla vestibulum"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="14" Term="Pharetra placerat pulvinar sagittis">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Proin senectus nam" Example="Pede augue dolor iaculis sociosqu" PartOfSpeech="conjunction" Term="Habitasse nulla hendrerit gravida vel"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Himenaeos sed dis quam" Key="Penatibus lacinia hac porttitor turpis" Subtitle="Imperdiet tortor malesuada est" Title="Quis laoreet tincidunt suscipit"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="79" Term="Fames felis varius leo ipsum">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Vestibulum mauris natoque posuere mus" Example="Tristique potenti nec nullam non" PartOfSpeech="other" Term="Torquent aenean urna"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Justo ultrices vehicula ultricies lacus" Key="Parturient maecenas venenatis praesent pretium" Subtitle="Adipiscing volutpat" Title="Per sed cras rhoncus"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="17" Term="Vestibulum sem duis accumsan">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Viverra sit" Example="Vulputate vel" PartOfSpeech="other" Term="Sodales aptent"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Lorem auctor curabitur phasellus" Key="Nunc magna amet" Subtitle="Congue consequat vestibulum" Title="Adipiscing aliquam"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+				<Data:DefinitionsDataItem DefinitionsCount="67" Term="Nam cursus massa dictum parturient">
+					<Data:DefinitionsDataItem.FirstDefinition>
+						<Data:TermProperties Definition="Lectus metus" Example="Libero morbi ligula" PartOfSpeech="verb" Term="Bibendum integer"/>
+					</Data:DefinitionsDataItem.FirstDefinition>
+					<Data:DefinitionsDataItem.Group>
+						<Data:DefinitionsDataGroup ColorCode="Convallis quisque vestibulum dignissim" Key="Arcu eleifend neque sed" Subtitle="Litora vestibulum ante dictumst adipiscing" Title="Parturient netus"/>
+					</Data:DefinitionsDataItem.Group>
+					<Data:DefinitionsDataItem.Id>
+						<System:Guid/>
+					</Data:DefinitionsDataItem.Id>
+				</Data:DefinitionsDataItem>
+			</Data:DefinitionsDataGroup.TopItems>
+		</Data:DefinitionsDataGroup>
+	</Data:DefinitionsDataItem.Group>
+    <Data:DefinitionsDataItem.GroupedItems>
+        <Data:GroupedItemDefinitions Key="adjective" Title="adjective">
+            <Data:GroupedItemDefinitions.TopItems>
+                <Data:TermProperties Term="Curabitur" Definition="Curae donec duis nunc etiam" Example="Nullam maecenas diam fusce" PartOfSpeech="adjective" />
+                <Data:TermProperties Term="Curabitur" Definition="Curae donec duis nunc etiam" Example="Nullam maecenas diam fusce" PartOfSpeech="adjective" />
+                <Data:TermProperties Term="Curabitur" Definition="Curae donec duis nunc etiam" Example="Nullam maecenas diam fusce" PartOfSpeech="adjective" />
+                <Data:TermProperties Term="Curabitur" Definition="Curae donec duis nunc etiam" Example="Nullam maecenas diam fusce" PartOfSpeech="adjective" />
+                <Data:TermProperties Term="Curabitur" Definition="Curae donec duis nunc etiam" Example="Nullam maecenas diam fusce" PartOfSpeech="adjective" />
+            </Data:GroupedItemDefinitions.TopItems>
+        </Data:GroupedItemDefinitions>
+        <Data:GroupedItemDefinitions Key="noun" Title="adjective">
+            <Data:GroupedItemDefinitions.TopItems>
+                <Data:TermProperties Term="Curabitur" Definition="Curae donec duis nunc etiam" Example="Nullam maecenas diam fusce" PartOfSpeech="noun" />
+                <Data:TermProperties Term="Curabitur" Definition="Curae donec duis nunc etiam" Example="Nullam maecenas diam fusce" PartOfSpeech="noun" />
+                <Data:TermProperties Term="Curabitur" Definition="Curae donec duis nunc etiam" Example="Nullam maecenas diam fusce" PartOfSpeech="noun" />
+                <Data:TermProperties Term="Curabitur" Definition="Curae donec duis nunc etiam" Example="Nullam maecenas diam fusce" PartOfSpeech="noun" />
+                <Data:TermProperties Term="Curabitur" Definition="Curae donec duis nunc etiam" Example="Nullam maecenas diam fusce" PartOfSpeech="noun" />
+            </Data:GroupedItemDefinitions.TopItems>
+        </Data:GroupedItemDefinitions>
+    </Data:DefinitionsDataItem.GroupedItems>
+	<Data:DefinitionsDataItem.Id>
+		<System:Guid/>
+	</Data:DefinitionsDataItem.Id>
+</Data:DefinitionsDataItem>

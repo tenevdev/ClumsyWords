@@ -70,6 +70,22 @@ namespace ClumsyWordsUniversal
             this.DefaultViewModel["Item"] = item;
         }
 
+        void Header_Click(object sender, RoutedEventArgs e)
+        {
+            // Determine what group the Button instance represents
+            var group = (sender as FrameworkElement).DataContext;
+
+            // Navigate to the appropriate destination page, configuring the new page
+            // by passing required information as a navigation parameter
+
+            Dictionary<string, object> navParameters = new Dictionary<string, object>();
+            navParameters["ItemName"] = ((DefinitionsDataItem)DefaultViewModel["CurrentItem"]).Term;
+            navParameters["Group"] = (CommonGroup<TermProperties>)group;
+
+
+            this.Frame.Navigate(typeof(ItemPage), navParameters);
+        }
+
         #region NavigationHelper registration
 
         /// <summary>
@@ -89,6 +105,142 @@ namespace ClumsyWordsUniversal
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedFrom(e);
+        }
+
+        #endregion
+
+        #region Event Handlers
+
+        private void OnGridViewSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            #region Maintain Selection Across View States
+            foreach (var item in e.RemovedItems)
+            {
+                this.itemListView.SelectedItems.Remove(item);
+            }
+
+            foreach (var item in e.AddedItems)
+            {
+                this.itemListView.SelectedItems.Add(item);
+            }
+            #endregion
+
+            if (this.itemGridView.SelectedItems.Count == 0)
+            {
+                //this.BottomAppBar.IsSticky = false;
+                this.BottomAppBar.IsOpen = false;
+            }
+            else
+            {
+                this.BottomAppBar.IsOpen = true;
+                //this.BottomAppBar.IsSticky = true;
+            }
+        }
+
+        private void OnListViewSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            #region Maintain Selection Across View States
+            foreach (var item in e.RemovedItems)
+            {
+                this.itemGridView.SelectedItems.Remove(item);
+            }
+
+            foreach (var item in e.AddedItems)
+            {
+                this.itemGridView.SelectedItems.Add(item);
+            }
+            #endregion
+
+            if (this.itemGridView.SelectedItems.Count == 0)
+            {
+                this.BottomAppBar.IsOpen = false;
+            }
+            else
+            {
+                this.BottomAppBar.IsOpen = true;
+            }
+        }
+
+        private void OnAddToFavouritesClick(object sender, RoutedEventArgs e)
+        {
+            DefinitionsDataItem newItem = new DefinitionsDataItem();
+            string currentTerm = ((DefinitionsDataItem)this.DefaultViewModel["CurrentItem"]).Term;
+            List<TermProperties> selectedItems = new List<TermProperties>();
+            TermProperties currentItem;
+
+            foreach (var item in this.itemGridView.SelectedItems)
+            {
+                currentItem = (TermProperties)item;
+
+                if (!selectedItems.Contains(currentItem))
+                    selectedItems.Add(currentItem);
+            }
+
+            newItem.ComposeItemFromTermProperties(currentTerm, selectedItems);
+            App.DataSource.GetGroup("Favourites").Items.Add(newItem);
+            this.Frame.Navigate(typeof(HubPage), new string[] { "Recent", "Favourites" });
+        }
+
+        private void OnClearSelectionClick(object sender, RoutedEventArgs e)
+        {
+            if (this.itemGridView.SelectedItems.Count != 0)
+                this.itemGridView.SelectedItems.Clear();
+        }
+
+        private void OnGoHomeClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HubPage), new string[] { "Recent", "Favourites" });
+        }
+
+        private void OnSemanticZoomViewChangeStarted(object sender, SemanticZoomViewChangedEventArgs e)
+        {
+            if (e.IsSourceZoomedInView == true)
+                this.BottomAppBar.Visibility = Visibility.Collapsed;
+            else
+                this.BottomAppBar.Visibility = Visibility.Visible;
+        }
+
+        private async void SignInClick(object sender, RoutedEventArgs e)
+        {
+            await App.UpdateUserName(true);
+
+            //this.userName.Text = App.UserName;
+
+            if (App.UserName == "You are not signed in.")
+                this.SignInBtn.Visibility = Visibility.Visible;
+            else
+                this.SignInBtn.Visibility = Visibility.Collapsed;
+        }
+
+        private void OnQuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args)
+        {
+            // If the Window isn't already using Frame navigation, insert our own Frame
+            var previousContent = Window.Current.Content;
+            var frame = previousContent as Frame;
+
+            // Display search results
+            frame.Navigate(typeof(SearchResultsPage), args.QueryText);
+            Window.Current.Content = frame;
+
+            // Ensure the current window is active
+            Window.Current.Activate();
+        }
+
+        private void OnSuggestionsRequested(SearchBox sender, SearchBoxSuggestionsRequestedEventArgs args)
+        {
+            // Extract the query
+            string query = args.QueryText.ToLower();
+
+            // Get all available terms from Recent and Favourites groups
+            string[] categories = new string[] { "Recent", "Favourites" };
+            List<string> terms = App.DataSource.GetTerms(categories);
+
+            // Display a term as a suggestion if it starts with the current query
+            foreach (var term in terms)
+            {
+                if (term.StartsWith(query))
+                    args.Request.SearchSuggestionCollection.AppendQuerySuggestion(term);
+            }
         }
 
         #endregion

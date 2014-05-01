@@ -161,6 +161,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <DesignData Include="SampleData\DefinitionsDataItemSampleData.xaml" />
     <DesignData Include="SampleData\SampleDefinitionsSourceSampleData.xaml" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
