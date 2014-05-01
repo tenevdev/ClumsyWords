@@ -43,4 +43,21 @@
         </Setter>
     </Style>
 
+    <Style x:Key="SnappedPageHeaderTextBlockStyle" TargetType="TextBlock" BasedOn="{StaticResource PageSubheaderTextBlockStyle}">
+        <Setter Property="Margin" Value="0,0,18,40"/>
+        <Setter Property="Foreground" Value="{StaticResource ClumsyOrangeBrush}"/>
+    </Style>
+
+    <Style x:Key="PageSubheaderTextBlockStyle" TargetType="TextBlock" BasedOn="{StaticResource SubheaderTextBlockStyle}">
+        <Setter Property="TextWrapping" Value="NoWrap"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+        <Setter Property="Margin" Value="0,0,0,40"/>
+    </Style>
+
+    <Style x:Key="PageHeaderTextBlockStyle" TargetType="TextBlock" BasedOn="{StaticResource HeaderTextBlockStyle}">
+        <Setter Property="TextWrapping" Value="NoWrap"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+        <Setter Property="Margin" Value="0,0,30,40"/>
+    </Style>
+
 </ResourceDictionary>

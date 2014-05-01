@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ClumsyWordsUniversal.Common">
 
-    <DataTemplate x:Key="definitionDataCustomItemTemplate">
+    <DataTemplate x:Key="Standard250ItemTemplate">
         <Grid HorizontalAlignment="Left" Background="{Binding Group.ColorCode, FallbackValue={StaticResource ClumsyOrangeBrush}}" Width="250" Height="250">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -39,5 +39,20 @@
         </Grid>
     </DataTemplate>
 
+    <DataTemplate x:Key="Standard80ItemTemplate">
+        <Grid Background="WhiteSmoke" Height="80" Width="400">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" 
+                       Text="{Binding Term}" Width="392"
+                       FontSize="18"
+                       Foreground="{StaticResource ClumsyOrangeBrush}"/>
+            <TextBlock Grid.Row="1" Width="392"
+                       Text="{Binding FirstDefinition.Definition}" TextTrimming="CharacterEllipsis"
+                       Foreground="{StaticResource ClumsyOrangeBrush}"/>
+        </Grid>
+    </DataTemplate>
 
 </ResourceDictionary>
