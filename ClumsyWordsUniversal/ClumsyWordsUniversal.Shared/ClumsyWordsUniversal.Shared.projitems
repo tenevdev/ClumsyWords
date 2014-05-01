@@ -23,6 +23,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSources\CloudDataSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSources\LocalDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSources\Sample\GroupedItemDefinitions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSources\Sample\SampleDefinitionsSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\Model\CommonGroup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\Model\PartOfSpeech.cs" />

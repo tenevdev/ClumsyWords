@@ -41,15 +41,15 @@ namespace ClumsyWordsUniversal.Controls
 
 
 
-        public ImageSource ImageSource
+        public BitmapImage ImageSource
         {
-            get { return (ImageSource)GetValue(ImageSourceProperty); }
+            get { return (BitmapImage)GetValue(ImageSourceProperty); }
             set { SetValue(ImageSourceProperty, value); }
         }
 
         // Using a DependencyProperty as the backing store for ImageSource.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ImageSourceProperty =
-            DependencyProperty.Register("ImageSource", typeof(ImageSource), typeof(UserInfo), new PropertyMetadata(0));
+            DependencyProperty.Register("ImageSource", typeof(BitmapImage), typeof(UserInfo), new PropertyMetadata(new BitmapImage(new Uri("ms-appx:///Assets/LightGray.png", UriKind.Absolute))));
 
     }
 }

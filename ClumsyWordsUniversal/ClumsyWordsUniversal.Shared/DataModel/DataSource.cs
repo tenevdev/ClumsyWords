@@ -85,6 +85,11 @@ namespace ClumsyWordsUniversal.Data
         [JsonProperty]
         public ObservableCollection<CommonGroup<TermProperties>> Items { get; set; }
 
+        /// <summary>
+        /// For design purposes only
+        /// </summary>
+        public ObservableCollection<GroupedItemDefinitions> GroupedItems { get; set; }   
+    
         public void ComposeItemFromTermProperties(string term, List<TermProperties> termProps)
         {
             this.Items = DefinitionsDataItem.GetGroupsList(termProps, p => p.PartOfSpeech);

@@ -55,4 +55,46 @@
         </Grid>
     </DataTemplate>
 
+    <DataTemplate x:Key="StandardListItemTemplate">
+        <Grid Background="WhiteSmoke" Width="400" Height="80">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Width="392"
+                       Text="{Binding Term}" TextWrapping="Wrap"
+                       Style="{StaticResource TitleTextBlockStyle}"                       
+                       Foreground="{StaticResource ClumsyOrangeBrush}"
+                       FontSize="18"/>
+            <TextBlock Grid.Row="1" Width="392"
+                       Text="{Binding Definition}" TextTrimming="CharacterEllipsis"
+                       Style="{StaticResource BaseTextBlockStyle}"
+                       Foreground="{StaticResource ClumsyOrangeBrush}"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Standard250ItemDetailTemplate">
+
+        <Grid HorizontalAlignment="Left" Background="{StaticResource ClumsyOrangeBrush}" Width="250" Height="250">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="{Binding Term}"
+                       VerticalAlignment="Top"
+                       FontSize="24"
+                       Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}"
+                       Style="{StaticResource TitleTextBlockStyle}"
+                       LineStackingStrategy="BlockLineHeight"
+                       Margin="15,15,25,10"/>
+            <TextBlock Grid.Row="1"
+                       Text="{Binding Definition}" TextTrimming="WordEllipsis" TextWrapping="Wrap"
+                       Foreground="White"
+                       Style="{StaticResource BodyTextBlockStyle}"
+                       Margin="15,0,5,5"
+                       FontSize="12"/>
+        </Grid>
+    </DataTemplate>
+
 </ResourceDictionary>
