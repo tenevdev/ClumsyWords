@@ -19,6 +19,7 @@ using ClumsyWordsUniversal.Common;
 using Windows.Storage;
 using System.Threading.Tasks;
 using Microsoft.Live;
+using ClumsyWordsUniversal.Data;
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -42,6 +43,44 @@ namespace ClumsyWordsUniversal
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
         }
+
+        #region Data
+
+        /// <summary>
+        /// Application settings container
+        /// </summary>
+        Windows.Storage.ApplicationDataContainer roamingSettings = Windows.Storage.ApplicationData.Current.RoamingSettings;
+
+        /// <summary>
+        /// Static container which stores app content and provides it across the app
+        /// </summary>
+        public static DataSource DataSource { get; set; }
+
+        /// <summary>
+        /// An auxiliary container which is used when a user selects to use both local and cloud storage to store app content for the first time
+        /// or the user changes the storage option 
+        /// </summary>
+        public static DataSource SecondaryDataSource { get; set; }
+
+        private void GetDataSource()
+        {
+            if (this.roamingSettings.Values.Contains(new KeyValuePair<string, object>("saveSkyDrive", true)))
+            {
+                App.DataSource = new CloudDataSource();
+            }
+
+            else if (this.roamingSettings.Values.Contains(new KeyValuePair<string, object>("saveLocal", true)))
+            {
+                App.DataSource = new LocalDataSource();
+            }
+            else
+            {
+                App.DataSource = new LocalDataSource();
+            }
+
+        }
+
+        #endregion
 
         #region LiveAccount
 
