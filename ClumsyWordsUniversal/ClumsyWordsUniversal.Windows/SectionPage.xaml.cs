@@ -70,18 +70,109 @@ namespace ClumsyWordsUniversal
             this.DefaultViewModel["Items"] = group.Items;
         }
 
+        #region Event Handlers
+
         /// <summary>
         /// Invoked when an item is clicked.
         /// </summary>
-        /// <param name="sender">The GridView displaying the item clicked.</param>
+        /// <param name="sender">The GridView (or ListView when the application is snapped)
+        /// displaying the item clicked.</param>
         /// <param name="e">Event data that describes the item clicked.</param>
-        private void ItemView_ItemClick(object sender, ItemClickEventArgs e)
+        void ItemView_ItemClick(object sender, ItemClickEventArgs e)
         {
             // Navigate to the appropriate destination page, configuring the new page
             // by passing required information as a navigation parameter
-            var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
+            var itemId = ((DefinitionsDataItem)e.ClickedItem).Id;
             this.Frame.Navigate(typeof(ItemPage), itemId);
         }
+
+        private void OnAddToFavouritesClick(object sender, RoutedEventArgs e)
+        {
+            List<object> selectedItems = this.itemGridView.SelectedItems.ToList();
+            foreach (var item in selectedItems)
+            {
+                if (!App.DataSource.GetGroup("Favourites").ContainsSimilar((DefinitionsDataItem)item))
+                {
+                    App.DataSource.GetGroup("Favourites").Items.Add(new DefinitionsDataItem((DefinitionsDataItem)item));
+                }
+            }
+            this.itemGridView.SelectedItems.Clear();
+        }
+
+        private void OnClearSelectionClick(object sender, RoutedEventArgs e)
+        {
+            if (this.itemGridView.SelectedItems.Count != 0)
+                this.itemGridView.SelectedItems.Clear();
+        }
+
+        private void OnDeleteSelectedItemsClick(object sender, RoutedEventArgs e)
+        {
+            List<object> selectedItems = this.itemGridView.SelectedItems.ToList();
+            foreach (var selectedItem in selectedItems)
+            {
+                foreach (var group in (List<DefinitionsDataGroup>)this.DefaultViewModel["Groups"])
+                {
+                    for (int i = group.Items.Count - 1; i >= 0; i--)
+                    {
+                        if (group.Items[i].Id == ((DefinitionsDataItem)selectedItem).Id)
+                        {
+                            group.Items.Remove(group.Items[i]);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void OnGoHomeClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HubPage), new string[] { "Recent", "Favourites" });
+        }
+
+        private async void SignInClick(object sender, RoutedEventArgs e)
+        {
+            await App.UpdateUserName(true);
+
+            //this.userName.Text = App.UserName;
+
+            if (App.UserName == "You are not signed in.")
+                this.SignInBtn.Visibility = Visibility.Visible;
+            else
+                this.SignInBtn.Visibility = Visibility.Collapsed;
+        }
+
+        private void OnQuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args)
+        {
+            // If the Window isn't already using Frame navigation, insert our own Frame
+            var previousContent = Window.Current.Content;
+            var frame = previousContent as Frame;
+
+            // Display search results
+            frame.Navigate(typeof(SearchResultsPage), args.QueryText);
+            Window.Current.Content = frame;
+
+            // Ensure the current window is active
+            Window.Current.Activate();
+        }
+
+        private void OnSuggestionsRequested(SearchBox sender, SearchBoxSuggestionsRequestedEventArgs args)
+        {
+            // Extract the query
+            string query = args.QueryText.ToLower();
+
+            // Get all available terms from Recent and Favourites groups
+            string[] categories = new string[] { "Recent", "Favourites" };
+            List<string> terms = App.DataSource.GetTerms(categories);
+
+            // Display a term as a suggestion if it starts with the current query
+            foreach (var term in terms)
+            {
+                if (term.StartsWith(query))
+                    args.Request.SearchSuggestionCollection.AppendQuerySuggestion(term);
+            }
+        }
+
+        #endregion
 
         #region NavigationHelper registration
 
