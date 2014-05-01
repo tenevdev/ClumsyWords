@@ -223,7 +223,7 @@
                        QuerySubmitted="OnQuerySubmitted" SuggestionsRequested="OnSuggestionsRequested"/>
 
             <StackPanel x:Name="userPanel" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Margin="0,0,40,36" Orientation="Horizontal" Grid.Column="3">
-                <controls:UserInfo x:Name="userInfo" Visibility="Collapsed" ImageSource=""/>
+                <controls:UserInfo x:Name="userInfo" Visibility="Collapsed"/>
                 <Button x:Name="SignInBtn" Click="SignInClick"
                         Visibility="Visible" Style="{StaticResource TextBlockButtonStyle}">
                     <Button.Content>
