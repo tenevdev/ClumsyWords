@@ -107,6 +107,9 @@
     <Compile Include="Views\HubPage.xaml.cs">
       <DependentUpon>HubPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ItemSectionPage.xaml.cs">
+      <DependentUpon>ItemSectionPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SearchResultsPage.xaml.cs">
       <DependentUpon>SearchResultsPage.xaml</DependentUpon>
     </Compile>
@@ -137,6 +140,10 @@
     <Page Include="Views\HubPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ItemSectionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\SearchResultsPage.xaml">
       <SubType>Designer</SubType>
