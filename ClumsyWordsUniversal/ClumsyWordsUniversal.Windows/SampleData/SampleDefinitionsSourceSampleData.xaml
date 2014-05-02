@@ -4,7 +4,7 @@
 			<Data:DefinitionsDataGroup.Items>
 				<Data:DefinitionsDataItem DefinitionsCount="32" Term="Maecenas">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Nam class sed dis aenean cras aliquam est hac" Example="Class nam aenean cras sed curae mauris donec etiam duis aliquam dis fusce lorem integer nullam nunc aptent est morbi" PartOfSpeech="adverb" Term="Class"/>
+						<Data:TermProperties Definition="Class aliquam nam cras aenean integer" Example="Cras aliquam integer class quisque maecenas duis curae nunc nam donec sed vivamus aliquam" PartOfSpeech="adverb" Term="Aliquam"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Class" Key="Nam" Subtitle="Aenean vivamus aliquam amet ante mauris" Title="Aliquam"/>
@@ -15,7 +15,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="69" Term="Aenean">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Curae leo integer donec quisque mauris etiam mus" Example="Quisque auctor hac maecenas congue cursus vivamus amet nulla dictum ante" PartOfSpeech="symbol" Term="Curae"/>
+						<Data:TermProperties Definition="Maecenas praesent quisque sed dis" Example="Dis amet ante aenean arcu praesent aliquet est mauris accumsan bibendum etiam diam" PartOfSpeech="symbol" Term="Maecenas"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Duis" Key="Mauris" Subtitle="Accumsan nullam aptent auctor nam sed congue" Title="Maecenas"/>
@@ -26,7 +26,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="59" Term="Mauris">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Duis maecenas vivamus nunc nullam" Example="Arcu leo lectus diam mus proin augue praesent aliquam accumsan libero dolor eget elit bibendum fames" PartOfSpeech="pronoun" Term="Donec"/>
+						<Data:TermProperties Definition="Accumsan duis bibendum est dictumst vivamus hac curae leo" Example="Hac nullam blandit fusce leo lorem morbi mus commodo conubia dictumst eget nec aptent cubilia eleifend non dapibus" PartOfSpeech="pronoun" Term="Nam"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Aenean" Key="Class" Subtitle="Arcu cursus class aliquet diam dis" Title="Praesent"/>
@@ -37,7 +37,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="42" Term="Nullam">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Fusce aliquam amet lorem praesent" Example="Dictumst felis aliquet enim blandit nec commodo conubia cubilia eleifend ligula dapibus litora luctus ipsum" PartOfSpeech="numeral" Term="Aliquam"/>
+						<Data:TermProperties Definition="Eleifend aliquam nunc aliquet facilisi faucibus amet mus mauris donec" Example="Per nulla sed facilisi elit enim egestas proin augue faucibus sem sit euismod dolor fames auctor erat" PartOfSpeech="numeral" Term="Aenean"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Aliquam" Key="Nullam" Subtitle="Dictum lectus eget libero blandit curae commodo bibendum" Title="Cras"/>
@@ -48,7 +48,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="56" Term="Cras">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Accumsan aliquet morbi ante aptent" Example="Facilisi faucibus habitant magnis non egestas erat euismod per inceptos feugiat eros justo sed sem interdum gravida mattis sit iaculis" PartOfSpeech="contraction" Term="Cras"/>
+						<Data:TermProperties Definition="Habitant blandit inceptos commodo nec conubia nullam non aptent" Example="Habitant felis feugiat ipsum gravida eros congue justo cursus lacus lorem nibh nisi inceptos nisl dictum" PartOfSpeech="contraction" Term="Cras"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Maecenas" Key="Curae" Subtitle="Est ligula elit donec enim litora hac dictumst" Title="Accumsan"/>
@@ -61,7 +61,7 @@
 			<Data:DefinitionsDataGroup.TopItems>
 				<Data:DefinitionsDataItem DefinitionsCount="18" Term="Praesent">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Blandit commodo nec auctor conubia" Example="Lacinia laoreet nibh lacus nisi nisl lobortis lorem vel natoque mauris magna nunc mollis montes nostra odio" PartOfSpeech="interjection" Term="Nam"/>
+						<Data:TermProperties Definition="Ante auctor interdum etiam arcu diam congue cursus" Example="Nunc iaculis vel odio nam orci magna lectus lacinia sed libero dis" PartOfSpeech="interjection" Term="Class"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Curae" Key="Aliquam" Subtitle="Luctus etiam magnis conubia erat" Title="Integer"/>
@@ -72,7 +72,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="23" Term="Accumsan">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Congue nulla cubilia cursus dictum lectus dapibus" Example="Posuere nascetur potenti pretium rhoncus ornare massa nam sodales metus" PartOfSpeech="conjunction" Term="Maecenas"/>
+						<Data:TermProperties Definition="Lobortis per eget elit nascetur fusce enim sed dictum lorem" Example="Ligula est massa interdum metus morbi lobortis neque netus nulla porta pede litora purus laoreet nascetur risus hac" PartOfSpeech="conjunction" Term="Integer"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Mauris" Key="Sed" Subtitle="Cubilia eleifend dapibus facilisi egestas leo mattis faucibus" Title="Quisque"/>
@@ -83,7 +83,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="52" Term="Nam">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Egestas euismod arcu proin non" Example="Platea viverra sed pharetra orci morbi aliquam primis pede integer neque netus quisque placerat pulvinar rutrum quam quis" PartOfSpeech="symbol" Term="Duis"/>
+						<Data:TermProperties Definition="Morbi erat lectus nulla cubilia proin" Example="Leo pharetra placerat luctus magnis natoque quam velit mus mattis pulvinar nec mauris mollis montes nostra sagittis" PartOfSpeech="symbol" Term="Praesent"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Integer" Key="Aptent" Subtitle="Eros fusce habitant euismod mus" Title="Duis"/>
@@ -94,7 +94,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="73" Term="Duis">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Feugiat gravida libero ligula per bibendum" Example="Nulla dis sagittis porta purus sapien senectus semper risus est sociosqu hac vivamus velit vitae suscipit urna sociis leo torquent" PartOfSpeech="adjective" Term="Etiam"/>
+						<Data:TermProperties Definition="Eros nibh nisi sem augue" Example="Ornare non vitae posuere senectus sociosqu suscipit per potenti class torquent platea" PartOfSpeech="adjective" Term="Curae"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Praesent" Key="Integer" Subtitle="Feugiat lorem morbi nibh inceptos interdum nulla mauris lobortis" Title="Nam"/>
@@ -105,7 +105,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="72" Term="Bibendum">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Litora sed augue dictumst sem diam iaculis dolor luctus" Example="Class ultrices curae vehicula donec volutpat maecenas etiam cras aliquam praesent mus duis nec aliquet" PartOfSpeech="suffix" Term="Integer"/>
+						<Data:TermProperties Definition="Dapibus dolor fames egestas libero sit felis pharetra nisl placerat" Example="Primis curae rutrum sed sapien sem semper quis ultrices sociis" PartOfSpeech="suffix" Term="Quisque"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Donec" Key="Auctor" Subtitle="Nascetur proin nisi pharetra augue" Title="Sed"/>
@@ -120,7 +120,7 @@
 			<Data:DefinitionsDataGroup.Items>
 				<Data:DefinitionsDataItem DefinitionsCount="89" Term="Aptent">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Sit magnis vel mattis mauris" Example="Blandit fusce non lorem morbi accumsan taciti per commodo tellus nunc" PartOfSpeech="adjective" Term="Quisque"/>
+						<Data:TermProperties Definition="Ipsum justo lacus lorem vel nunc nam pulvinar magna ligula" Example="Pretium taciti sit donec urna etiam cras vehicula rhoncus tellus vel tempor duis volutpat nam" PartOfSpeech="adjective" Term="Duis"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Nullam" Key="Donec" Subtitle="Montes lacinia per nisl nunc" Title="Amet"/>
@@ -131,7 +131,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="84" Term="Auctor">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Eleifend lacinia fames laoreet nam sed" Example="Bibendum sed dictumst conubia tempor amet tempus nulla eleifend proin" PartOfSpeech="other" Term="Sed"/>
+						<Data:TermProperties Definition="Euismod litora odio sed feugiat sagittis gravida senectus" Example="Fusce nunc sed maecenas tempus sodales amet lorem viverra morbi ante nulla dis praesent tortor est arcu" PartOfSpeech="other" Term="Mauris"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Aptent" Key="Quisque" Subtitle="Sed sagittis odio orci nostra sem senectus laoreet" Title="Ante"/>
@@ -142,7 +142,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="82" Term="Sed">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Natoque facilisi posuere dis felis est mollis faucibus habitant" Example="Tortor facilisi sem augue cubilia turpis ante varius arcu faucibus dapibus egestas euismod aenean dolor diam" PartOfSpeech="contraction" Term="Vivamus"/>
+						<Data:TermProperties Definition="Luctus orci sociosqu dis magnis est hac iaculis suscipit" Example="Accumsan hac diam aliquam integer proin quisque augue vivamus bibendum turpis eget varius leo" PartOfSpeech="contraction" Term="Nunc"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Accumsan" Key="Vivamus" Subtitle="Ornare felis platea primis pede" Title="Mauris"/>
@@ -153,7 +153,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="37" Term="Dis">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Potenti pretium hac rhoncus inceptos montes" Example="Eget mauris habitant feugiat gravida iaculis elit sit vel lacinia" PartOfSpeech="numeral" Term="Aliquam"/>
+						<Data:TermProperties Definition="Mattis massa pede lacinia leo quam metus" Example="Elit aliquam mus enim dictumst aenean erat dolor aliquet fames nec eros" PartOfSpeech="numeral" Term="Nullam"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Etiam" Key="Aliquam" Subtitle="Rutrum natoque sociosqu quam sapien suscipit semper sit ipsum justo" Title="Arcu"/>
@@ -164,7 +164,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="16" Term="Dictumst">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Nostra eget ornare elit platea interdum enim" Example="Fames nullam nam aptent auctor inceptos sed enim dis congue interdum lobortis laoreet felis ipsum justo" PartOfSpeech="contraction" Term="Nunc"/>
+						<Data:TermProperties Definition="Torquent ultrices quis mus laoreet urna nec morbi" Example="Eleifend non per nibh facilisi sed mauris blandit nullam nisi aptent nisl auctor commodo nunc" PartOfSpeech="contraction" Term="Sed"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Vivamus" Key="Praesent" Subtitle="Quis posuere urna vel torquent sociis potenti lacus" Title="Vivamus"/>
@@ -177,7 +177,7 @@
 			<Data:DefinitionsDataGroup.TopItems>
 				<Data:DefinitionsDataItem DefinitionsCount="55" Term="Class">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Leo primis erat sodales rutrum viverra eros mus nibh lobortis" Example="Lacus natoque cursus est lorem magna erat massa hac leo dictum mus lectus posuere libero nascetur metus" PartOfSpeech="preposition" Term="Aliquet"/>
+						<Data:TermProperties Definition="Natoque neque posuere cras non duis" Example="Congue conubia faucibus cursus odio orci felis habitant cubilia inceptos dapibus egestas" PartOfSpeech="preposition" Term="Vivamus"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Bibendum" Key="Accumsan" Subtitle="Pretium rhoncus cras taciti nam sodales" Title="Bibendum"/>
@@ -188,7 +188,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="49" Term="Curae">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Sapien nascetur nec semper nisi ipsum" Example="Pharetra eros potenti ligula pretium morbi placerat litora neque netus pulvinar nibh nulla sagittis porta purus risus" PartOfSpeech="interjection" Term="Aenean"/>
+						<Data:TermProperties Definition="Vehicula potenti nunc mauris netus per sed nulla pretium" Example="Ipsum sem dictum pede interdum euismod lectus libero ligula justo lacus" PartOfSpeech="interjection" Term="Donec"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Aliquam" Key="Dis" Subtitle="Sed tellus viverra tempor ultrices vehicula lorem magna tempus" Title="Nullam"/>
@@ -199,7 +199,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="14" Term="Aliquam">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Justo non sociis pharetra lacus aliquam" Example="Velit luctus magnis senectus vitae nec nisi rhoncus class curae nisl" PartOfSpeech="contraction" Term="Amet"/>
+						<Data:TermProperties Definition="Amet ante porta arcu mollis montes sem volutpat nostra" Example="Lobortis litora feugiat nascetur lorem pharetra sit placerat luctus vel quam" PartOfSpeech="contraction" Term="Aptent"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Aliquet" Key="Bibendum" Subtitle="Dis massa volutpat aliquam duis est nunc integer amet" Title="Aptent"/>
@@ -210,7 +210,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="23" Term="Donec">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Lorem magna nisl integer placerat nunc massa pulvinar metus" Example="Non sodales donec sociosqu per etiam viverra nunc mattis suscipit aliquam fusce mauris mollis torquent" PartOfSpeech="conjunction" Term="Ante"/>
+						<Data:TermProperties Definition="Diam rhoncus eget sodales viverra aliquam" Example="Gravida magnis pulvinar iaculis sagittis nam magna sed massa metus quis morbi dis lacinia senectus sociosqu mattis mauris est urna" PartOfSpeech="conjunction" Term="Accumsan"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Nam" Key="Congue" Subtitle="Tortor metus maecenas morbi neque praesent accumsan" Title="Class"/>
@@ -221,7 +221,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="55" Term="Integer">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Morbi odio neque sagittis per quisque vivamus netus aliquam taciti" Example="Ultrices lorem odio montes orci sed integer pede morbi vehicula nulla nostra proin sem augue volutpat quam" PartOfSpeech="interjection" Term="Fusce"/>
+						<Data:TermProperties Definition="Sit purus elit ornare enim erat risus maecenas platea primis" Example="Mollis cras duis suscipit hac neque nunc torquent ultrices montes leo amet nostra mus netus" PartOfSpeech="interjection" Term="Bibendum"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Nunc" Key="Est" Subtitle="Hac quisque bibendum dictumst eleifend leo facilisi" Title="Curae"/>
@@ -236,7 +236,7 @@
 			<Data:DefinitionsDataGroup.Items>
 				<Data:DefinitionsDataItem DefinitionsCount="46" Term="Congue">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Aliquet tellus blandit tempor senectus" Example="Maecenas ornare platea quisque sit praesent quis vel nam urna vivamus dolor primis cras accumsan fames rutrum sed bibendum" PartOfSpeech="adjective" Term="Arcu"/>
+						<Data:TermProperties Definition="Integer rutrum praesent vel quisque eros velit vitae nibh nam" Example="Nec nulla ante laoreet ornare non platea per sed natoque sem primis arcu" PartOfSpeech="adjective" Term="Aliquam"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Auctor" Key="Aliquet" Subtitle="Faucibus diam turpis habitant inceptos eget non" Title="Aliquam"/>
@@ -247,7 +247,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="67" Term="Nunc">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Commodo sed nulla sociosqu orci" Example="Felis aliquam duis nunc ipsum justo dictumst eleifend aliquet facilisi lacus dis" PartOfSpeech="suffix" Term="Lorem"/>
+						<Data:TermProperties Definition="Vivamus class accumsan sapien bibendum semper sociis sed" Example="Rutrum sit sapien porta purus vehicula semper risus diam volutpat sociis taciti posuere velit vel" PartOfSpeech="suffix" Term="Aliquet"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Commodo" Key="Blandit" Subtitle="Aliquam interdum lobortis netus nulla porta" Title="Aliquet"/>
@@ -258,7 +258,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="90" Term="Amet">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Pede suscipit torquent conubia quam sem cubilia" Example="Amet est sapien lorem hac leo ante blandit magna mus semper arcu faucibus habitant commodo inceptos conubia massa" PartOfSpeech="preposition" Term="Dis"/>
+						<Data:TermProperties Definition="Dis nisi est hac leo taciti curae dictumst" Example="Potenti eget maecenas pretium nam elit praesent tellus vitae rhoncus tempor sed dis est hac leo mus sodales nec" PartOfSpeech="preposition" Term="Dis"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Congue" Key="Dictumst" Subtitle="Nascetur per sed varius aliquet aenean elit" Title="Auctor"/>
@@ -269,7 +269,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="44" Term="Etiam">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Porta ultrices vehicula volutpat dapibus quis" Example="Diam interdum lobortis sociis metus morbi cubilia neque eget elit enim nascetur taciti" PartOfSpeech="prefix" Term="Diam"/>
+						<Data:TermProperties Definition="Eleifend donec nisl tellus aliquam etiam aliquet tempor blandit facilisi" Example="Class accumsan non viverra aliquam integer curae bibendum quisque donec vivamus enim aliquam tempus etiam erat dictumst aliquet eros tortor" PartOfSpeech="prefix" Term="Auctor"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Sed" Key="Hac" Subtitle="Blandit commodo conubia enim mauris nullam aptent sem" Title="Congue"/>
@@ -280,7 +280,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="43" Term="Fusce">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Purus sit tempus egestas euismod vel tortor turpis varius feugiat" Example="Nec dapibus non tellus netus per egestas pharetra erat eros nulla porta purus nibh sed risus velit tempor placerat nisi" PartOfSpeech="suffix" Term="Eget"/>
+						<Data:TermProperties Definition="Nunc commodo faucibus habitant fusce inceptos" Example="Eleifend turpis fusce nibh varius facilisi faucibus aenean lorem nisi habitant mauris blandit" PartOfSpeech="suffix" Term="Etiam"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Fusce" Key="Duis" Subtitle="Purus erat auctor sit vel nam pharetra sed placerat" Title="Donec"/>
@@ -293,7 +293,7 @@
 			<Data:DefinitionsDataGroup.TopItems>
 				<Data:DefinitionsDataItem DefinitionsCount="85" Term="Lorem">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Urna gravida cras aenean maecenas risus nam" Example="Nisl tempus vitae sem euismod feugiat sit gravida iaculis lacinia pulvinar class tortor curae donec" PartOfSpeech="pronoun" Term="Blandit"/>
+						<Data:TermProperties Definition="Tempus tortor interdum conubia lorem turpis cubilia varius aenean odio" Example="Commodo inceptos per conubia nullam nisl sed aptent morbi nunc sem" PartOfSpeech="pronoun" Term="Congue"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Lorem" Key="Nunc" Subtitle="Congue dis eros nibh nisi pulvinar nisl nunc" Title="Etiam"/>
@@ -304,7 +304,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="13" Term="Quisque">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Praesent accumsan mauris iaculis sed nullam duis lacinia aptent" Example="Etiam laoreet fusce lorem sagittis vel morbi senectus turpis varius nam sociosqu" PartOfSpeech="adjective" Term="Elit"/>
+						<Data:TermProperties Definition="Dapibus orci mauris nullam aptent morbi" Example="Auctor congue cubilia nulla dapibus interdum odio orci egestas pede sit" PartOfSpeech="adjective" Term="Cursus"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Amet" Key="Etiam" Subtitle="Cursus risus sagittis est senectus odio velit" Title="Dictumst"/>
@@ -315,7 +315,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="66" Term="Cursus">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Dis est velit auctor bibendum laoreet hac nunc vitae class" Example="Nunc natoque suscipit posuere aenean nulla potenti odio mauris orci sed pretium nullam torquent ultrices dis" PartOfSpeech="conjunction" Term="Mauris"/>
+						<Data:TermProperties Definition="Auctor egestas nulla lobortis pede euismod" Example="Lobortis cursus euismod quam feugiat gravida nascetur dictum lectus libero quis proin vel ligula urna augue" PartOfSpeech="conjunction" Term="Fusce"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Dictumst" Key="Amet" Subtitle="Dictum cubilia vitae hac class curae orci pede dapibus leo" Title="Diam"/>
@@ -326,7 +326,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="10" Term="Eleifend">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Curae leo donec amet ante congue" Example="Aptent pede vehicula volutpat maecenas rhoncus auctor congue est hac leo mus sodales viverra aliquam cursus integer" PartOfSpeech="pronoun" Term="Est"/>
+						<Data:TermProperties Definition="Quam quis congue urna feugiat nascetur proin pharetra cras" Example="Cras litora duis pharetra dolor fames felis luctus placerat nam ipsum pulvinar" PartOfSpeech="pronoun" Term="Lorem"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Cursus" Key="Fusce" Subtitle="Donec egestas quam etiam quis fusce mus nec non" Title="Blandit"/>
@@ -337,7 +337,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="24" Term="Vivamus">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Natoque mus posuere nec non cursus potenti per dictumst" Example="Quisque praesent nec vivamus non proin per aliquam quam accumsan sed aliquet dictum bibendum dictumst sem" PartOfSpeech="verb" Term="Praesent"/>
+						<Data:TermProperties Definition="Duis placerat mus cursus augue dictum gravida dolor nunc iaculis" Example="Justo sagittis magnis iaculis lacus mattis sed mauris senectus lorem magna nunc lacinia sociosqu mollis" PartOfSpeech="verb" Term="Amet"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Eleifend" Key="Cursus" Subtitle="Sociosqu euismod lorem suscipit morbi torquent" Title="Eleifend"/>
@@ -352,7 +352,7 @@
 			<Data:DefinitionsDataGroup.Items>
 				<Data:DefinitionsDataItem DefinitionsCount="76" Term="Facilisi">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Sed eleifend sem dictum arcu lectus diam facilisi" Example="Augue dolor fames blandit sit eleifend lectus vel quis commodo felis urna libero ipsum conubia ligula litora" PartOfSpeech="contraction" Term="Commodo"/>
+						<Data:TermProperties Definition="Lectus pulvinar libero lacinia fames" Example="Massa metus amet laoreet natoque morbi neque suscipit posuere netus ante" PartOfSpeech="contraction" Term="Morbi"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Ante" Key="Commodo" Subtitle="Volutpat cras nulla duis litora feugiat luctus magnis nunc gravida" Title="Fusce"/>
@@ -363,7 +363,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="90" Term="Morbi">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Eget sit libero elit faucibus habitant etiam ligula vel" Example="Nam cubilia facilisi faucibus cras justo habitant dapibus duis egestas euismod lacus inceptos lorem nunc amet sed magna" PartOfSpeech="numeral" Term="Enim"/>
+						<Data:TermProperties Definition="Sagittis amet ante senectus nec non felis ipsum laoreet sociosqu" Example="Montes nulla dis arcu porta nostra purus torquent est ornare hac risus leo" PartOfSpeech="numeral" Term="Est"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Dictum" Key="Mus" Subtitle="Mattis sed maecenas sem praesent accumsan amet bibendum dictumst eleifend" Title="Commodo"/>
@@ -374,7 +374,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="24" Term="Faucibus">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Enim fusce nam inceptos litora pretium erat sed" Example="Ante massa interdum luctus lobortis metus nascetur morbi arcu pharetra placerat" PartOfSpeech="prefix" Term="Accumsan"/>
+						<Data:TermProperties Definition="Justo natoque arcu per suscipit posuere" Example="Velit platea primis rutrum ultrices mus vehicula diam sapien potenti volutpat nec" PartOfSpeech="prefix" Term="Hac"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Lectus" Key="Dictum" Subtitle="Iaculis proin mauris ante facilisi" Title="Eget"/>
@@ -385,7 +385,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="85" Term="Ante">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Lorem morbi luctus magnis mattis nulla eros proin rhoncus interdum" Example="Diam feugiat eget magnis elit neque dis pulvinar enim est sagittis netus" PartOfSpeech="proverb" Term="Morbi"/>
+						<Data:TermProperties Definition="Diam potenti torquent ligula lacus" Example="Semper vitae sociis taciti non maecenas pretium class per praesent rhoncus tellus sodales sed" PartOfSpeech="proverb" Term="Leo"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Est" Key="Lorem" Subtitle="Faucibus arcu habitant augue diam sit vel nam" Title="Facilisi"/>
@@ -396,7 +396,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="94" Term="Dictum">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Lobortis nascetur mauris dis pharetra est hac leo mus" Example="Senectus sociosqu erat suscipit gravida eros nulla nibh hac mattis leo porta nisi mauris mollis torquent montes ultrices" PartOfSpeech="conjunction" Term="Nulla"/>
+						<Data:TermProperties Definition="Lorem ultrices eget pretium vehicula elit enim" Example="Viverra accumsan aliquam bibendum sem curae sit eget elit enim integer dictumst vel quisque tempor" PartOfSpeech="conjunction" Term="Nulla"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Morbi" Key="Lectus" Subtitle="Lacinia inceptos interdum lobortis sed laoreet" Title="Conubia"/>
@@ -409,7 +409,7 @@
 			<Data:DefinitionsDataGroup.TopItems>
 				<Data:DefinitionsDataItem DefinitionsCount="39" Term="Aliquam">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Sodales augue viverra nibh nisi mollis nec nisl dolor" Example="Iaculis nisl mus vehicula volutpat maecenas nostra lacinia laoreet nec" PartOfSpeech="prefix" Term="Conubia"/>
+						<Data:TermProperties Definition="Erat litora rhoncus sodales luctus sed eros magna viverra" Example="Nam sed tempus erat eros vivamus nibh aliquam donec eleifend tortor nisi dis facilisi etiam" PartOfSpeech="prefix" Term="Dictumst"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Conubia" Key="Ante" Subtitle="Dolor fames mollis montes dis nascetur natoque nostra pharetra" Title="Faucibus"/>
@@ -420,7 +420,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="37" Term="Lectus">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Non placerat montes per pulvinar nostra" Example="Nunc odio natoque purus risus praesent accumsan posuere potenti ornare orci pede" PartOfSpeech="numeral" Term="Proin"/>
+						<Data:TermProperties Definition="Magnis aliquam nibh integer massa metus quisque" Example="Aliquet est faucibus habitant nisl hac fusce blandit commodo turpis inceptos lorem nunc odio conubia leo interdum mus cubilia lobortis" PartOfSpeech="numeral" Term="Proin"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Facilisi" Key="Eleifend" Subtitle="Ornare est posuere eget potenti hac placerat platea primis elit" Title="Habitant"/>
@@ -431,7 +431,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="72" Term="Arcu">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Sagittis sed ornare fames platea primis felis senectus nunc" Example="Bibendum platea dictumst primis pretium rhoncus velit rutrum eleifend non vitae quam quis sapien class facilisi faucibus urna" PartOfSpeech="interjection" Term="Nullam"/>
+						<Data:TermProperties Definition="Volutpat maecenas morbi neque nisi" Example="Nascetur nec orci morbi pede varius non nulla pharetra proin per sed quam dapibus augue" PartOfSpeech="interjection" Term="Augue"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Nulla" Key="Libero" Subtitle="Felis pretium rutrum rhoncus enim pulvinar sapien" Title="Hac"/>
@@ -442,7 +442,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="95" Term="Libero">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Sociosqu rutrum sapien ipsum odio" Example="Cras habitant curae duis inceptos interdum sodales semper per nunc viverra aliquam amet sed integer sociis donec etiam sem" PartOfSpeech="symbol" Term="Bibendum"/>
+						<Data:TermProperties Definition="Sem netus nisl mattis sit praesent mauris nunc" Example="Aenean sem quis mauris dolor egestas urna placerat euismod cras duis sit" PartOfSpeech="symbol" Term="Ante"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Proin" Key="Facilisi" Subtitle="Ipsum leo mus nec non sagittis erat eros" Title="Cubilia"/>
@@ -453,7 +453,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="71" Term="Ligula">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Semper suscipit torquent justo aliquam lacus" Example="Ante sit quisque fusce arcu diam vel vivamus taciti nam" PartOfSpeech="preposition" Term="Cubilia"/>
+						<Data:TermProperties Definition="Accumsan vel nam vivamus odio" Example="Nullam aptent feugiat gravida nunc amet pulvinar fames iaculis lacinia felis auctor congue" PartOfSpeech="preposition" Term="Dictum"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Hac" Key="Conubia" Subtitle="Semper sociis nibh sodales taciti nisi per" Title="Lorem"/>
@@ -468,7 +468,7 @@
 			<Data:DefinitionsDataGroup.Items>
 				<Data:DefinitionsDataItem DefinitionsCount="81" Term="Habitant">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Integer sociis sem lorem sit taciti orci ultrices pede" Example="Aliquam lorem sed aliquet morbi eget elit blandit tellus tempor lobortis" PartOfSpeech="letter" Term="Aptent"/>
+						<Data:TermProperties Definition="Orci sed pede aliquam dis est bibendum nulla dictumst" Example="Vel nam laoreet ipsum justo natoque sed lacus posuere ante dis cursus lorem magna arcu dictum est lectus" PartOfSpeech="letter" Term="Arcu"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Ligula" Key="Faucibus" Subtitle="Sociosqu lorem orci viverra tempor sem" Title="Enim"/>
@@ -479,7 +479,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="70" Term="Nulla">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Vehicula magna volutpat vel nam sed quisque massa" Example="Nascetur dis tempus est commodo hac pharetra nulla tortor turpis" PartOfSpeech="suffix" Term="Dapibus"/>
+						<Data:TermProperties Definition="Mollis eleifend aliquet facilisi faucibus" Example="Hac leo libero ligula potenti mus litora pretium sagittis massa diam" PartOfSpeech="suffix" Term="Eleifend"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Litora" Key="Habitant" Subtitle="Aliquam integer magna tempus massa metus" Title="Morbi"/>
@@ -490,7 +490,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="28" Term="Est">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Vivamus tellus metus morbi neque tempor quam aliquam maecenas tempus" Example="Enim leo placerat varius mus proin aenean erat nec pulvinar non eros mauris nibh conubia" PartOfSpeech="verb" Term="Augue"/>
+						<Data:TermProperties Definition="Habitant quam quis inceptos porta interdum lobortis hac" Example="Rhoncus sodales luctus magnis senectus metus viverra mattis mauris eget mollis nec montes aliquam" PartOfSpeech="verb" Term="Diam"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Augue" Key="Non" Subtitle="Quisque morbi vivamus tortor sit turpis" Title="Dapibus"/>
@@ -501,7 +501,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="72" Term="Litora">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Dis praesent est accumsan hac netus" Example="Cubilia sagittis dapibus egestas augue senectus euismod feugiat per dolor sociosqu nisi" PartOfSpeech="numeral" Term="Dictumst"/>
+						<Data:TermProperties Definition="Leo purus mus montes urna blandit nec" Example="Morbi integer non quisque vivamus aliquam aliquet blandit elit enim neque per netus nulla commodo conubia nostra sociosqu" PartOfSpeech="numeral" Term="Eget"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Cubilia" Key="Morbi" Subtitle="Vel pede neque aliquam aliquet nam suscipit netus" Title="Leo"/>
@@ -512,7 +512,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="93" Term="Aliquet">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Nulla aliquet quis leo urna cras mus porta" Example="Nisl fames sed sem felis suscipit ipsum nullam justo sit nunc odio gravida iaculis lacus lorem lacinia torquent laoreet" PartOfSpeech="contraction" Term="Auctor"/>
+						<Data:TermProperties Definition="Commodo nostra ornare risus velit" Example="Cubilia sed sem porta purus suscipit ornare torquent platea sit primis risus rutrum ultrices vel dapibus erat velit" PartOfSpeech="contraction" Term="Lectus"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Leo" Key="Nulla" Subtitle="Nulla quam quis blandit porta varius sed dis" Title="Mus"/>
@@ -525,7 +525,7 @@
 			<Data:DefinitionsDataGroup.TopItems>
 				<Data:DefinitionsDataItem DefinitionsCount="49" Term="Inceptos">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Tortor turpis duis varius blandit" Example="Aptent magna orci vel nam pede auctor quam natoque massa quis" PartOfSpeech="other" Term="Congue"/>
+						<Data:TermProperties Definition="Cras vitae platea duis nascetur class curae conubia non cubilia" Example="Vitae vehicula nam egestas class volutpat sapien curae eros maecenas praesent nibh euismod feugiat semper" PartOfSpeech="other" Term="Elit"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Dapibus" Key="Arcu" Subtitle="Urna commodo conubia cras aenean est cubilia torquent ultrices" Title="Nec"/>
@@ -536,7 +536,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="84" Term="Diam">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Aenean purus nec commodo risus nunc bibendum" Example="Ultrices urna sed cras metus posuere dis potenti congue duis est pretium morbi cursus rhoncus neque" PartOfSpeech="prefix" Term="Egestas"/>
+						<Data:TermProperties Definition="Nunc dapibus amet per primis sed" Example="Sociis nisi donec taciti sed nisl nunc odio gravida dis iaculis" PartOfSpeech="prefix" Term="Libero"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Arcu" Key="Per" Subtitle="Hac leo vehicula purus volutpat mauris maecenas duis mus" Title="Inceptos"/>
@@ -547,7 +547,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="42" Term="Blandit">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Velit non amet dictumst conubia mauris" Example="Vehicula sodales netus nulla hac leo dictum porta viverra volutpat nunc mus maecenas aliquam integer" PartOfSpeech="conjunction" Term="Dolor"/>
+						<Data:TermProperties Definition="Egestas ante rutrum euismod donec sem pharetra" Example="Est lacinia laoreet tellus hac natoque orci pede etiam tempor posuere leo tempus mus accumsan nec" PartOfSpeech="conjunction" Term="Enim"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Egestas" Key="Diam" Subtitle="Praesent nec nullam non dapibus nunc egestas amet euismod" Title="Interdum"/>
@@ -558,7 +558,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="75" Term="Commodo">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Per eleifend ante sed sem facilisi arcu" Example="Quisque nec non amet praesent per purus ante vivamus risus accumsan" PartOfSpeech="abbreviation" Term="Eleifend"/>
+						<Data:TermProperties Definition="Feugiat sapien semper placerat sit etiam arcu" Example="Potenti tortor non quam fusce pretium rhoncus bibendum turpis varius quis per sed urna sodales cras" PartOfSpeech="abbreviation" Term="Blandit"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Faucibus" Key="Inceptos" Subtitle="Aptent risus auctor ante feugiat arcu congue" Title="Cursus"/>
@@ -569,7 +569,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="63" Term="Luctus">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Vitae nullam diam cubilia dapibus sit class" Example="Arcu lectus velit libero bibendum ligula diam aliquam litora vitae eget sed elit aliquet blandit commodo luctus class" PartOfSpeech="adjective" Term="Euismod"/>
+						<Data:TermProperties Definition="Vel fusce lorem morbi gravida sociis iaculis nam sed" Example="Aenean viverra aliquam integer mauris nullam dictumst duis sem lorem morbi eleifend quisque" PartOfSpeech="adjective" Term="Mus"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Luctus" Key="Eget" Subtitle="Diam per gravida accumsan bibendum dictumst cursus dictum iaculis lectus" Title="Non"/>
@@ -584,7 +584,7 @@
 			<Data:DefinitionsDataGroup.Items>
 				<Data:DefinitionsDataItem DefinitionsCount="79" Term="Hac">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Curae faucibus habitant inceptos eget egestas vel donec elit" Example="Curae dictumst eleifend conubia donec enim cubilia erat etiam facilisi fusce lorem morbi magnis faucibus sem" PartOfSpeech="other" Term="Cursus"/>
+						<Data:TermProperties Definition="Dis nulla est hac proin diam eget elit leo" Example="Nunc vivamus nulla amet ante proin aptent aliquam facilisi arcu augue sit" PartOfSpeech="other" Term="Erat"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Euismod" Key="Interdum" Subtitle="Ligula eget laoreet vel litora nam" Title="Egestas"/>
@@ -595,7 +595,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="80" Term="Magnis">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Interdum nam euismod feugiat enim lobortis erat aptent" Example="Dapibus sit habitant vel inceptos egestas euismod eros nibh nisi mattis interdum lobortis nulla nisl proin nascetur feugiat augue" PartOfSpeech="proverb" Term="Dictum"/>
+						<Data:TermProperties Definition="Enim mus nec augue pulvinar taciti non erat dolor" Example="Aliquet faucibus dolor fames vel diam nam habitant auctor congue inceptos felis sed ipsum dis blandit interdum est" PartOfSpeech="proverb" Term="Ligula"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Feugiat" Key="Cubilia" Subtitle="Sed vitae class curae donec" Title="Sed"/>
@@ -606,7 +606,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="18" Term="Proin">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Eros nibh gravida nisi nisl nunc" Example="Dolor pharetra fames nam sed placerat mauris dis felis ipsum est hac mollis nunc odio pulvinar montes gravida" PartOfSpeech="abbreviation" Term="Erat"/>
+						<Data:TermProperties Definition="Lacinia laoreet eros tellus fames felis sagittis natoque senectus" Example="Lobortis justo nascetur eget lacus commodo conubia pharetra placerat pulvinar hac cursus dictum" PartOfSpeech="abbreviation" Term="Dolor"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Gravida" Key="Dapibus" Subtitle="Dis etiam elit eleifend enim luctus natoque magnis mattis est" Title="Sem"/>
@@ -617,7 +617,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="32" Term="Mattis">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Etiam fusce lorem odio orci nascetur sed pede dis quam" Example="Justo nostra ornare orci iaculis platea pede lacinia laoreet lacus sagittis primis senectus rutrum sapien quam lorem leo magna sociosqu" PartOfSpeech="contraction" Term="Feugiat"/>
+						<Data:TermProperties Definition="Ipsum posuere justo sociosqu nibh potenti per tempor" Example="Lorem magna cubilia sagittis dapibus massa egestas leo elit enim senectus erat" PartOfSpeech="contraction" Term="Commodo"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Diam" Key="Ligula" Subtitle="Erat hac leo mauris facilisi eros" Title="Euismod"/>
@@ -628,7 +628,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="88" Term="Leo">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Pharetra morbi nulla quis proin iaculis" Example="Natoque quis urna semper massa posuere mus cras suscipit potenti sociis taciti tellus tempor tempus duis pretium nunc amet torquent" PartOfSpeech="adjective" Term="Eros"/>
+						<Data:TermProperties Definition="Lacus nisi suscipit tempus lorem nisl nunc pretium" Example="Lectus sociosqu mus nec euismod eros suscipit feugiat gravida metus non nibh libero" PartOfSpeech="adjective" Term="Eros"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Iaculis" Key="Elit" Subtitle="Mus nibh posuere nisi nisl faucibus habitant inceptos interdum nec" Title="Erat"/>
@@ -641,7 +641,7 @@
 			<Data:DefinitionsDataGroup.TopItems>
 				<Data:DefinitionsDataItem DefinitionsCount="64" Term="Mauris">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Placerat auctor congue lacinia urna pulvinar augue cras sagittis" Example="Ultrices metus nec ante arcu vehicula morbi tortor neque diam rhoncus non turpis varius per sed eget" PartOfSpeech="symbol" Term="Hac"/>
+						<Data:TermProperties Definition="Rhoncus odio orci sodales magna viverra massa metus pede" Example="Morbi iaculis lacinia per nisi nisl torquent ultrices vehicula neque volutpat netus ligula nulla nunc sed sem litora sit maecenas" PartOfSpeech="symbol" Term="Facilisi"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Nec" Key="Litora" Subtitle="Nunc non per lobortis fusce lorem" Title="Eros"/>
@@ -652,7 +652,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="79" Term="Eget">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Cursus duis dictum dolor fames" Example="Sem volutpat maecenas aenean praesent accumsan sit sodales netus bibendum nulla dictumst elit mauris" PartOfSpeech="pronoun" Term="Fames"/>
+						<Data:TermProperties Definition="Torquent morbi aliquam neque sed integer quam tortor" Example="Praesent laoreet natoque posuere accumsan odio potenti vel pretium rhoncus nam porta luctus orci" PartOfSpeech="pronoun" Term="Conubia"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Eget" Key="Lobortis" Subtitle="Morbi mollis nulla odio montes potenti pretium proin orci nascetur" Title="Nulla"/>
@@ -663,7 +663,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="25" Term="Elit">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Felis nunc est laoreet ipsum justo senectus lectus natoque libero" Example="Enim eleifend porta vel purus nam sed risus nullam velit vitae facilisi" PartOfSpeech="symbol" Term="Nibh"/>
+						<Data:TermProperties Definition="Netus ultrices turpis quisque nulla vehicula porta quis purus" Example="Purus sodales sed bibendum dictumst dis est risus viverra magnis hac aliquam leo eleifend mattis integer quisque vivamus facilisi" PartOfSpeech="symbol" Term="Litora"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Magnis" Key="Enim" Subtitle="Sed augue pede sem rhoncus nostra ornare sodales" Title="Proin"/>
@@ -674,7 +674,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="99" Term="Mus">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Hac ligula leo lacus sociosqu" Example="Aptent dis auctor est faucibus class congue hac viverra erat eros nibh habitant curae leo" PartOfSpeech="letter" Term="Felis"/>
+						<Data:TermProperties Definition="Urna volutpat cras vivamus risus velit sem aliquam aliquet" Example="Pede mauris aliquam faucibus mus quam nec mollis aliquet quis urna velit montes habitant" PartOfSpeech="letter" Term="Nec"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Non" Key="Luctus" Subtitle="Pharetra quam viverra quis urna cras dolor fames placerat duis" Title="Lobortis"/>
@@ -685,7 +685,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="71" Term="Interdum">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Posuere litora mus amet luctus ante nec magnis" Example="Donec inceptos interdum lobortis aliquam mus integer etiam nec non cursus dictum nascetur per lectus" PartOfSpeech="proverb" Term="Lectus"/>
+						<Data:TermProperties Definition="Duis blandit maecenas varius commodo nunc praesent conubia vitae" Example="Cras non nostra per sed ornare sem blandit platea sit duis primis vel nam inceptos" PartOfSpeech="proverb" Term="Luctus"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Lacinia" Key="Erat" Subtitle="Felis platea primis rutrum aliquam pulvinar integer" Title="Augue"/>
@@ -700,7 +700,7 @@
 			<Data:DefinitionsDataGroup.Items>
 				<Data:DefinitionsDataItem DefinitionsCount="14" Term="Enim">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Mattis suscipit mauris torquent non arcu" Example="Fusce libero nisi sed nisl sem nunc lorem pharetra placerat morbi odio pulvinar sit quisque" PartOfSpeech="adjective" Term="Facilisi"/>
+						<Data:TermProperties Definition="Class curae sit donec aenean cubilia accumsan" Example="Rutrum sed interdum nunc vitae amet sapien semper commodo dis" PartOfSpeech="adjective" Term="Cubilia"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Mattis" Key="Eros" Subtitle="Sagittis ante aliquam semper aliquet blandit justo commodo sociis" Title="Nibh"/>
@@ -711,7 +711,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="57" Term="Augue">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Potenti mollis montes pretium nostra ultrices ornare" Example="Orci pede sagittis vel ligula litora luctus nulla vivamus aliquam senectus magnis proin sociosqu augue" PartOfSpeech="noun" Term="Nisi"/>
+						<Data:TermProperties Definition="Vel etiam dapibus bibendum fusce amet egestas mauris dictumst" Example="Conubia lobortis sociis ante arcu taciti est tellus nascetur cubilia dapibus" PartOfSpeech="noun" Term="Fames"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Dolor" Key="Sed" Subtitle="Arcu senectus vel taciti diam lacus eget conubia" Title="Nascetur"/>
@@ -722,7 +722,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="52" Term="Nec">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Lorem rhoncus vehicula volutpat maecenas magna sodales per platea" Example="Suscipit mattis nam sed torquent mauris dis ultrices est hac" PartOfSpeech="conjunction" Term="Nisl"/>
+						<Data:TermProperties Definition="Nullam lorem ante morbi aptent eleifend euismod" Example="Hac tempor egestas diam pharetra tempus leo tortor turpis varius mus placerat euismod eget nec" PartOfSpeech="conjunction" Term="Magnis"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Fames" Key="Egestas" Subtitle="Nam cubilia tellus sed dapibus" Title="Feugiat"/>
@@ -733,7 +733,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="58" Term="Mollis">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Primis viverra sed massa sem praesent diam metus" Example="Quam mollis vehicula leo quis volutpat maecenas dolor fames praesent felis montes accumsan ipsum" PartOfSpeech="verb" Term="Libero"/>
+						<Data:TermProperties Definition="Feugiat arcu nulla auctor gravida" Example="Elit enim non aenean mauris class feugiat per curae gravida donec etiam fusce nullam sed pulvinar erat lorem" PartOfSpeech="verb" Term="Nibh"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Natoque" Key="Nibh" Subtitle="Lorem tempor tempus magna massa elit metus sociosqu suscipit egestas" Title="Pharetra"/>
@@ -744,7 +744,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="95" Term="Non">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Accumsan sit morbi rutrum sapien" Example="Mus aliquet urna justo cras lacus lorem blandit magna nostra nec bibendum duis commodo non per sed nunc" PartOfSpeech="letter" Term="Leo"/>
+						<Data:TermProperties Definition="Iaculis diam eget facilisi lacinia congue nam faucibus elit" Example="Sem aptent auctor eros sit congue iaculis cursus sagittis nibh morbi dictum senectus sociosqu vel nam nisi suscipit lectus" PartOfSpeech="letter" Term="Nisi"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Mauris" Key="Magnis" Subtitle="Torquent morbi neque ultrices netus" Title="Placerat"/>
@@ -757,7 +757,7 @@
 			<Data:DefinitionsDataGroup.TopItems>
 				<Data:DefinitionsDataItem DefinitionsCount="99" Term="Per">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Aliquam integer neque quisque eget vel" Example="Conubia dictumst massa eleifend cubilia metus morbi facilisi faucibus amet sem sit vel" PartOfSpeech="interjection" Term="Ipsum"/>
+						<Data:TermProperties Definition="Habitant proin augue laoreet enim" Example="Nisl sed nulla nunc proin augue dolor fames dis lacinia est felis" PartOfSpeech="interjection" Term="Nisl"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Felis" Key="Nisi" Subtitle="Euismod feugiat dis vehicula gravida" Title="Sit"/>
@@ -768,7 +768,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="70" Term="Montes">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Bibendum semper vivamus sociis netus elit nulla dictumst enim" Example="Ante ornare platea habitant nam neque primis dapibus egestas euismod rutrum sed arcu inceptos netus sapien dis diam nulla feugiat" PartOfSpeech="preposition" Term="Mus"/>
+						<Data:TermProperties Definition="Sed dolor inceptos fames interdum lobortis" Example="Libero torquent ligula litora laoreet luctus ultrices hac magnis vehicula leo ipsum justo mattis" PartOfSpeech="preposition" Term="Mattis"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Per" Key="Nascetur" Subtitle="Est enim tortor iaculis erat" Title="Dictum"/>
@@ -779,7 +779,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="97" Term="Lobortis">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Erat aliquam eleifend eros porta facilisi nibh aliquet faucibus" Example="Est gravida interdum hac leo mus lobortis nec eget semper non iaculis porta" PartOfSpeech="adjective" Term="Nunc"/>
+						<Data:TermProperties Definition="Felis cursus erat nascetur natoque eros posuere ipsum dictum" Example="Natoque volutpat mauris lacus odio orci pede lorem mus quam" PartOfSpeech="adjective" Term="Nunc"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Habitant" Key="Sem" Subtitle="Nulla hac volutpat maecenas lacinia porta praesent eros leo accumsan" Title="Lectus"/>
@@ -790,7 +790,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="43" Term="Dolor">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Blandit nisi commodo purus nam habitant risus taciti" Example="Purus nascetur elit lacinia pharetra placerat laoreet sociis taciti per enim pulvinar" PartOfSpeech="preposition" Term="Odio"/>
+						<Data:TermProperties Definition="Justo dis est nibh nisi" Example="Mollis quis nec maecenas montes non posuere potenti praesent accumsan bibendum pretium urna cras magna nostra massa" PartOfSpeech="preposition" Term="Non"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Mollis" Key="Sit" Subtitle="Nibh mus purus nisi nisl" Title="Nisi"/>
@@ -801,7 +801,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="77" Term="Erat">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Inceptos conubia interdum sed velit dis nisl cubilia est" Example="Sagittis risus velit sed erat natoque senectus tellus eros sem vitae posuere class potenti sit" PartOfSpeech="adjective" Term="Justo"/>
+						<Data:TermProperties Definition="Nisl nunc lacus hac lectus potenti pretium rhoncus sodales libero" Example="Dictumst eleifend duis facilisi per rhoncus sodales ornare metus faucibus platea morbi habitant nunc amet viverra ante sed neque primis" PartOfSpeech="adjective" Term="Odio"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Posuere" Key="Nisl" Subtitle="Nunc laoreet odio orci nec non natoque risus bibendum" Title="Libero"/>
@@ -816,7 +816,7 @@
 			<Data:DefinitionsDataGroup.Items>
 				<Data:DefinitionsDataItem DefinitionsCount="28" Term="Nascetur">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Hac lobortis nunc tellus odio dapibus leo mus" Example="Curae tempor donec nibh tempus pretium rhoncus sociosqu vel nisi suscipit nisl etiam sodales nunc" PartOfSpeech="abbreviation" Term="Orci"/>
+						<Data:TermProperties Definition="Leo viverra ligula odio pharetra lorem aliquam placerat magna integer" Example="Sem netus rutrum arcu diam sapien semper aliquam sit sociis eget vel" PartOfSpeech="abbreviation" Term="Orci"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Sed" Key="Mauris" Subtitle="Eleifend sem facilisi sit varius faucibus quam quis vel" Title="Litora"/>
@@ -827,7 +827,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="77" Term="Eros">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Nec non orci per pede egestas vitae" Example="Fusce viverra tortor odio orci turpis varius torquent ultrices aliquam pede nam sed lorem morbi nulla quam dis integer quis" PartOfSpeech="other" Term="Nec"/>
+						<Data:TermProperties Definition="Orci pede mus massa quam metus quisque litora quis" Example="Integer inceptos nulla porta quisque elit taciti purus enim erat eros nam sed risus dis tellus tempor" PartOfSpeech="other" Term="Faucibus"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Elit" Key="Euismod" Subtitle="Urna cras habitant nam pretium duis inceptos aenean vitae class" Title="Luctus"/>
@@ -838,7 +838,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="19" Term="Sed">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Sed tempor sem sit class tempus" Example="Vehicula est volutpat quisque hac leo aenean urna maecenas proin mauris nullam praesent" PartOfSpeech="conjunction" Term="Lacus"/>
+						<Data:TermProperties Definition="Pulvinar sagittis urna cras morbi" Example="Interdum lobortis nibh nascetur est nisi velit vitae hac vivamus class leo mus tempus aliquam tortor turpis aliquet pharetra" PartOfSpeech="conjunction" Term="Pede"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Inceptos" Key="Vel" Subtitle="Interdum curae mauris sed nullam aptent" Title="Vel"/>
@@ -849,7 +849,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="52" Term="Conubia">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Curae nascetur vel pharetra quam tortor nam sed" Example="Mus aptent vivamus nec non augue auctor accumsan congue cursus dolor fames aliquam aliquet" PartOfSpeech="verb" Term="Ligula"/>
+						<Data:TermProperties Definition="Senectus vivamus sociosqu suscipit aliquam nec" Example="Placerat pulvinar sagittis nec curae senectus nisl blandit nunc donec odio sociosqu varius non orci per commodo" PartOfSpeech="verb" Term="Quam"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Nostra" Key="Nam" Subtitle="Dis lobortis nunc rhoncus est nascetur" Title="Pulvinar"/>
@@ -860,7 +860,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="74" Term="Cubilia">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Placerat turpis varius aenean donec" Example="Felis blandit commodo conubia cras dictum ipsum duis nunc cubilia bibendum amet ante per arcu sed" PartOfSpeech="abbreviation" Term="Gravida"/>
+						<Data:TermProperties Definition="Non aliquet torquent luctus blandit per" Example="Sed sem conubia aenean suscipit sit cubilia mauris vel etiam pede dapibus fusce nullam lorem aptent nam" PartOfSpeech="abbreviation" Term="Mauris"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Potenti" Key="Feugiat" Subtitle="Auctor pharetra donec hac amet ante" Title="Fames"/>
@@ -873,7 +873,7 @@
 			<Data:DefinitionsDataGroup.TopItems>
 				<Data:DefinitionsDataItem DefinitionsCount="75" Term="Sem">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Euismod etiam fusce quis mauris nullam feugiat" Example="Lectus sem libero sit dictumst dapibus ligula justo vel litora diam eget elit luctus lacus enim lorem magna" PartOfSpeech="conjunction" Term="Lorem"/>
+						<Data:TermProperties Definition="Magnis mattis mauris duis mollis sed montes nostra sem" Example="Egestas euismod torquent ultrices feugiat vehicula gravida morbi sed volutpat maecenas" PartOfSpeech="conjunction" Term="Habitant"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Enim" Key="Pharetra" Subtitle="Leo sodales viverra mus nec" Title="Felis"/>
@@ -884,7 +884,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="49" Term="Nibh">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Lorem dis gravida est morbi" Example="Nam massa sed magnis metus eleifend morbi facilisi erat dis eros faucibus nibh mattis mauris mollis est nisi" PartOfSpeech="proverb" Term="Non"/>
+						<Data:TermProperties Definition="Sit nunc vel ultrices nam" Example="Iaculis praesent dis lacinia nulla est proin auctor accumsan quam" PartOfSpeech="proverb" Term="Mollis"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Ipsum" Key="Sed" Subtitle="Non placerat congue cursus aliquam arcu per pulvinar sed" Title="Gravida"/>
@@ -895,7 +895,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="27" Term="Nostra">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Iaculis hac nulla leo pulvinar" Example="Egestas montes euismod nostra hac neque ornare platea netus nisl leo feugiat nunc primis gravida iaculis" PartOfSpeech="abbreviation" Term="Pede"/>
+						<Data:TermProperties Definition="Sed amet neque commodo conubia vehicula" Example="Bibendum laoreet quis augue urna congue hac leo dictumst eleifend natoque" PartOfSpeech="abbreviation" Term="Inceptos"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Ornare" Key="Dis" Subtitle="Sagittis diam eget dictum etiam" Title="Nisl"/>
@@ -906,7 +906,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="50" Term="Ornare">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Mus urna proin aptent lacinia sagittis nec laoreet senectus" Example="Habitant inceptos interdum lobortis lacinia rutrum sapien mus semper sociis odio orci pede taciti tellus" PartOfSpeech="suffix" Term="Litora"/>
+						<Data:TermProperties Definition="Netus ante arcu dis nulla volutpat diam eget cubilia" Example="Cras cursus duis dictum mus posuere dolor nec facilisi non faucibus per" PartOfSpeech="suffix" Term="Per"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Interdum" Key="Est" Subtitle="Senectus elit fusce lectus sociosqu" Title="Iaculis"/>
@@ -917,7 +917,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="94" Term="Platea">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Non per sociosqu cras auctor natoque congue posuere suscipit torquent" Example="Laoreet tempor quam tempus nascetur tortor turpis nulla natoque nec posuere varius quis pharetra aenean potenti mauris non nullam" PartOfSpeech="contraction" Term="Iaculis"/>
+						<Data:TermProperties Definition="Ornare elit porta dapibus est maecenas" Example="Habitant potenti nunc amet fames ante arcu sed inceptos lectus pretium interdum lobortis rhoncus felis ipsum diam sodales" PartOfSpeech="contraction" Term="Quis"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Lobortis" Key="Mollis" Subtitle="Sem lorem suscipit enim integer sit quisque vivamus torquent" Title="Ipsum"/>
@@ -932,7 +932,7 @@
 			<Data:DefinitionsDataGroup.Items>
 				<Data:DefinitionsDataItem DefinitionsCount="11" Term="Sit">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Cursus duis augue dictum lectus" Example="Pretium rhoncus aptent per auctor sed placerat sodales sem porta urna purus cras viverra aliquam risus duis sit vel" PartOfSpeech="abbreviation" Term="Faucibus"/>
+						<Data:TermProperties Definition="Enim hac praesent erat egestas platea euismod purus accumsan" Example="Justo eget nascetur sem libero lacus pharetra elit enim lorem" PartOfSpeech="abbreviation" Term="Sed"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Erat" Key="Nunc" Subtitle="Erat vel nam eros aliquet sed vehicula dis" Title="Nunc"/>
@@ -943,7 +943,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="71" Term="Pharetra">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Nunc dolor sed sem libero ligula litora luctus" Example="Pulvinar nunc amet velit nam sagittis sed dis vitae ante senectus sociosqu congue est integer suscipit quisque hac" PartOfSpeech="contraction" Term="Lacinia"/>
+						<Data:TermProperties Definition="Primis bibendum leo rutrum mus feugiat eros nec gravida dictumst" Example="Placerat magna sit erat pulvinar ligula eros viverra vel massa litora aliquam luctus sagittis senectus" PartOfSpeech="contraction" Term="Felis"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Pretium" Key="Hac" Subtitle="Est nibh blandit volutpat commodo proin maecenas conubia nisi" Title="Nam"/>
@@ -954,7 +954,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="90" Term="Dapibus">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Ultrices vehicula magnis fames amet potenti sit mattis" Example="Class vivamus curae torquent aliquam donec ultrices cursus dictum etiam vehicula fusce lectus lorem" PartOfSpeech="suffix" Term="Laoreet"/>
+						<Data:TermProperties Definition="Sapien risus nibh velit iaculis lacinia eleifend nisi facilisi" Example="Magnis integer nibh mattis nisi nisl nam sociosqu nunc mauris" PartOfSpeech="suffix" Term="Montes"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Rhoncus" Key="Gravida" Subtitle="Cubilia praesent luctus nisl dapibus accumsan magnis hac mattis leo" Title="Sed"/>
@@ -965,7 +965,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="47" Term="Nisi">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Felis mauris mollis ipsum pretium justo rhoncus ante arcu volutpat" Example="Aliquet morbi leo arcu nulla proin augue diam dolor mus fames libero eget ligula litora felis luctus blandit volutpat elit" PartOfSpeech="other" Term="Magna"/>
+						<Data:TermProperties Definition="Vitae faucibus laoreet nisl natoque nunc habitant odio semper sociis" Example="Mollis odio quisque orci suscipit metus sed torquent ultrices dis montes nostra ornare vehicula pede platea vivamus quam volutpat" PartOfSpeech="other" Term="Ipsum"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Eros" Key="Montes" Subtitle="Nunc mauris odio mollis orci mus bibendum egestas" Title="Senectus"/>
@@ -976,7 +976,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="44" Term="Egestas">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Maecenas vel lacus montes nostra ornare sodales viverra lorem diam" Example="Commodo ipsum conubia nec justo maecenas lacus magnis enim mattis non praesent cubilia lorem per erat accumsan magna mauris massa" PartOfSpeech="verb" Term="Massa"/>
+						<Data:TermProperties Definition="Inceptos orci posuere potenti class" Example="Est aliquam primis hac quis maecenas rutrum sapien aliquet leo mus praesent" PartOfSpeech="verb" Term="Sem"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Nibh" Key="Leo" Subtitle="Pede quam quis urna dictumst" Title="Dis"/>
@@ -989,7 +989,7 @@
 			<Data:DefinitionsDataGroup.TopItems>
 				<Data:DefinitionsDataItem DefinitionsCount="95" Term="Nisl">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Praesent nam sed magna massa" Example="Mollis eros nibh metus montes nisi nisl morbi bibendum nunc dictumst odio nostra orci ornare pede dapibus sed eleifend" PartOfSpeech="pronoun" Term="Quam"/>
+						<Data:TermProperties Definition="Curae taciti interdum tellus pede lobortis donec" Example="Morbi blandit semper urna neque netus sociis nec non taciti commodo conubia cubilia nulla" PartOfSpeech="pronoun" Term="Interdum"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Sem" Key="Pulvinar" Subtitle="Montes euismod nec augue dolor feugiat eleifend nostra ornare gravida" Title="Magnis"/>
@@ -1000,7 +1000,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="82" Term="Vel">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Metus accumsan morbi bibendum neque netus dis dictumst" Example="Neque facilisi faucibus habitant inceptos interdum netus lobortis egestas nulla quam porta sem sit platea euismod primis quis urna rutrum" PartOfSpeech="pronoun" Term="Per"/>
+						<Data:TermProperties Definition="Non pretium nascetur tempor etiam pharetra" Example="Per cras porta duis dapibus tellus egestas sed nunc accumsan" PartOfSpeech="pronoun" Term="Nostra"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Sodales" Key="Dolor" Subtitle="Fames facilisi faucibus iaculis cras felis duis ipsum" Title="Mattis"/>
@@ -1011,7 +1011,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="91" Term="Nunc">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Nulla eget aliquam eleifend est facilisi faucibus platea" Example="Vel sapien nam semper sed sociis nascetur purus risus pharetra feugiat" PartOfSpeech="suffix" Term="Quis"/>
+						<Data:TermProperties Definition="Tempus per fusce placerat quam rhoncus sed pulvinar sagittis" Example="Bibendum sem tempor amet ante euismod purus dictumst feugiat sit" PartOfSpeech="suffix" Term="Urna"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Sit" Key="Iaculis" Subtitle="Nunc non habitant platea primis inceptos lacinia" Title="Lacinia"/>
@@ -1022,7 +1022,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="97" Term="Nam">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Integer quisque primis rutrum porta hac purus risus" Example="Taciti placerat tellus dis velit tempor cras vitae class est curae tempus" PartOfSpeech="symbol" Term="Urna"/>
+						<Data:TermProperties Definition="Tortor quis urna sem turpis sodales varius" Example="Vel eleifend facilisi tempus faucibus nam sed dis gravida tortor habitant" PartOfSpeech="symbol" Term="Lobortis"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Nascetur" Key="Lacinia" Subtitle="Justo laoreet natoque rutrum posuere lacus interdum sapien lobortis per" Title="Justo"/>
@@ -1033,7 +1033,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="39" Term="Placerat">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Habitant vivamus velit vitae aliquam" Example="Pulvinar gravida sagittis senectus hac sociosqu donec leo mus etiam tortor" PartOfSpeech="letter" Term="Metus"/>
+						<Data:TermProperties Definition="Viverra aenean aliquam integer quisque sit cras senectus" Example="Inceptos arcu interdum iaculis diam eget risus elit velit enim vitae turpis varius erat eros lobortis" PartOfSpeech="letter" Term="Ornare"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Vel" Key="Mus" Subtitle="Semper sociis taciti amet ante tellus tempor potenti" Title="Lacus"/>
@@ -1048,7 +1048,7 @@
 			<Data:DefinitionsDataGroup.Items>
 				<Data:DefinitionsDataItem DefinitionsCount="60" Term="Fames">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Sapien elit class enim leo erat curae donec" Example="Iaculis lacinia laoreet duis suscipit nunc torquent ultrices fusce vehicula turpis natoque varius lorem volutpat nec non" PartOfSpeech="symbol" Term="Morbi"/>
+						<Data:TermProperties Definition="Duis vel nam sed vivamus dis" Example="Nibh nascetur nisi est lacinia pharetra aenean class nisl nunc" PartOfSpeech="symbol" Term="Sit"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Aliquam" Key="Nostra" Subtitle="Arcu sed nascetur sem sit vel pharetra nam diam tempus" Title="Sociosqu"/>
@@ -1059,7 +1059,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="21" Term="Odio">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Eros inceptos semper interdum nibh lobortis etiam" Example="Amet maecenas praesent morbi posuere per ante accumsan sed potenti bibendum aenean sem pretium rhoncus arcu diam sodales nulla viverra" PartOfSpeech="adjective" Term="Sed"/>
+						<Data:TermProperties Definition="Lorem est aliquam sociosqu mauris morbi hac leo" Example="Laoreet curae natoque donec mauris odio nullam placerat hac posuere potenti" PartOfSpeech="adjective" Term="Nascetur"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Nam" Key="Ornare" Subtitle="Placerat sed eget dis aliquam massa tortor elit" Title="Odio"/>
@@ -1070,7 +1070,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="73" Term="Sed">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Aliquet blandit sociis nascetur fusce taciti mus nisi" Example="Proin augue sit mauris vel nam aliquam eget sed dolor fames dis" PartOfSpeech="symbol" Term="Sem"/>
+						<Data:TermProperties Definition="Suscipit mus nullam nulla aptent torquent" Example="Etiam leo aptent pulvinar auctor orci sagittis congue pede fusce" PartOfSpeech="symbol" Term="Cras"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Sed" Key="Nec" Subtitle="Pulvinar integer quisque sagittis vivamus enim senectus turpis" Title="Natoque"/>
@@ -1081,7 +1081,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="33" Term="Primis">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Tellus commodo nec nisl tempor pharetra non" Example="Dictumst elit integer enim nullam erat est quisque aptent felis vivamus auctor hac ipsum" PartOfSpeech="contraction" Term="Neque"/>
+						<Data:TermProperties Definition="Auctor nunc nec amet aliquet congue ultrices ante vehicula blandit" Example="Lorem cursus quam senectus quis morbi nulla mus nec pretium dictum lectus sociosqu libero non ligula per litora" PartOfSpeech="contraction" Term="Platea"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Nisi" Key="Laoreet" Subtitle="Metus sociosqu suscipit erat est hac morbi" Title="Orci"/>
@@ -1092,7 +1092,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="66" Term="Felis">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Tempus placerat tortor per pulvinar" Example="Eros leo eleifend justo nibh aliquam congue lacus aliquet facilisi blandit nisi nisl commodo lorem faucibus" PartOfSpeech="verb" Term="Habitant"/>
+						<Data:TermProperties Definition="Non cursus commodo dictum lectus arcu conubia per diam" Example="Urna suscipit luctus cras magnis duis rhoncus torquent sodales nunc sed mattis" PartOfSpeech="verb" Term="Pharetra"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Nisl" Key="Non" Subtitle="Leo eros aliquam varius torquent neque ultrices nibh" Title="Est"/>
@@ -1105,7 +1105,7 @@
 			<Data:DefinitionsDataGroup.TopItems>
 				<Data:DefinitionsDataItem DefinitionsCount="34" Term="Rutrum">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Sagittis lorem turpis sed varius morbi" Example="Habitant conubia nunc cubilia cursus dapibus inceptos magna egestas mus euismod feugiat nec interdum dictum lectus" PartOfSpeech="letter" Term="Netus"/>
+						<Data:TermProperties Definition="Cubilia eget elit libero enim" Example="Viverra aliquam ultrices vehicula proin volutpat augue mauris amet integer ante quisque maecenas sem arcu praesent sit" PartOfSpeech="letter" Term="Dapibus"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Dis" Key="Natoque" Subtitle="Netus nisi vehicula nisl nunc nulla aenean volutpat porta" Title="Pede"/>
@@ -1116,7 +1116,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="28" Term="Orci">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Nunc aenean conubia sem mauris odio orci sit nullam pede" Example="Massa gravida iaculis libero odio ligula non lacinia litora metus" PartOfSpeech="interjection" Term="Luctus"/>
+						<Data:TermProperties Definition="Sed erat proin dapibus egestas euismod sem augue" Example="Vel vivamus nam diam eget elit dolor aliquam sed dis est enim fames aliquet hac leo felis" PartOfSpeech="interjection" Term="Justo"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Pharetra" Key="Senectus" Subtitle="Odio purus risus mauris mus velit vitae nullam nec" Title="Suscipit"/>
@@ -1127,7 +1127,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="69" Term="Sapien">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Vel aptent senectus nam auctor sed sociosqu" Example="Morbi lobortis luctus orci nascetur pede quam magnis mattis pharetra quis" PartOfSpeech="noun" Term="Inceptos"/>
+						<Data:TermProperties Definition="Dolor fames eros sit volutpat feugiat nibh" Example="Mus blandit commodo nec erat eros non mollis ipsum justo montes accumsan nibh lacus bibendum dictumst conubia" PartOfSpeech="noun" Term="Vel"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Integer" Key="Fames" Subtitle="Aptent aliquet non orci per auctor maecenas congue pede" Title="Lorem"/>
@@ -1138,7 +1138,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="76" Term="Semper">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Nulla dis est suscipit proin quam" Example="Neque laoreet netus per mauris natoque sed placerat pulvinar urna posuere cras duis sagittis" PartOfSpeech="suffix" Term="Interdum"/>
+						<Data:TermProperties Definition="Vel nisi nisl nunc nam maecenas sed ligula" Example="Cubilia lorem per magna massa metus morbi nisi nisl dapibus neque nunc egestas sed sem euismod nostra sit netus" PartOfSpeech="suffix" Term="Placerat"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Est" Key="Posuere" Subtitle="Blandit sed commodo cursus praesent sem dictum quam" Title="Torquent"/>
@@ -1149,7 +1149,7 @@
 				</Data:DefinitionsDataItem>
 				<Data:DefinitionsDataItem DefinitionsCount="94" Term="Sociis">
 					<Data:DefinitionsDataItem.FirstDefinition>
-						<Data:TermProperties Definition="Augue congue dolor hac leo fames" Example="Mollis sem senectus montes nunc nostra ornare sit vel nulla nam sociosqu platea sed porta" PartOfSpeech="conjunction" Term="Sit"/>
+						<Data:TermProperties Definition="Litora felis luctus odio magnis" Example="Vel eleifend facilisi ornare faucibus feugiat habitant inceptos gravida interdum iaculis platea nam odio primis sed" PartOfSpeech="conjunction" Term="Duis"/>
 					</Data:DefinitionsDataItem.FirstDefinition>
 					<Data:DefinitionsDataItem.Group>
 						<Data:DefinitionsDataGroup ColorCode="Placerat" Key="Odio" Subtitle="Lectus conubia accumsan libero quis bibendum dictumst ligula sit litora" Title="Posuere"/>
