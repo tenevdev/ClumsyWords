@@ -85,6 +85,41 @@ namespace ClumsyWordsUniversal
 
         }
 
+        public class GroupsCollection : List<string>
+        {
+            public GroupsCollection() : base() { }
+            public GroupsCollection(IEnumerable<string> items) : base(items) { }
+
+            public override string ToString()
+            {
+                string result = string.Empty;
+
+                for (int i = 0; i < this.Count - 1; i++)
+                {
+                    result += this[i] + ",";
+                }
+
+                result += this.Last();
+                return result;
+            }
+        }
+
+        private List<string> GetGroupsListFromRoaming()
+        {
+            // Configure the parameter to be passed to the initial page
+            // It should show what data should be loaded and displayed
+
+            GroupsCollection groups = new GroupsCollection() { "Recent", "Favourites" };
+
+            if (roamingSettings.Values.ContainsKey("Groups"))
+                groups = new GroupsCollection(roamingSettings.Values["Groups"].ToString().Split(new char[]{','}));
+            else
+                roamingSettings.Values["Groups"] = groups.ToString();
+
+            // The groups list is set with this values initially so we don't need to set it here once again
+            return groups;
+        }
+
         #endregion
 
         #region LiveAccount
@@ -316,16 +351,7 @@ namespace ClumsyWordsUniversal
         protected override void OnWindowCreated(WindowCreatedEventArgs args)
         {
 #if WINDOWS_APP
-            // Register for Settings commands
             SettingsPane.GetForCurrentView().CommandsRequested += App_CommandsRequested;
-
-            // Register for Search suggestions
-            //SearchPane.GetForCurrentView().SuggestionsRequested += OnSuggestionsRequested;
-
-            //SearchPane.GetForCurrentView().QuerySubmitted += OnQuerySubmitted;
-
-            //SearchPane.GetForCurrentView().PlaceholderText = "Search for a word";
-            //SearchPane.GetForCurrentView().ShowOnKeyboardInput = true;
 #endif
             base.OnWindowCreated(args);
         }
@@ -374,6 +400,21 @@ namespace ClumsyWordsUniversal
                     }
                 }
 
+                if (e.PreviousExecutionState == ApplicationExecutionState.Running)
+                {
+                    Window.Current.Activate();
+                    return;
+                }
+
+                // Try signing in
+                //await UpdateUserName(true);
+
+                roamingSettings.Values.Clear();
+
+                // Load data
+                this.GetDataSource();
+                await App.DataSource.InitAsync();
+
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
             }
@@ -395,10 +436,12 @@ namespace ClumsyWordsUniversal
                 rootFrame.Navigated += this.RootFrame_FirstNavigated;
 #endif
 
+
+
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                if (!rootFrame.Navigate(typeof(HubPage), e.Arguments))
+                if (!rootFrame.Navigate(typeof(HubPage), this.GetGroupsListFromRoaming()))
                 {
                     throw new Exception("Failed to create initial page");
                 }

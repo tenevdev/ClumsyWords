@@ -199,16 +199,17 @@ namespace ClumsyWordsUniversal.Data
 
 
         /// <summary>
-        /// Finds the a group for each of the given keys or creates a new one if it doesn't exist
+        /// Finds the a group for each of the given keys or creates a new one if it doesn't exist.
+        /// Then gets all existing groups. This overload combines getting groups and adding new ones.
         /// </summary>
         /// <param name="keys">A collection of group keys</param>
         /// <returns>A collection of all existing groups with new groups for the given keys if they do not exist</returns>
         public virtual IEnumerable<DefinitionsDataGroup> GetGroups(IList<string> keys)
         {
-            foreach (var k in keys)
+            foreach (var key in keys)
             {
-                if (!groupsMap.Keys.Contains(k))
-                    this.AddGroup(k, k, "#FFFA6800");
+                if (!groupsMap.Keys.Contains(key))
+                    this.AddGroup(key, key, "#FFFA6800");
             }
             return groupsMap.Values;
         }
@@ -223,9 +224,7 @@ namespace ClumsyWordsUniversal.Data
             DefinitionsDataGroup ddg;
             if (!groupsMap.TryGetValue(key, out ddg))
             {
-                //return;
-                ddg = new DefinitionsDataGroup(key, key, "#FFFA6800");
-                groupsMap.Add(key, ddg);
+                this.AddGroup(key, key, "#FFFA6800");
             }
 
             return ddg;
@@ -239,7 +238,11 @@ namespace ClumsyWordsUniversal.Data
         /// <param name="colorCode">The color to set the theme color for the new group</param>
         public virtual void AddGroup(string groupName, string details, string colorCode)
         {
+            // Add to data source
             this.groupsMap.Add(groupName, new DefinitionsDataGroup(groupName, groupName, details, colorCode));
+
+            // Add to roaming settings
+            Windows.Storage.ApplicationData.Current.RoamingSettings.Values["Groups"] = new ClumsyWordsUniversal.App.GroupsCollection(groupsMap.Keys).ToString();
         }
 
         /// <summary>
