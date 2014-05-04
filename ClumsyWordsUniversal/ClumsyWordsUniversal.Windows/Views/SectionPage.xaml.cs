@@ -16,6 +16,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.ApplicationModel.DataTransfer;
+using ClumsyWordsUniversal.Common.Converters;
 
 namespace ClumsyWordsUniversal
 {
@@ -62,13 +64,68 @@ namespace ClumsyWordsUniversal
         /// <see cref="Frame.Navigate(Type, object)"/> when this page was initially requested and
         /// a dictionary of state preserved by this page during an earlier
         /// session.  The state will be null the first time a page is visited.</param>
-        private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
+        private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
-            var group = await SampleDataSource.GetGroupAsync((string)e.NavigationParameter);
+            var group = App.DataSource.GetGroup((String)e.NavigationParameter);
             this.DefaultViewModel["Group"] = group;
             this.DefaultViewModel["Items"] = group.Items;
+
+            DataTransferManager.GetForCurrentView().DataRequested += OnDataRequested;
         }
+
+        private void NavigationHelper_SaveState(Dictionary<String, Object> pageState)
+        {
+            DataTransferManager.GetForCurrentView().DataRequested -= OnDataRequested;
+        }
+
+        #region Share Functionality Methods
+
+        private void OnDataRequested(DataTransferManager sender, DataRequestedEventArgs args)
+        {
+            var request = args.Request;
+            var group = (DefinitionsDataGroup)this.DefaultViewModel["Group"];
+
+            DefinitionsToHTMLConverter htmlConverter = new DefinitionsToHTMLConverter();
+
+            request.Data.Properties.Title = String.Empty;
+
+            string definitionsString = "<style>body{word-wrap:break-word;} h2{text-align:center;}</style>";
+
+            if (this.itemGridView.SelectedItems.Count == 0)
+            {
+                foreach (var item in group.Items)
+                {
+                    request.Data.Properties.Title += item.Term + ", ";
+                    definitionsString += htmlConverter.Convert(item, typeof(string), null, string.Empty);
+                }
+            }
+
+            else
+            {
+                CommonGroup<DefinitionsDataItem> selectedItems = new CommonGroup<DefinitionsDataItem>();
+                DefinitionsDataItem currentItem;
+
+                foreach (var selectedItem in this.itemGridView.SelectedItems)
+                {
+                    currentItem = (DefinitionsDataItem)selectedItem;
+
+                    if (!selectedItems.Items.Contains(currentItem))
+                        selectedItems.Items.Add(currentItem);
+                }
+
+                foreach (var item in selectedItems.Items)
+                {
+                    request.Data.Properties.Title += item.Term + ", ";
+                    definitionsString += htmlConverter.Convert(item, typeof(string), null, string.Empty);
+                }
+            }
+
+            definitionsString = HtmlFormatHelper.CreateHtmlFormat(definitionsString);
+            request.Data.SetHtmlFormat(definitionsString);
+        }
+
+        #endregion
 
         #region Event Handlers
 

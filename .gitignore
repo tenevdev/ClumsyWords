@@ -5,6 +5,7 @@
 *.suo
 *.user
 *.sln.docstates
+*.keys.json
 
 # Build results
 [Dd]ebug/
@@ -141,6 +142,7 @@ csx/
 
 # Windows Store app package directory
 AppPackages/
+*.StoreAssociation.xml
 
 # Others
 sql/

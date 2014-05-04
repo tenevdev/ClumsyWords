@@ -16,6 +16,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.ApplicationModel.DataTransfer;
+using ClumsyWordsUniversal.Common.Converters;
+using ClumsyWordsUniversal.Views;
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -63,28 +66,60 @@ namespace ClumsyWordsUniversal
         /// <see cref="Frame.Navigate(Type, object)"/> when this page was initially requested and
         /// a dictionary of state preserved by this page during an earlier
         /// session.  The state will be null the first time a page is visited.</param>
-        private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
+        private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
-            // TODO: Create an appropriate data model for your problem domain to replace the sample data
-            var item = await SampleDataSource.GetItemAsync((string)e.NavigationParameter);
-            this.DefaultViewModel["Item"] = item;
+            var item = App.DataSource.GetItem((Guid)e.NavigationParameter);
+
+            this.DefaultViewModel["Groups"] = item.Items;
+            this.DefaultViewModel["CurrentItem"] = item;
+
+            DataTransferManager.GetForCurrentView().DataRequested += OnDataRequested;
         }
 
-        void Header_Click(object sender, RoutedEventArgs e)
+        private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
-            // Determine what group the Button instance represents
-            var group = (sender as FrameworkElement).DataContext;
-
-            // Navigate to the appropriate destination page, configuring the new page
-            // by passing required information as a navigation parameter
-
-            Dictionary<string, object> navParameters = new Dictionary<string, object>();
-            navParameters["ItemName"] = ((DefinitionsDataItem)DefaultViewModel["CurrentItem"]).Term;
-            navParameters["Group"] = (CommonGroup<TermProperties>)group;
-
-
-            this.Frame.Navigate(typeof(ItemPage), navParameters);
+            DataTransferManager.GetForCurrentView().DataRequested -= OnDataRequested;
         }
+
+        #region Share Functionality Methods
+
+        private void OnDataRequested(DataTransferManager sender, DataRequestedEventArgs args)
+        {
+            var request = args.Request;
+
+            // Get current item on page
+            var item = (DefinitionsDataItem)this.DefaultViewModel["CurrentItem"];
+            DefinitionsToHTMLConverter htmlConverter = new DefinitionsToHTMLConverter();
+
+            request.Data.Properties.Title = item.Term;
+
+            string definitionsString = "<style>body{word-wrap:break-word;} h2{text-align:center;}</style>";
+
+            // If no definitions are selected then share all
+            if (this.itemGridView.SelectedItems.Count == 0)
+                definitionsString += htmlConverter.Convert(item, typeof(string), null, string.Empty);
+
+            // Else share only the selected definitions
+            else
+            {
+                List<TermProperties> selectedItems = new List<TermProperties>();
+                TermProperties currentItem;
+
+                foreach (var selectedItem in this.itemGridView.SelectedItems)
+                {
+                    currentItem = (TermProperties)selectedItem;
+
+                    if (!selectedItems.Contains(currentItem))
+                        selectedItems.Add(currentItem);
+                }
+                definitionsString += htmlConverter.Convert(item, typeof(string), DefinitionsDataItem.GetGroupsList(selectedItems, p => p.PartOfSpeech), string.Empty).ToString();
+            }
+
+            definitionsString = HtmlFormatHelper.CreateHtmlFormat(definitionsString);
+            request.Data.SetHtmlFormat(definitionsString);
+        }
+
+        #endregion
 
         #region NavigationHelper registration
 
@@ -110,6 +145,22 @@ namespace ClumsyWordsUniversal
         #endregion
 
         #region Event Handlers
+
+        void Header_Click(object sender, RoutedEventArgs e)
+        {
+            // Determine what group the Button instance represents
+            var group = (sender as FrameworkElement).DataContext;
+
+            // Navigate to the appropriate destination page, configuring the new page
+            // by passing required information as a navigation parameter
+
+            Dictionary<string, object> navParameters = new Dictionary<string, object>();
+            navParameters["ItemName"] = ((DefinitionsDataItem)DefaultViewModel["CurrentItem"]).Term;
+            navParameters["Group"] = (CommonGroup<TermProperties>)group;
+
+
+            this.Frame.Navigate(typeof(ItemSectionPage), navParameters);
+        }
 
         private void OnGridViewSelectionChanged(object sender, SelectionChangedEventArgs e)
         {

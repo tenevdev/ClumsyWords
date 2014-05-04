@@ -15,6 +15,9 @@ using Windows.UI.Xaml.Navigation;
 using ClumsyWordsUniversal.Data;
 using ClumsyWordsUniversal.Common;
 using ClumsyWordsUniversal.Settings;
+using Windows.ApplicationModel.DataTransfer;
+using Windows.UI.Popups;
+using ClumsyWordsUniversal.Common.Converters;
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -64,10 +67,93 @@ namespace ClumsyWordsUniversal
         /// session.  The state will be null the first time a page is visited.</param>
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
+            // Display a message if the user couldn't log in.
+            if (App.UserName == "Couldn't sign in")
+            {
+                var messageDialog = new MessageDialog(App.UserName + ". Please, check your Internet connection.");
+                await messageDialog.ShowAsync();
+                //App.UserName = "";
+            }
+
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
-            var sampleDataGroups = await SampleDefinitionsSource.GetGroupsAsync();
-            this.DefaultViewModel["GroupsCollection"] = sampleDataGroups;
+            //var sampleDataGroups = await SampleDefinitionsSource.GetGroupsAsync();
+            //this.DefaultViewModel["GroupsCollection"] = sampleDataGroups;
+
+            var dataGroups = App.DataSource.GetGroups((List<string>)e.NavigationParameter);
+            this.DefaultViewModel["GroupsCollection"] = dataGroups;
+
+            // Subscribe for Share Charm.
+            DataTransferManager.GetForCurrentView().DataRequested += OnDataRequested;
+
         }
+
+        private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
+        {
+            DataTransferManager.GetForCurrentView().DataRequested -= OnDataRequested;
+        }
+
+        #region Share Functionality Methods
+
+        private void OnDataRequested(DataTransferManager sender, DataRequestedEventArgs args)
+        {
+            DataRequest request = args.Request;
+
+            DefinitionsToHTMLConverter htmlConverter = new DefinitionsToHTMLConverter();
+
+            //request.Data.Properties.Title = String.Empty;
+            //request.Data.Properties.Description = "Send definitions to your friends easily via email.";
+
+            // Get all groups on page
+            var groups = (List<DefinitionsDataGroup>)this.DefaultViewModel["Groups"];
+
+            // Starts with simple styles
+            string definitionsString = "<style>body{word-wrap:break-word;} h2{text-align:center;}</style>";
+
+            // If there are no selected items then share all available items.
+            if (this.itemGridView.SelectedItems.Count == 0)
+            {
+                foreach (var group in groups)
+                {
+                    foreach (var item in group.Items)
+                    {
+                        //request.Data.Properties.Title += item.Term + ", ";
+                        definitionsString += htmlConverter.Convert(item, typeof(string), null, string.Empty);
+                    }
+                }
+            }
+
+            // There are one or several selected items
+            else
+            {
+                CommonGroup<DefinitionsDataItem> selectedItems = new CommonGroup<DefinitionsDataItem>();
+                DefinitionsDataItem currentItem;
+
+                // Store selected items in a collection
+                foreach (var selectedItem in this.itemGridView.SelectedItems)
+                {
+                    currentItem = (DefinitionsDataItem)selectedItem;
+
+                    if (!selectedItems.Items.Contains(currentItem))
+                        selectedItems.Items.Add(currentItem);
+                }
+
+                // Generate html for each selected item
+                foreach (var item in selectedItems.Items)
+                {
+                    //request.Data.Properties.Title += item.Term + ", ";
+                    definitionsString += htmlConverter.Convert(item, typeof(string), null, string.Empty);
+                }
+            }
+
+            // Format as valid html
+            definitionsString = HtmlFormatHelper.CreateHtmlFormat(definitionsString);
+
+            // Set share content
+            request.Data.SetHtmlFormat(definitionsString);
+            //request.Data.SetText("Plain text shared");
+        }
+
+        #endregion
 
         #region NavigationHelper registration
 

@@ -70,6 +70,14 @@ namespace ClumsyWordsUniversal.Views
         /// session. The state will be null the first time a page is visited.</param>
         private void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
+            Dictionary<string, object> navParams = e.NavigationParameter as Dictionary<string, object>;
+            CommonGroup<TermProperties> group = (CommonGroup<TermProperties>)navParams["Group"];
+            this.DefaultViewModel["Group"] = group;
+            this.DefaultViewModel["Items"] = group.Items;
+
+            this.DefaultViewModel["CurrentTerm"] = navParams["ItemName"];
+
+            DataTransferManager.GetForCurrentView().DataRequested += OnDataRequested;
         }
 
         /// <summary>
@@ -82,6 +90,7 @@ namespace ClumsyWordsUniversal.Views
         /// serializable state.</param>
         private void navigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
+            DataTransferManager.GetForCurrentView().DataRequested -= OnDataRequested;
         }
 
         #region NavigationHelper registration
