@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClumsyWordsUniversal.Data.DefinitionsDataItem" Collapsed="true">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAABIgACEAAAAAAgAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\tenev_000\Documents\Visual Studio 2013\Projects\ClumsyWordsUniversal\ClumsyWordsUniversal\ClumsyWordsUniversal.Shared\DataModel\DataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClumsyWordsUniversal.Data.DefinitionsDataGroup" Collapsed="true">
+    <Position X="5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABCAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\tenev_000\Documents\Visual Studio 2013\Projects\ClumsyWordsUniversal\ClumsyWordsUniversal\ClumsyWordsUniversal.Shared\DataModel\DataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClumsyWordsUniversal.Data.DataSource" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEADEAAAAACAAAAgAAgAiAEAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\tenev_000\Documents\Visual Studio 2013\Projects\ClumsyWordsUniversal\ClumsyWordsUniversal\ClumsyWordsUniversal.Shared\DataModel\DataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClumsyWordsUniversal.Data.CloudDataSource" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIUAAAAAAAACQIAAACAAAAgAAAACAAAwIwAAAAAAA=</HashCode>
+      <FileName>C:\Users\tenev_000\Documents\Visual Studio 2013\Projects\ClumsyWordsUniversal\ClumsyWordsUniversal\ClumsyWordsUniversal.Shared\DataModel\DataSources\CloudDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClumsyWordsUniversal.Data.LocalDataSource" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAACBAAAgAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\tenev_000\Documents\Visual Studio 2013\Projects\ClumsyWordsUniversal\ClumsyWordsUniversal\ClumsyWordsUniversal.Shared\DataModel\DataSources\LocalDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClumsyWordsUniversal.Data.CommonGroup&lt;T&gt;" Collapsed="true">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAIAACUQAAASAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\tenev_000\Documents\Visual Studio 2013\Projects\ClumsyWordsUniversal\ClumsyWordsUniversal\ClumsyWordsUniversal.Shared\DataModel\Model\CommonGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClumsyWordsUniversal.Data.TermDefinition" Collapsed="true">
+    <Position X="3" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+      <FileName>C:\Users\tenev_000\Documents\Visual Studio 2013\Projects\ClumsyWordsUniversal\ClumsyWordsUniversal\ClumsyWordsUniversal.Shared\DataModel\Model\TermDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClumsyWordsUniversal.Data.Group&lt;U, T&gt;" Collapsed="true">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\tenev_000\Documents\Visual Studio 2013\Projects\ClumsyWordsUniversal\ClumsyWordsUniversal\ClumsyWordsUniversal.Shared\DataModel\Model\TermDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClumsyWordsUniversal.Data.TermProperties" Collapsed="true">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAACAAAAAIAAAAAAgAAEAAAEAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\tenev_000\Documents\Visual Studio 2013\Projects\ClumsyWordsUniversal\ClumsyWordsUniversal\ClumsyWordsUniversal.Shared\DataModel\Model\TermProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ClumsyWordsUniversal.Data.PartOfSpeech" Collapsed="true">
+    <Position X="4.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAIACAAAAAAIQAAAAAAAAAAAAAAQlAAAAAYAgWggAA=</HashCode>
+      <FileName>C:\Users\tenev_000\Documents\Visual Studio 2013\Projects\ClumsyWordsUniversal\ClumsyWordsUniversal\ClumsyWordsUniversal.Shared\DataModel\Model\PartOfSpeech.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
