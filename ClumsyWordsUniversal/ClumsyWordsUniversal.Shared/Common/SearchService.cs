@@ -74,14 +74,22 @@ namespace ClumsyWordsUniversal.Common
             HttpClient client = new HttpClient();
 
             string searchQuery = url + term;
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync(searchQuery);
 
-            HttpResponseMessage response = await client.GetAsync(searchQuery);
             string responseText = await response.Content.ReadAsStringAsync();
 
             DefinitionsDataItem termProps;
 
             if (SearchService.TryParseXMLResponse(responseText, p => p.PartOfSpeech, term, out termProps))
                 return termProps;
+            }
+            catch (Exception ex)
+            {
+                // Maybe there is no connection to the Internet or the server is down
+                return default(DefinitionsDataItem);
+            }
 
             return default(DefinitionsDataItem);
         }
