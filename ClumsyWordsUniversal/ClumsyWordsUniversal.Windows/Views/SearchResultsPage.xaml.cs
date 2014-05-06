@@ -100,7 +100,7 @@ namespace ClumsyWordsUniversal
                 Credentials accessCredentials = new Credentials();
 
                 // This file contains sensititve data and is ignored in our public repository
-                Uri dataUri = new Uri("ms-appx:///API/STANDS4.keys.json");
+                Uri dataUri = new Uri("ms-appx:///API/STANDS4.keys.json", UriKind.Absolute);
 
                 StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(dataUri);
                 string jsonText = await FileIO.ReadTextAsync(file);
@@ -338,7 +338,7 @@ namespace ClumsyWordsUniversal
 
         private void OnGoHomeClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(HubPage), new string[] { "Recent", "Favourites" });
+            this.Frame.Navigate(typeof(HubPage), new List<string>() { "Recent", "Favourites" });
         }
 
         /// <summary>

@@ -241,7 +241,7 @@ namespace ClumsyWordsUniversal.Views
 
         private void OnGoHomeClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(HubPage), new string[] { "Recent", "Favourites" });
+            this.Frame.Navigate(typeof(HubPage), new List<string>() { "Recent", "Favourites" });
         }
 
         private async void SignInClick(object sender, RoutedEventArgs e)
