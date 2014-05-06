@@ -172,6 +172,25 @@ namespace ClumsyWordsUniversal
         public static string LastName { get; set; }
         public static string ProfilePictureSource { get; set; }
 
+        private static IEnumerable<string> DetermineLoginScopes()
+        {
+            List<string> scopes = new List<string>() { "wl.basic" };
+
+            ApplicationDataContainer roamingSettings = ApplicationData.Current.RoamingSettings;
+
+            // Check if user has given consent to save data into their SkyDrive storage.
+            if (roamingSettings.Values.ContainsKey("saveSkyDrive"))
+            {
+                if ((bool)roamingSettings.Values["saveSkyDrive"])
+                {
+                    scopes.Add("wl.skydrive");
+                    scopes.Add("wl.skydrive_upload");
+                }
+            }
+
+            return scopes;
+        }
+
         /// <summary>
         /// Tries signing in the user with their Microsoft account
         /// </summary>
@@ -199,22 +218,17 @@ namespace ClumsyWordsUniversal
                         //   has not already given consent to this app to access the data 
                         //   described by the scope.
 
-                        List<string> scopes = new List<string>() { "wl.basic" };
-
-                        ApplicationDataContainer roamingSettings = ApplicationData.Current.RoamingSettings;
-
-                        // Check if user has given consent to save data into their SkyDrive storage.
-                        if (roamingSettings.Values.ContainsKey("saveSkyDrive"))
-                        {
-                            if ((bool)roamingSettings.Values["saveSkyDrive"])
-                            {
-                                scopes.Add("wl.skydrive");
-                                scopes.Add("wl.skydrive_upload");
-                            }
-                        }
+                        List<string> scopes = DetermineLoginScopes().ToList();
 
                         // Sign in the user with the given scopes
-                        loginResult = await LCAuth.LoginAsync(scopes);
+                        try 
+                        {
+                            loginResult = await LCAuth.LoginAsync(scopes);
+                        }
+                        catch(Exception ex)
+                        {
+                            string m = ex.Message;
+                        }
                     }
                     else
                     {
