@@ -267,6 +267,18 @@ namespace ClumsyWordsUniversal
             VisualStateManager.GoToState(this, "NoResultsFound", true);
         }
 
+        private async void SignInClick(object sender, RoutedEventArgs e)
+        {
+            await App.UpdateUserName(true);
+
+            //this.userName.Text = App.UserName;
+
+            if (App.UserName == "You are not signed in.")
+                this.SignInBtn.Visibility = Visibility.Visible;
+            else
+                this.SignInBtn.Visibility = Visibility.Collapsed;
+        }
+
         private void OnGridViewSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             #region Maintain Selection Across View States
