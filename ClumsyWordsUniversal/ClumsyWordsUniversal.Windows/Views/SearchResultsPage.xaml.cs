@@ -357,6 +357,37 @@ namespace ClumsyWordsUniversal
             }
         }
 
+        private void OnQuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args)
+        {
+            // If the Window isn't already using Frame navigation, insert our own Frame
+            var previousContent = Window.Current.Content;
+            var frame = previousContent as Frame;
+
+            // Display search results
+            frame.Navigate(typeof(SearchResultsPage), args.QueryText);
+            Window.Current.Content = frame;
+
+            // Ensure the current window is active
+            Window.Current.Activate();
+        }
+
+        private void OnSuggestionsRequested(SearchBox sender, SearchBoxSuggestionsRequestedEventArgs args)
+        {
+            // Extract the query
+            string query = args.QueryText.ToLower();
+
+            // Get all available terms from Recent and Favourites groups
+            string[] categories = new string[] { "Recent", "Favourites" };
+            List<string> terms = App.DataSource.GetTerms(categories);
+
+            // Display a term as a suggestion if it starts with the current query
+            foreach (var term in terms)
+            {
+                if (term.StartsWith(query))
+                    args.Request.SearchSuggestionCollection.AppendQuerySuggestion(term);
+            }
+        }
+
         #endregion
 
         #region NavigationHelper registration

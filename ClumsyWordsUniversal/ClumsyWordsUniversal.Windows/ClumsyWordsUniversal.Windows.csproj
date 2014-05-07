@@ -128,6 +128,7 @@
     </AppxManifest>
     <Content Include="API\STANDS4.keys.json" />
     <None Include="ClumsyWordsUniversal.Windows_StoreKey.pfx" />
+    <None Include="Model.cd" />
     <None Include="Package.StoreAssociation.xml" />
     <None Include="ClumsyWordsUniversal.Windows_TemporaryKey.pfx" />
     <Content Include="Fonts\LiveSymbol.ttf" />
