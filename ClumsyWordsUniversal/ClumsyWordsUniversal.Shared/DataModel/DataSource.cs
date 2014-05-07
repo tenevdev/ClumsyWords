@@ -37,9 +37,9 @@ namespace ClumsyWordsUniversal.Data
             this.Items = items;
 
             if (String.IsNullOrWhiteSpace(term) || term == String.Empty)
-                this.Term = term;
-            else
                 this.Term = this.FirstDefinition.Term;
+            else
+                this.Term = term;
         }
 
         public DefinitionsDataItem(DefinitionsDataItem item)
