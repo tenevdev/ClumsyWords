@@ -487,7 +487,23 @@ namespace ClumsyWordsUniversal
         private async void OnSuspending(object sender, SuspendingEventArgs e)
         {
             var deferral = e.SuspendingOperation.GetDeferral();
+
+            // Save app content to the user selected storage
+            if (App.SecondaryDataSource == null)
+                await App.DataSource.SaveDataAsync();
+            else if (roamingSettings.Values.Contains(new KeyValuePair<string, object>("saveLocal", true)))
+            {
+                App.SecondaryDataSource.groupsMap = App.DataSource.groupsMap;
+                await App.SecondaryDataSource.SaveDataAsync("definitions.json", App.SecondaryDataSource.groupsMap);
+            }
+            else
+            {
+                App.SecondaryDataSource.groupsMap = App.DataSource.groupsMap;
+                await App.SecondaryDataSource.SaveDataAsync();
+            }
+
             await SuspensionManager.SaveAsync();
+
             deferral.Complete();
         }
     }
