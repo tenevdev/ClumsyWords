@@ -11,4 +11,28 @@
     <SolidColorBrush x:Key="ClumsyOrangeBrush" Color="{StaticResource ClumsyOrange}"/>
 
 
+    <!--Override default colors-->
+    
+    <SolidColorBrush x:Key="ListViewItemSelectedBackgroundThemeBrush" Color="{StaticResource ClumsyOrange}"></SolidColorBrush>
+    <!--<SolidColorBrush x:Key="ListViewItemPointerOverBackgroundThemeBrush" Color="#FA6800"></SolidColorBrush>-->
+    <SolidColorBrush x:Key="ListViewItemSelectedPointerOverBackgroundThemeBrush" Color="{StaticResource ClumsyOrange}"></SolidColorBrush>
+    <SolidColorBrush x:Key="ListViewItemSelectedPointerOverBorderThemeBrush" Color="{StaticResource ClumsyOrange}"></SolidColorBrush>
+    <SolidColorBrush x:Key="ComboBoxItemSelectedBackgroundThemeBrush" Color="{StaticResource ClumsyOrange}"></SolidColorBrush>
+    <SolidColorBrush x:Key="ComboBoxItemSelectedPointerOverBackgroundThemeBrush" Color="{StaticResource ClumsyOrange}"></SolidColorBrush>
+    <!-- Search button background when when the control is focused, but the mouse is 
+             out of the button.
+             It is also the background of search suggestions when the mouse is over 
+             them -->
+    <SolidColorBrush x:Key="SearchBoxButtonBackgroundThemeBrush" Color="{StaticResource ClumsyBlue}" />
+    <!-- Search button background when the mouse is over the button
+             (when the control is focused or not) -->
+    <SolidColorBrush x:Key="SearchBoxButtonPointerOverBackgroundThemeBrush" Color="{StaticResource ClumsyBlueLight}" />
+    <!-- Color of highlighted characters in the result suggestions -->
+    <SolidColorBrush x:Key="SearchBoxHitHighlightForegroundThemeBrush" Color="{StaticResource ClumsyBlue}" />
+
+    <!-- Color of highlighted characters in the result suggestions when the mouse is 
+             over the element -->
+    <SolidColorBrush x:Key="SearchBoxHitHighlightSelectedForegroundThemeBrush" Color="{StaticResource ClumsyBlueLight}" />
+
+
 </ResourceDictionary>
