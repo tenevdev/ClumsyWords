@@ -290,7 +290,7 @@ namespace ClumsyWordsUniversal
 
         private async void SignInClick(object sender, RoutedEventArgs e)
         {
-            await App.UpdateUserName(true);
+            await App.UpdateUserName(false);
 
             //this.userName.Text = App.UserName;
 
@@ -460,7 +460,7 @@ namespace ClumsyWordsUniversal
 
                 this.userInfo.FirstName = App.FirstName;
                 this.userInfo.LastName = App.LastName;
-                this.userInfo.ImageSource = new BitmapImage(new Uri(App.ProfilePictureSource, UriKind.Absolute));
+                this.userInfo.ImageSource = App.ProfileImage;
             }
         }
 

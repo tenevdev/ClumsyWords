@@ -20,6 +20,7 @@ using Windows.UI.Popups;
 using ClumsyWordsUniversal.Common.Converters;
 using ClumsyWordsUniversal.Views.ViewStateManagment;
 using Windows.UI.Xaml.Media.Imaging;
+using Microsoft.Live;
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -120,13 +121,15 @@ namespace ClumsyWordsUniversal
         {
             DataRequest request = args.Request;
 
+            request.Data.Properties.Title = "Items";
+
             DefinitionsToHTMLConverter htmlConverter = new DefinitionsToHTMLConverter();
 
             //request.Data.Properties.Title = String.Empty;
             //request.Data.Properties.Description = "Send definitions to your friends easily via email.";
 
             // Get all groups on page
-            var groups = (List<DefinitionsDataGroup>)this.DefaultViewModel["GroupsCollection"];
+            IEnumerable<DefinitionsDataGroup>groups = this.DefaultViewModel["GroupsCollection"] as IEnumerable<DefinitionsDataGroup>;
 
             // Starts with simple styles
             string definitionsString = "<style>body{word-wrap:break-word;} h2{text-align:center;}</style>";
@@ -168,7 +171,7 @@ namespace ClumsyWordsUniversal
             }
 
             // Format as valid html
-            definitionsString = HtmlFormatHelper.CreateHtmlFormat(definitionsString);
+            //definitionsString = HtmlFormatHelper.CreateHtmlFormat(definitionsString);
 
             // Set share content
             request.Data.SetHtmlFormat(definitionsString);
@@ -310,7 +313,8 @@ namespace ClumsyWordsUniversal
             List<object> selectedItems = this.itemGridView.SelectedItems.ToList();
             foreach (var selectedItem in selectedItems)
             {
-                foreach (var group in (List<DefinitionsDataGroup>)this.DefaultViewModel["GroupsCollection"])
+                IEnumerable<DefinitionsDataGroup> groups = this.DefaultViewModel["GroupsCollection"] as IEnumerable<DefinitionsDataGroup>;
+                foreach (var group in groups)
                 {
                     for (int i = group.Items.Count - 1; i >= 0; i--)
                     {
@@ -388,7 +392,7 @@ namespace ClumsyWordsUniversal
 
                 this.userInfo.FirstName = App.FirstName;
                 this.userInfo.LastName = App.LastName;
-                this.userInfo.ImageSource = new BitmapImage(new Uri(App.ProfilePictureSource, UriKind.Absolute));
+                this.userInfo.ImageSource = App.ProfileImage;
             }
         }
 
