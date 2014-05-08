@@ -132,6 +132,7 @@
                     AutomationProperties.Name="Search Results"
                     TabIndex="1"
                     Grid.Row="1"
+                    Width="420"
                     Margin="10,0,0,0"
                     Padding="0,0,0,60"
                     SelectionMode="Multiple"
@@ -154,6 +155,10 @@
 
         <!-- Back button, page title and subtitles-->
         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <!--<ColumnDefinition Width="Auto" />-->
                 <ColumnDefinition Width="Auto" />
@@ -172,7 +177,7 @@
             <TextBlock x:Name="resultText" Grid.Column="1" Text="Results for&#160;" IsHitTestVisible="false" Style="{StaticResource PageHeaderTextBlockStyle}"/>
             <TextBlock x:Name="queryText" Grid.Column="2" Text="{Binding QueryText, FallbackValue=query}" IsHitTestVisible="false" Style="{StaticResource PageHeaderTextBlockStyle}"/>
 
-            <SearchBox x:Name="searchBox" Margin="0,0,0,36" VerticalAlignment="Bottom" Grid.Column="3" Width="350" MaxHeight="35"
+            <SearchBox x:Name="searchBox" Margin="0,0,0,36" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.Column="3" Width="350" MaxHeight="35"
                        SearchHistoryEnabled="False" PlaceholderText="Search for a word"
                        QuerySubmitted="OnQuerySubmitted" SuggestionsRequested="OnSuggestionsRequested"/>
 
@@ -232,17 +237,20 @@
                             <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource NavigationBackButtonSmallStyle}"/>
                         </ObjectAnimationUsingKeyFrames>
 
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="queryText" Storyboard.TargetProperty="Style">
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="queryText" Storyboard.TargetProperty="Style">
                             <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedPageHeaderTextBlockStyle}"/>
-                        </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pageTitle" Storyboard.TargetProperty="Visibility">
+                        </ObjectAnimationUsingKeyFrames>-->
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="pageTitle" Storyboard.TargetProperty="Visibility">
                             <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
-                        </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="resultText" Storyboard.TargetProperty="Visibility">
+                        </ObjectAnimationUsingKeyFrames>-->
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="resultText" Storyboard.TargetProperty="Visibility">
                             <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
-                        </ObjectAnimationUsingKeyFrames>
+                        </ObjectAnimationUsingKeyFrames>-->
 
                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="typicalPanel" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="userPanel" Storyboard.TargetProperty="Visibility">
                             <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
                         </ObjectAnimationUsingKeyFrames>
                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="snappedPanel" Storyboard.TargetProperty="Visibility">

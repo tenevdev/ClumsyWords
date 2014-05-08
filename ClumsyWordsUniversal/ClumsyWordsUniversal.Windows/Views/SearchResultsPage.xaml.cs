@@ -62,6 +62,7 @@ namespace ClumsyWordsUniversal
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             this.navigationHelper.SaveState += navigationHelper_SaveState;
 
+
             // Display user name and profile picture or a sign in button
             this.DetermineUserPanelState();
 
@@ -92,6 +93,7 @@ namespace ClumsyWordsUniversal
         private async void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             DataTransferManager.GetForCurrentView().DataRequested += OnDataRequested;
+            Window.Current.SizeChanged += Window_SizeChanged;
 
             this.progressPanel.Visibility = Visibility.Visible;
             this.progressRing.IsActive = true;
@@ -195,6 +197,8 @@ namespace ClumsyWordsUniversal
         /// serializable state.</param>
         private void navigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
+            DataTransferManager.GetForCurrentView().DataRequested -= OnDataRequested;
+            Window.Current.SizeChanged -= Window_SizeChanged;
         }
 
         #region Event Handlers
@@ -470,10 +474,7 @@ namespace ClumsyWordsUniversal
 
                 Grid.SetRow(this.searchBox, 1);
                 Grid.SetColumn(this.searchBox, 1);
-
-                Grid.SetRowSpan(this.userPanel, 2);
-                Grid.SetColumn(this.userPanel, 2);
-                Grid.SetColumnSpan(this.userPanel, 2);
+                Grid.SetColumnSpan(this.searchBox, 3);
 
                 return true;
             }
@@ -486,9 +487,10 @@ namespace ClumsyWordsUniversal
             {
                 Grid.SetRow(this.searchBox, 1);
                 Grid.SetColumn(this.searchBox, 1);
+                Grid.SetColumnSpan(this.searchBox, 3);
 
                 Grid.SetRowSpan(this.userPanel, 2);
-                Grid.SetColumn(this.userPanel, 2);
+                Grid.SetColumn(this.userPanel, 3);
                 Grid.SetColumnSpan(this.userPanel, 2);
 
                 return true;
@@ -499,10 +501,10 @@ namespace ClumsyWordsUniversal
         private bool SetFullScreenState(double width, double height)
         {
             Grid.SetRow(this.searchBox, 0);
-            Grid.SetColumn(this.searchBox, 2);
+            Grid.SetColumn(this.searchBox, 3);
             Grid.SetColumnSpan(this.searchBox, 1);
 
-            Grid.SetColumn(this.userPanel, 3);
+            Grid.SetColumn(this.userPanel, 4);
             Grid.SetColumnSpan(this.userPanel, 1);
             Grid.SetRowSpan(this.userPanel, 1);
 
@@ -521,10 +523,7 @@ namespace ClumsyWordsUniversal
 
                 Grid.SetRow(this.searchBox, 1);
                 Grid.SetColumn(this.searchBox, 1);
-
-                Grid.SetRowSpan(this.userPanel, 2);
-                Grid.SetColumn(this.userPanel, 2);
-                Grid.SetColumnSpan(this.userPanel, 2);
+                Grid.SetColumnSpan(this.searchBox, 3);
             }
             else if (e.Size.Height > e.Size.Width)
             {
@@ -532,9 +531,10 @@ namespace ClumsyWordsUniversal
 
                 Grid.SetRow(this.searchBox, 1);
                 Grid.SetColumn(this.searchBox, 1);
+                Grid.SetColumnSpan(this.searchBox, 3);
 
                 Grid.SetRowSpan(this.userPanel, 2);
-                Grid.SetColumn(this.userPanel, 2);
+                Grid.SetColumn(this.userPanel, 3);
                 Grid.SetColumnSpan(this.userPanel, 2);
             }
             else
@@ -542,10 +542,10 @@ namespace ClumsyWordsUniversal
                 VisualStateManager.GoToState(this, "FullScreenLandscape", false);
 
                 Grid.SetRow(this.searchBox, 0);
-                Grid.SetColumn(this.searchBox, 2);
+                Grid.SetColumn(this.searchBox, 3);
                 Grid.SetColumnSpan(this.searchBox, 1);
 
-                Grid.SetColumn(this.userPanel, 3);
+                Grid.SetColumn(this.userPanel, 4);
                 Grid.SetColumnSpan(this.userPanel, 1);
                 Grid.SetRowSpan(this.userPanel, 1);
             }

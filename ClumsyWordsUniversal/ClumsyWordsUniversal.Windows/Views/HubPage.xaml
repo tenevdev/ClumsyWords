@@ -117,7 +117,7 @@
                     <!--Support for horizontal scrolling-->
                     <GridView.ItemsPanel>
                         <ItemsPanelTemplate>
-                            <VirtualizingStackPanel Orientation="Horizontal" Height="480"/>
+                            <VirtualizingStackPanel Orientation="Horizontal" Height="675"/>
                         </ItemsPanelTemplate>
                     </GridView.ItemsPanel>
 
@@ -134,7 +134,7 @@
                                             Click="Header_Click" 
                                             Background="Black"
                                             Width="300"
-                                            Height="480"
+                                            Height="675"
                                             Style="{StaticResource TextBlockButtonStyle}" >
                                     <StackPanel Orientation="Vertical" Background="WhiteSmoke">
                                         <!--Display the title of the group-->
