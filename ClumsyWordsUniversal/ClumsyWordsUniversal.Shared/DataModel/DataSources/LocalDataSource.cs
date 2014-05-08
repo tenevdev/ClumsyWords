@@ -47,8 +47,11 @@ namespace ClumsyWordsUniversal.Data
             }
             if (!exists)
             {
+                // Create the file
                 file = await LocalDataSource.localFolder.CreateFileAsync(this._fileName);
-                return;
+
+                // Get sample data designed for inital loading of the app
+                file = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///DataModel/DataSources/Sample/SampleDefinitions.json", UriKind.Absolute));
             }
             var result = await FileIO.ReadTextAsync(file);
 
