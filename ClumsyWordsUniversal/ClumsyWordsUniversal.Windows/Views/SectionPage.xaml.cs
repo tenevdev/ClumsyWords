@@ -18,6 +18,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.ApplicationModel.DataTransfer;
 using ClumsyWordsUniversal.Common.Converters;
+using ClumsyWordsUniversal.Views.ViewStateManagment;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace ClumsyWordsUniversal
 {
@@ -35,6 +37,22 @@ namespace ClumsyWordsUniversal
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
+            this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
+
+            // Display user name and profile picture or a sign in button
+            this.DetermineUserPanelState();
+
+            // Manage visual states
+            var _viewsManager = new PageViewStateManager(this)
+            {
+                States = new List<CustomViewStates>
+                {
+                    new CustomViewStates {State = "Snapped", MatchState = (w,h) => this.SetSnappedState(w,h) },
+                    new CustomViewStates { State = "Filled", MatchState = (w,h) => this.SetFilledState(w,h) },
+                    new CustomViewStates { State = "FullScreenLandscape", MatchState = (w,h) => this.SetFullScreenState(w,h) }
+                }
+
+            };
         }
 
         /// <summary>
@@ -72,11 +90,13 @@ namespace ClumsyWordsUniversal
             this.DefaultViewModel["Items"] = group.Items;
 
             DataTransferManager.GetForCurrentView().DataRequested += OnDataRequested;
+            Window.Current.SizeChanged += Window_SizeChanged;
         }
 
-        private void NavigationHelper_SaveState(Dictionary<String, Object> pageState)
+        private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
             DataTransferManager.GetForCurrentView().DataRequested -= OnDataRequested;
+            Window.Current.SizeChanged += Window_SizeChanged;
         }
 
         #region Share Functionality Methods
@@ -250,6 +270,117 @@ namespace ClumsyWordsUniversal
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedFrom(e);
+        }
+
+        #endregion
+
+        private void DetermineUserPanelState()
+        {
+            if (App.UserName == "You're not signed in.")
+            {
+                this.userInfo.Visibility = Visibility.Collapsed;
+                this.SignInBtn.Visibility = Visibility.Visible;
+            }
+            else if (App.UserName != "Couldn't sign in. Please, try again later." && App.UserName != "")
+            {
+                this.SignInBtn.Visibility = Visibility.Collapsed;
+                this.userInfo.Visibility = Visibility.Visible;
+
+                this.userInfo.FirstName = App.FirstName;
+                this.userInfo.LastName = App.LastName;
+                this.userInfo.ImageSource = new BitmapImage(new Uri(App.ProfilePictureSource, UriKind.Absolute));
+            }
+        }
+
+        #region Visual State Switching Methods
+
+        private bool SetSnappedState(double width, double height)
+        {
+            if (width < 675)
+            {
+                //VisualStateManager.GoToState(this, "Snapped", false);
+
+                Grid.SetRow(this.searchBox, 1);
+                Grid.SetColumn(this.searchBox, 1);
+
+                Grid.SetRowSpan(this.userPanel, 2);
+                Grid.SetColumn(this.userPanel, 2);
+                Grid.SetColumnSpan(this.userPanel, 2);
+
+                return true;
+            }
+            return false;
+        }
+
+        private bool SetFilledState(double width, double height)
+        {
+            if (width < height)
+            {
+                Grid.SetRow(this.searchBox, 1);
+                Grid.SetColumn(this.searchBox, 1);
+
+                Grid.SetRowSpan(this.userPanel, 2);
+                Grid.SetColumn(this.userPanel, 2);
+                Grid.SetColumnSpan(this.userPanel, 2);
+
+                return true;
+            }
+            return false;
+        }
+
+        private bool SetFullScreenState(double width, double height)
+        {
+            Grid.SetRow(this.searchBox, 0);
+            Grid.SetColumn(this.searchBox, 2);
+            Grid.SetColumnSpan(this.searchBox, 1);
+
+            Grid.SetColumn(this.userPanel, 3);
+            Grid.SetColumnSpan(this.userPanel, 1);
+            Grid.SetRowSpan(this.userPanel, 1);
+
+            return true;
+        }
+
+        private void Window_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
+        {
+            //ApplicationView currentState = ApplicationView.GetForCurrentView();
+
+            // Set the initial visual state of the control
+            //VisualStateManager.GoToState(this, "", false);
+            if (e.Size.Width <= 675)
+            {
+                VisualStateManager.GoToState(this, "Snapped", false);
+
+                Grid.SetRow(this.searchBox, 1);
+                Grid.SetColumn(this.searchBox, 1);
+
+                Grid.SetRowSpan(this.userPanel, 2);
+                Grid.SetColumn(this.userPanel, 2);
+                Grid.SetColumnSpan(this.userPanel, 2);
+            }
+            else if (e.Size.Height > e.Size.Width)
+            {
+                VisualStateManager.GoToState(this, "Filled", false);
+
+                Grid.SetRow(this.searchBox, 1);
+                Grid.SetColumn(this.searchBox, 1);
+
+                Grid.SetRowSpan(this.userPanel, 2);
+                Grid.SetColumn(this.userPanel, 2);
+                Grid.SetColumnSpan(this.userPanel, 2);
+            }
+            else
+            {
+                VisualStateManager.GoToState(this, "FullScreenLandscape", false);
+
+                Grid.SetRow(this.searchBox, 0);
+                Grid.SetColumn(this.searchBox, 2);
+                Grid.SetColumnSpan(this.searchBox, 1);
+
+                Grid.SetColumn(this.userPanel, 3);
+                Grid.SetColumnSpan(this.userPanel, 1);
+                Grid.SetRowSpan(this.userPanel, 1);
+            }
         }
 
         #endregion

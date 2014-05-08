@@ -1,6 +1,7 @@
 ﻿using ClumsyWordsUniversal.Common;
 using ClumsyWordsUniversal.Common.Converters;
 using ClumsyWordsUniversal.Data;
+using ClumsyWordsUniversal.Views.ViewStateManagment;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -16,6 +17,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
@@ -55,6 +57,21 @@ namespace ClumsyWordsUniversal.Views
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             this.navigationHelper.SaveState += navigationHelper_SaveState;
+
+            // Display user name and profile picture or a sign in button
+            this.DetermineUserPanelState();
+
+            // Manage visual states
+            var _viewsManager = new PageViewStateManager(this)
+            {
+                States = new List<CustomViewStates>
+                {
+                    new CustomViewStates {State = "Snapped", MatchState = (w,h) => this.SetSnappedState(w,h) },
+                    new CustomViewStates { State = "Filled", MatchState = (w,h) => this.SetFilledState(w,h) },
+                    new CustomViewStates { State = "FullScreenLandscape", MatchState = (w,h) => this.SetFullScreenState(w,h) }
+                }
+
+            };
         }
 
         /// <summary>
@@ -78,6 +95,7 @@ namespace ClumsyWordsUniversal.Views
             this.DefaultViewModel["CurrentTerm"] = navParams["ItemName"];
 
             DataTransferManager.GetForCurrentView().DataRequested += OnDataRequested;
+            Window.Current.SizeChanged += Window_SizeChanged;
         }
 
         /// <summary>
@@ -91,6 +109,7 @@ namespace ClumsyWordsUniversal.Views
         private void navigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
             DataTransferManager.GetForCurrentView().DataRequested -= OnDataRequested;
+            Window.Current.SizeChanged -= Window_SizeChanged;
         }
 
         #region NavigationHelper registration
@@ -286,6 +305,117 @@ namespace ClumsyWordsUniversal.Views
                     args.Request.SearchSuggestionCollection.AppendQuerySuggestion(term);
             }
         }
+        #endregion
+
+        private void DetermineUserPanelState()
+        {
+            if (App.UserName == "You're not signed in.")
+            {
+                this.userInfo.Visibility = Visibility.Collapsed;
+                this.SignInBtn.Visibility = Visibility.Visible;
+            }
+            else if (App.UserName != "Couldn't sign in. Please, try again later." && App.UserName != "")
+            {
+                this.SignInBtn.Visibility = Visibility.Collapsed;
+                this.userInfo.Visibility = Visibility.Visible;
+
+                this.userInfo.FirstName = App.FirstName;
+                this.userInfo.LastName = App.LastName;
+                this.userInfo.ImageSource = new BitmapImage(new Uri(App.ProfilePictureSource, UriKind.Absolute));
+            }
+        }
+
+        #region Visual State Switching Methods
+
+        private bool SetSnappedState(double width, double height)
+        {
+            if (width < 675)
+            {
+                //VisualStateManager.GoToState(this, "Snapped", false);
+
+                Grid.SetRow(this.searchBox, 1);
+                Grid.SetColumn(this.searchBox, 1);
+
+                Grid.SetRowSpan(this.userPanel, 2);
+                Grid.SetColumn(this.userPanel, 2);
+                Grid.SetColumnSpan(this.userPanel, 2);
+
+                return true;
+            }
+            return false;
+        }
+
+        private bool SetFilledState(double width, double height)
+        {
+            if (width < height)
+            {
+                Grid.SetRow(this.searchBox, 1);
+                Grid.SetColumn(this.searchBox, 1);
+
+                Grid.SetRowSpan(this.userPanel, 2);
+                Grid.SetColumn(this.userPanel, 2);
+                Grid.SetColumnSpan(this.userPanel, 2);
+
+                return true;
+            }
+            return false;
+        }
+
+        private bool SetFullScreenState(double width, double height)
+        {
+            Grid.SetRow(this.searchBox, 0);
+            Grid.SetColumn(this.searchBox, 2);
+            Grid.SetColumnSpan(this.searchBox, 1);
+
+            Grid.SetColumn(this.userPanel, 3);
+            Grid.SetColumnSpan(this.userPanel, 1);
+            Grid.SetRowSpan(this.userPanel, 1);
+
+            return true;
+        }
+
+        private void Window_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
+        {
+            //ApplicationView currentState = ApplicationView.GetForCurrentView();
+
+            // Set the initial visual state of the control
+            //VisualStateManager.GoToState(this, "", false);
+            if (e.Size.Width <= 675)
+            {
+                VisualStateManager.GoToState(this, "Snapped", false);
+
+                Grid.SetRow(this.searchBox, 1);
+                Grid.SetColumn(this.searchBox, 1);
+
+                Grid.SetRowSpan(this.userPanel, 2);
+                Grid.SetColumn(this.userPanel, 2);
+                Grid.SetColumnSpan(this.userPanel, 2);
+            }
+            else if (e.Size.Height > e.Size.Width)
+            {
+                VisualStateManager.GoToState(this, "Filled", false);
+
+                Grid.SetRow(this.searchBox, 1);
+                Grid.SetColumn(this.searchBox, 1);
+
+                Grid.SetRowSpan(this.userPanel, 2);
+                Grid.SetColumn(this.userPanel, 2);
+                Grid.SetColumnSpan(this.userPanel, 2);
+            }
+            else
+            {
+                VisualStateManager.GoToState(this, "FullScreenLandscape", false);
+
+                Grid.SetRow(this.searchBox, 0);
+                Grid.SetColumn(this.searchBox, 2);
+                Grid.SetColumnSpan(this.searchBox, 1);
+
+                Grid.SetColumn(this.userPanel, 3);
+                Grid.SetColumnSpan(this.userPanel, 1);
+                Grid.SetRowSpan(this.userPanel, 1);
+            }
+        }
+
         #endregion
     }
 }

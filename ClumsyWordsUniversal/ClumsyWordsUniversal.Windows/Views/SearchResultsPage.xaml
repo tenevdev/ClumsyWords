@@ -33,7 +33,7 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="140"/>
+            <RowDefinition Height="Auto" MinHeight="140"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
