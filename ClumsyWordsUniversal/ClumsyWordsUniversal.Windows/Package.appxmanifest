@@ -15,11 +15,18 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="ClumsyWordsUniversal.Windows.App">
-      <m2:VisualElements DisplayName="ClumsyWords" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="ClumsyWords is a definitions dictionary for English words" ForegroundText="light" BackgroundColor="#464646">
-        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      <m2:VisualElements DisplayName="ClumsyWords" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="ClumsyWords is a definitions dictionary for English words" ForegroundText="dark" BackgroundColor="#FA6800" ToastCapable="false">
+        <m2:DefaultTile ShortName="ClumsyWords" DefaultSize="square150x150Logo">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#FA6800" />
         <m2:InitialRotationPreference>
           <m2:Rotation Preference="portrait" />
           <m2:Rotation Preference="landscape" />
+          <m2:Rotation Preference="portraitFlipped" />
+          <m2:Rotation Preference="landscapeFlipped" />
         </m2:InitialRotationPreference>
         <m2:ApplicationView MinWidth="default" />
       </m2:VisualElements>
