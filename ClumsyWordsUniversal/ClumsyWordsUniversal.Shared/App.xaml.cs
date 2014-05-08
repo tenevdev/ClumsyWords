@@ -21,6 +21,8 @@ using System.Threading.Tasks;
 using Microsoft.Live;
 using ClumsyWordsUniversal.Data;
 using ClumsyWordsUniversal.Settings;
+using Windows.UI.Xaml.Media.Imaging;
+using Windows.Storage.Streams;
 
 #if WINDOWS_APP
 using Windows.UI.ApplicationSettings;
@@ -47,6 +49,8 @@ namespace ClumsyWordsUniversal
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+
+            App.AccountState = LiveConnectSessionStatus.Unknown;
         }
 
         #region Data
@@ -123,58 +127,33 @@ namespace ClumsyWordsUniversal
         #endregion
 
         #region LiveAccount
+        public static LiveConnectClient LiveClient { get; set; }
 
-        private static LiveConnectSession _session;
         /// <summary>
         /// A static property which provides access to the current session across the app
         /// </summary>
-        public static LiveConnectSession Session
-        {
-            get
-            {
-                return _session;
-            }
-            set
-            {
-                _session = value;
+        public static LiveConnectSession Session { get; set; }
 
-            }
-        }
+        public static List<string> Permissions { get; set; }
 
-        //private static string _permissions = "none";
-        public static string Permissions { get; set; }
-
-        private static string _userName = "You're not signed in.";
         /// <summary>
         /// The user's Live account user name
         /// </summary>
-        public static string UserName
-        {
-            get
-            {
-                return _userName;
-            }
-            set
-            {
-                _userName = value;
+        public static string UserName { get; set; }
 
-            }
-        }
-
-        private static string _accountState = "signedOut";
-        public static string AccountState
-        {
-            get { return _accountState; }
-            set { _accountState = value; }
-        }
+        public static LiveConnectSessionStatus AccountState { get; set; }
 
         public static string FirstName { get; set; }
         public static string LastName { get; set; }
         public static string ProfilePictureSource { get; set; }
 
-        private static IEnumerable<string> DetermineLoginScopes()
+        public static BitmapImage ProfileImage { get; set; }
+
+        public static bool HasOneDrivePermissions { get; set; }
+
+        private static IEnumerable<string> GetLoginScopes()
         {
-            List<string> scopes = new List<string>() { "wl.basic" };
+            List<string> scopes = new List<string>() { "wl.signin", "wl.basic" };
 
             ApplicationDataContainer roamingSettings = ApplicationData.Current.RoamingSettings;
 
@@ -184,30 +163,98 @@ namespace ClumsyWordsUniversal
                 if ((bool)roamingSettings.Values["saveSkyDrive"])
                 {
                     scopes.Add("wl.skydrive");
-                    scopes.Add("wl.skydrive_upload");
+                    scopes.Add("wl.skydrive_update");
                 }
             }
 
             return scopes;
         }
 
+        private static async Task GetUserProfile() 
+        {
+            // Get the profile info of the user.
+            LiveOperationResult operationResult = await LiveClient.GetAsync("me");
+            dynamic result = operationResult.Result;
+            App.UserName = result.name;
+            App.FirstName = result.first_name;
+            App.LastName = result.last_name;
+        }
+
+        private static async Task GetUserAvatar()
+        {
+            try
+            {
+                LiveDownloadOperation operation = await LiveClient.CreateBackgroundDownloadAsync("me/picture");
+                LiveDownloadOperationResult result = await operation.StartAsync();
+                if (result != null && result.Stream != null)
+                {
+                    using (IRandomAccessStream ras = await result.GetRandomAccessStreamAsync())
+                    {
+                        BitmapImage imgSource = new BitmapImage();
+                        imgSource.SetSource(ras);
+                        ProfileImage = imgSource;
+                    }
+                }
+            }
+            catch (LiveConnectException)
+            {
+            }
+        }
+
+        #region Unsafe methods
+        private static async Task<IEnumerable<string>> GetUserPermissions()
+        {
+            // Get the permissions given by the user to the app.
+            try
+            {
+                LiveOperationResult permissionsResult = await LiveClient.GetAsync("me/permissions");
+                dynamic res = permissionsResult.RawResult;
+                App.Permissions = res;
+            }
+            catch (Exception ex) 
+            {
+                string m = ex.Message;
+            }
+
+            return App.Permissions;
+        }
+
+        public static async Task<bool> CheckUserPermisson(IEnumerable<string> scopes) 
+        {
+            IEnumerable<string> permissions = await GetUserPermissions();
+            foreach(string scope in scopes)
+            {
+                if (!permissions.Contains(scope))
+                    return false;
+            }
+
+            return true;
+        }
+        #endregion
+
         /// <summary>
         /// Tries signing in the user with their Microsoft account
         /// </summary>
         /// <param name="signIn">Shows wether the user should try to sign in or just load the current session state.</param>
         /// <returns></returns>
-        public static async Task UpdateUserName(Boolean signIn)
+        public static async Task UpdateUserName(Boolean logIn)
         {
             try
             {
                 // Open Live Connect SDK client.
                 LiveAuthClient LCAuth = new LiveAuthClient();
-                LiveLoginResult LCLoginResult = await LCAuth.InitializeAsync();
+
+                // Get list of needed permissions
+                List<string> scopes = GetLoginScopes().ToList();
+
                 try
                 {
                     LiveLoginResult loginResult = null;
-                    if (signIn)
+
+                    #region Login scenario
+                    if (logIn)
                     {
+
                         // Sign in to the user's Microsoft account with the required scope.
                         //  
                         //  This call will display the Microsoft account sign-in screen if 
@@ -218,64 +265,68 @@ namespace ClumsyWordsUniversal
                         //   has not already given consent to this app to access the data 
                         //   described by the scope.
 
-                        List<string> scopes = DetermineLoginScopes().ToList();
-
-                        // Sign in the user with the given scopes
                         try 
                         {
                             loginResult = await LCAuth.LoginAsync(scopes);
+                            if (scopes.Contains("wl.skydrive"))
+                                App.HasOneDrivePermissions = true;
                         }
-                        catch(Exception ex)
+                        catch (Exception ex)
                         {
-                            string m = ex.Message;
+                            // Maybe there is no connection
+                            App.UserName = "You're not signed in.";
                         }
                     }
+                    #endregion
+
+                    #region Initialize scenario
+                    //Initialize
                     else
                     {
                         // If we don't want the user to sign in, continue with the current 
                         //  sign-in state.
-                        loginResult = LCLoginResult;
+                        loginResult = await LCAuth.InitializeAsync(scopes);
                     }
+                    #endregion
+
+                    #region Connected
+
                     if (loginResult.Status == LiveConnectSessionStatus.Connected)
                     {
                         // Create a client session to get the profile data.
-                        LiveConnectClient connect = new LiveConnectClient(LCAuth.Session);
+                        LiveClient = new LiveConnectClient(LCAuth.Session);
 
-                        // Get the profile info of the user.
-                        LiveOperationResult operationResult = await connect.GetAsync("me");
-                        dynamic result = operationResult.Result;
-                        App.UserName = result.name;
-                        App.FirstName = result.first_name;
-                        App.LastName = result.last_name;
-                        App.Session = LCAuth.Session;
+                        // Set account state
+                        App.AccountState = LiveConnectSessionStatus.Connected;
 
-                        LiveOperationResult pictureOperationResult = await connect.GetAsync("me/picture");
-                        dynamic pictureResult = pictureOperationResult.Result;
-                        App.ProfilePictureSource = pictureResult.location;
+                        // Get user name
+                        await GetUserProfile();
 
-                        if (result != null)
+                        // Get profile picture
+                        await GetUserAvatar();
+
+                        if (App.UserName != null)
                         {
                             // Create a personalised hello-message using the user's name.
-                            App.UserName = string.Join(" ", "Hello,", result.name, "!");
+                            App.UserName = string.Join(" ", "Hello,", App.UserName, "!");
                         }
                         else
                         {
                             // Handle the case where the user name was not returned.
                             App.UserName = "Couldn't get user name.";
                         }
-
-                        // Get the permissions given by the user to the app.
-                        LiveOperationResult permissionsResult = await connect.GetAsync("me/permissions");
-                        dynamic res = permissionsResult.RawResult;
-                        App.Permissions = res;
-
                     }
+                    #endregion
+
+                    #region Not Connected
                     else
                     {
                         // The user hasn't signed in so display this text 
                         //  in place of his or her name.
                         App.UserName = "You're not signed in.";
+                        App.AccountState = LiveConnectSessionStatus.NotConnected;
                     }
+                    #endregion
 
                 }
                 catch (LiveAuthException ex)
@@ -288,13 +339,6 @@ namespace ClumsyWordsUniversal
             catch (LiveAuthException ex)
             {
                 // Handle the exception. 
-                string errorMessage = ex.Message;
-                App.UserName = "Couldn't sign in. Please, try again later.";
-
-            }
-            catch (LiveConnectException ex)
-            {
-                // Handle the exception.
                 string errorMessage = ex.Message;
                 App.UserName = "Couldn't sign in. Please, try again later.";
 
@@ -420,10 +464,9 @@ namespace ClumsyWordsUniversal
                     return;
                 }
 
-                // Try signing in
-                //await UpdateUserName(true);
 
-                roamingSettings.Values.Clear();
+                // Try signing in
+                await UpdateUserName(false);
 
                 // Load data
                 this.GetDataSource();
@@ -494,15 +537,23 @@ namespace ClumsyWordsUniversal
             else if (roamingSettings.Values.Contains(new KeyValuePair<string, object>("saveLocal", true)))
             {
                 App.SecondaryDataSource.groupsMap = App.DataSource.groupsMap;
-                await App.SecondaryDataSource.SaveDataAsync("definitions.json", App.SecondaryDataSource.groupsMap);
+                bool success = true;
+                try
+                {
+                    await App.SecondaryDataSource.SaveDataAsync("definitions.json", App.SecondaryDataSource.groupsMap);
+                }
+                catch(Exception ex)
+                {
+                    success = false;
+                }
+                if(!success)
+                    await App.DataSource.SaveDataAsync();
             }
             else
             {
                 App.SecondaryDataSource.groupsMap = App.DataSource.groupsMap;
                 await App.SecondaryDataSource.SaveDataAsync();
             }
-
-            await SuspensionManager.SaveAsync();
 
             deferral.Complete();
         }
