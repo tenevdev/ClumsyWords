@@ -54,7 +54,7 @@ namespace ClumsyWordsUniversal.Data
                     if (authResult.Status == LiveConnectSessionStatus.Connected)
                     {
                         // Save the current session object
-                        App.Session = authResult.Session;
+                        App.LiveClient = new LiveConnectClient(authResult.Session);
                         LoadProfile();
                     }
                 }
@@ -77,8 +77,7 @@ namespace ClumsyWordsUniversal.Data
         /// </summary>
         private async void LoadProfile()
         {
-            LiveConnectClient client = new LiveConnectClient(App.Session);
-            LiveOperationResult operationResult = await client.GetAsync("me");
+            LiveOperationResult operationResult = await App.LiveClient.GetAsync("me");
             dynamic result = operationResult.Result;
             App.UserName = result.name;
             if (HasAccess)
@@ -119,10 +118,9 @@ namespace ClumsyWordsUniversal.Data
                     var folderData = new Dictionary<string, object>();
                     // Set the desired name
                     folderData.Add("name", name);
-                    LiveConnectClient liveClient = new LiveConnectClient(App.Session);
                     // Save the data folder in the user's MyDouments OneDrive directory
                     LiveOperationResult operationResult =
-                        await liveClient.PostAsync("me/skydrive/my_documents", folderData);
+                        await App.LiveClient.PostAsync("me/skydrive/my_documents", folderData);
 
                     // Contains information about the newly created folder
                     dynamic result = operationResult.Result;
@@ -148,8 +146,6 @@ namespace ClumsyWordsUniversal.Data
         /// <returns></returns>
         public override async Task LoadDataAsync()
         {
-            LiveConnectClient client = new LiveConnectClient(App.Session);
-
             // Checks if there is a data file ID in the roaming settings storage
             // It is assumed that if there is an ID the file exists but the user might have deleted it manually
             // or the file might not exist for other reasons
@@ -166,7 +162,7 @@ namespace ClumsyWordsUniversal.Data
                 try
                 {
                     // Get file content
-                    await client.BackgroundDownloadAsync(path + "/content", storageFile);
+                    await App.LiveClient.BackgroundDownloadAsync(path + "/content", storageFile);
                 }
                 catch (Exception ex)
                 {
@@ -222,8 +218,6 @@ namespace ClumsyWordsUniversal.Data
             // Set default file and folder names
             string path = await CreateSkyDriveFolderAsync(_folderName);
 
-            LiveConnectClient client = new LiveConnectClient(App.Session);
-
             MemoryStream stream = new MemoryStream();
             using (StreamWriter writer = new StreamWriter(stream))
             {
@@ -238,7 +232,7 @@ namespace ClumsyWordsUniversal.Data
                 await writer.WriteAsync(data);
                 await writer.FlushAsync();
                 // Upload a file from this stream with an overwrite option
-                LiveOperationResult operationResult = await client.BackgroundUploadAsync(path, _fileName, stream.AsInputStream(), OverwriteOption.Overwrite);
+                LiveOperationResult operationResult = await App.LiveClient.BackgroundUploadAsync(path, _fileName, stream.AsInputStream(), OverwriteOption.Overwrite);
                 // Contains information about the uploaded file
                 dynamic result = operationResult.Result;
                 // Add the file ID to roaming settings storage
@@ -269,13 +263,12 @@ namespace ClumsyWordsUniversal.Data
             string path = await CreateSkyDriveFolderAsync(_folderName);
 
 
-            LiveConnectClient client = new LiveConnectClient(App.Session);
             if (path != String.Empty)
             {
                 bool shouldRetry = false;
                 try
                 {
-                    LiveOperationResult operationResult = await client.BackgroundUploadAsync(path, file.Name, file, OverwriteOption.Overwrite);
+                    LiveOperationResult operationResult = await App.LiveClient.BackgroundUploadAsync(path, file.Name, file, OverwriteOption.Overwrite);
 
                     dynamic result = operationResult.Result;
                     Windows.Storage.ApplicationData.Current.RoamingSettings.Values["dataFileId"] = result.id;
