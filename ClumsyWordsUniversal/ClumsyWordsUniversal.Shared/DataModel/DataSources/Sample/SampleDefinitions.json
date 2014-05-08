@@ -1674,19 +1674,5 @@
             ]
          }
       ]
-   },
-   "Tips":{
-      "ColorCode":null,
-      "Key":"Tips",
-      "Title":"Tips",
-      "Items":[
-         {
-            "Id":"613ffce1-4ee4-4497-885a-63a89c9abb68",
-            "Term":"",
-            "Items":[
-
-            ]
-         }
-      ]
    }
 }
