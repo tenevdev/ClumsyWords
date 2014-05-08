@@ -37,6 +37,10 @@
                 </ToggleSwitch.HeaderTemplate>
             </ToggleSwitch>
             
+            <TextBlock x:Name="signInBeforeToggle" Visibility="Collapsed" Foreground="Red" Style="{StaticResource BodyTextBlockStyle}">
+                Please sign in with your Microsoft account.
+            </TextBlock>
+            
             <!--<ToggleSwitch x:Name="roamingSwitch" Header="Enable data roaming (recommended)"
                           ToolTipService.ToolTip="Sync settings and data across devices"
                           Toggled="EnableRoamingSwitch_Toggled"/>-->

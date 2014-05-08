@@ -68,6 +68,7 @@ namespace ClumsyWordsUniversal.Settings
                     // Show sign-in button.
                     signInBtn.Visibility = Windows.UI.Xaml.Visibility.Visible;
                     signOutBtn.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+
                 }
                 catch (LiveConnectException x)
                 {
@@ -84,7 +85,7 @@ namespace ClumsyWordsUniversal.Settings
         private async Task SetNameField(bool login)
         {
             // If login == false, just update the name field.
-            this.cannotSignOutMessage.Text = "";
+            //this.cannotSignOutMessage.Text = "";
             await App.UpdateUserName(login);
 
             //this.permissions.Text = App.Permissions;
@@ -99,7 +100,7 @@ namespace ClumsyWordsUniversal.Settings
                     userCanSignOut = LCAuth.CanLogout;
                 }
 
-                if (App.UserName == "You are not signed in.")
+                if (App.UserName == "You're not signed in.")
                 {
                     // Show sign-in button.
                     signInBtn.Visibility = Windows.UI.Xaml.Visibility.Visible;
@@ -120,10 +121,8 @@ namespace ClumsyWordsUniversal.Settings
             }
             catch(LiveAuthException) 
             {
-                this.cannotSignOutMessage.Text = "Couldn't sign in. Please check your Internet connection and try again.";
-                this.cannotSignOutMessage.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                this.cannotSignInMessage.Visibility = Visibility.Visible;
             }
-
         }
     }
 }

@@ -18,17 +18,24 @@
         <!-- Content Section 1-->
         <StackPanel x:Name="accountName">
             <StackPanel>
+                <TextBlock Name="info" Text="You can sign in using your Microsoft account." Style="{StaticResource BodyTextBlockStyle}" TextWrapping="Wrap" Margin="0,0,0,15"/> 
+                
                 <TextBlock Name="userName" Text="{Binding}" Style="{StaticResource BodyTextBlockStyle}" TextWrapping="Wrap" 
-            Margin="0,0,0,25"/>
+            Margin="15,0,0,25"/>
                 <!-- both buttons are defined to occupy the same place in the UI -->
                 <!-- however only one is visible at a time, to prevent flicker or confusion -->
                 <!-- they are defined as Collapsed so neither is visibly by default -->
                 <Button x:Name="signInBtn" Click="SignInClick" Content="Sign in" Visibility="Visible"/>
                 <Button x:Name="signOutBtn" Click="SignOutClick" Content="Sign out" Visibility="Collapsed"/>
                 <TextBlock x:Name="permissions" Style="{StaticResource BodyTextBlockStyle}" TextWrapping="Wrap" Margin="0,12,0,12" />
+                
                 <TextBlock x:Name="cannotSignOutMessage" Style="{StaticResource BodyTextBlockStyle}" Foreground="Red"
                            TextWrapping="Wrap" Margin="0,15,0,0" Visibility="Collapsed"
                            Text="Cannot sign out. You are logged in  with a Microsoft account or a local or domain account that is connected to a Microsoft account."/>
+                
+                <TextBlock x:Name="cannotSignInMessage" Style="{StaticResource BodyTextBlockStyle}" Foreground="Red"
+                           TextWrapping="Wrap" Margin="0,15,0,0" Visibility="Collapsed"
+                           Text="Couldn't sign in. Please, check your internet connection and try again later."/>
             </StackPanel>
         </StackPanel>
 

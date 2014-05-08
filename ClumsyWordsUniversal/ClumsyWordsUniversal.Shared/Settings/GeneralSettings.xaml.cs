@@ -77,7 +77,7 @@ namespace ClumsyWordsUniversal.Settings
 
         }
 
-        private void SaveSkyDriveSwitch_Toggled(object sender, RoutedEventArgs e)
+        private async void SaveSkyDriveSwitch_Toggled(object sender, RoutedEventArgs e)
         {
 
             //Testing
@@ -86,17 +86,25 @@ namespace ClumsyWordsUniversal.Settings
             // Check if there is a secondary data source
             if (skyDriveSwitch.IsOn && 
                 App.SecondaryDataSource == null && 
+                (App.UserName != "You're not signed in." && App.UserName != null) &&
                 (!roamingSettings.Values.ContainsKey("saveSkyDrive") || roamingSettings.Values.Contains(new KeyValuePair<string, object>("saveSkyDrive", false))))
             {
+                roamingSettings.Values["saveSkyDrive"] = skyDriveSwitch.IsOn;
+                // Check scopes
+                await App.UpdateUserName(true);
 
-                // There is no secondary data source so create it
-                App.SecondaryDataSource = new CloudDataSource("ClumsyWords");
-                //App.SecondaryDataSource.groupsMap = App.DataSource.groupsMap;
-
-                // Create a folder in the sky drive directory
+                // There is no secondary data source so create it if we have permissions
+                //if (App.CheckUserPermisson(new List<string>() { "wl.skydrive", "wl.skydrive_update" }).Result)
+                if(App.HasOneDrivePermissions)
+                    App.SecondaryDataSource = new CloudDataSource("ClumsyWords");
             }
 
-            roamingSettings.Values["saveSkyDrive"] = skyDriveSwitch.IsOn;
+            else 
+            {
+                this.signInBeforeToggle.Visibility = Visibility.Visible;
+                skyDriveSwitch.IsOn = false;
+            }
+
         }
 
         private void DisplayTipsSwitch_Toggled(object sender, RoutedEventArgs e)
