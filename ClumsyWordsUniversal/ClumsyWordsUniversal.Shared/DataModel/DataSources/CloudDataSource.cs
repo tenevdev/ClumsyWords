@@ -112,6 +112,7 @@ namespace ClumsyWordsUniversal.Data
             // Check if there is a data folder ID in the roaming settings storage
             if (!Windows.Storage.ApplicationData.Current.RoamingSettings.Values.ContainsKey("folderId"))
             {
+                bool exists = false;
                 // Try to create a new folder
                 try
                 {
@@ -131,7 +132,8 @@ namespace ClumsyWordsUniversal.Data
                 catch (LiveConnectException ex)
                 {
                     // Return an empty path if something went wrong
-                    return String.Empty;
+                    exists = true;
+                    return string.Empty;
                 }
             }
 

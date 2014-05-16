@@ -94,6 +94,7 @@ namespace ClumsyWordsUniversal.Data
         {
             this.Items = DefinitionsDataItem.GetGroupsList(termProps, p => p.PartOfSpeech);
             this.Term = term;
+            //this.Group = App.DataSource.GetGroup("Favourites");
         }
 
         public static ObservableCollection<CommonGroup<TermProperties>> GetGroupsList(List<TermProperties> itemList, Func<TermProperties, PartOfSpeech> getKeyFunc)
@@ -228,6 +229,11 @@ namespace ClumsyWordsUniversal.Data
             }
 
             return ddg;
+        }
+
+        public virtual void AddItem(DefinitionsDataItem item, string groupKey)
+        {
+            this.groupsMap[groupKey].Items.Insert(0, item);
         }
 
         /// <summary>

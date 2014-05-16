@@ -40,7 +40,7 @@
     </DataTemplate>
 
     <DataTemplate x:Key="Standard80ItemTemplate">
-        <Grid Background="WhiteSmoke" Height="80" Width="400">
+        <Grid Background="WhiteSmoke" Height="80" Width="400" Margin="0,0,10,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
@@ -55,8 +55,24 @@
         </Grid>
     </DataTemplate>
 
+    <DataTemplate x:Key="Standard120ItemTemplate">
+        <Grid Background="WhiteSmoke" Height="120" Width="400" Margin="0,0,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" 
+                       Text="{Binding Term}" Width="392"
+                       FontSize="18"
+                       Foreground="{StaticResource ClumsyOrangeBrush}"/>
+            <TextBlock Grid.Row="1" Width="392"
+                       Text="{Binding Definition}" TextTrimming="CharacterEllipsis"
+                       Foreground="{StaticResource ClumsyOrangeBrush}"/>
+        </Grid>
+    </DataTemplate>
+
     <DataTemplate x:Key="StandardListItemTemplate">
-        <Grid Background="WhiteSmoke" Width="400" Height="80">
+        <Grid Background="WhiteSmoke" Width="400" Height="80" Margin="0,0,10,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
@@ -89,11 +105,11 @@
                        LineStackingStrategy="BlockLineHeight"
                        Margin="15,15,25,10"/>
             <TextBlock Grid.Row="1"
-                       Text="{Binding Definition}" TextTrimming="WordEllipsis" TextWrapping="Wrap"
+                       Text="{Binding Definition}" TextTrimming="CharacterEllipsis" TextWrapping="Wrap"
                        Foreground="White"
                        Style="{StaticResource BodyTextBlockStyle}"
                        Margin="15,0,5,5"
-                       FontSize="12"/>
+                       FontSize="16"/>
         </Grid>
     </DataTemplate>
 

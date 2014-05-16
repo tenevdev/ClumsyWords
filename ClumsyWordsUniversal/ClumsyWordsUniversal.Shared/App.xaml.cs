@@ -464,6 +464,7 @@ namespace ClumsyWordsUniversal
                     return;
                 }
 
+                //roamingSettings.Values.Clear();
 
                 // Try signing in
                 await UpdateUserName(false);
