@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="22963SleekWare.426562A895D66" Publisher="CN=7F0E632B-3AE7-4607-A166-7C65B8896DB3" Version="1.1.0.0" />
+  <Identity Name="22963SleekWare.13497B178B2C4" Publisher="CN=7F0E632B-3AE7-4607-A166-7C65B8896DB3" Version="1.1.0.0" />
   <Properties>
     <DisplayName>ClumsyWords</DisplayName>
     <PublisherDisplayName>SleekWare</PublisherDisplayName>

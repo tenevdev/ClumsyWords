@@ -1,0 +1,4 @@
+﻿<Common:FilterCollection xmlns:Common="using:ClumsyWordsUniversal.Common" Capacity="56">
+    <Common:Filter Active="True" Count="13" Description="Maecenas(13)" Name="Maecenas"/>
+	<Common:Filter Active="False" Count="71" Description="Class(71)" Name="Class"/>
+</Common:FilterCollection>
