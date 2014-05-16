@@ -135,7 +135,8 @@ namespace ClumsyWordsUniversal
                 definitionsString += htmlConverter.Convert(item, typeof(string), DefinitionsDataItem.GetGroupsList(selectedItems, p => p.PartOfSpeech), string.Empty).ToString();
             }
 
-            //definitionsString = HtmlFormatHelper.CreateHtmlFormat(definitionsString);
+            definitionsString = HtmlFormatHelper.CreateHtmlFormat(definitionsString);
+
             request.Data.SetHtmlFormat(definitionsString);
         }
 
@@ -248,8 +249,8 @@ namespace ClumsyWordsUniversal
             }
 
             newItem.ComposeItemFromTermProperties(currentTerm, selectedItems);
-            App.DataSource.GetGroup("Favourites").Items.Add(newItem);
-            this.Frame.Navigate(typeof(HubPage), new string[] { "Recent", "Favourites" });
+            App.DataSource.AddItem(newItem, "Favourites");
+            this.Frame.Navigate(typeof(HubPage), new List<string>() { "Recent", "Favourites" });
         }
 
         private void OnClearSelectionClick(object sender, RoutedEventArgs e)

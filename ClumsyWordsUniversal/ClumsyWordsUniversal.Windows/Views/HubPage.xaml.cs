@@ -91,13 +91,9 @@ namespace ClumsyWordsUniversal
             {
                 var messageDialog = new MessageDialog(App.UserName + ". Please, check your Internet connection.");
                 await messageDialog.ShowAsync();
-                //App.UserName = "";
             }
 
-            // TODO: Create an appropriate data model for your problem domain to replace the sample data
-            //var sampleDataGroups = await SampleDefinitionsSource.GetGroupsAsync();
-            //this.DefaultViewModel["GroupsCollection"] = sampleDataGroups;
-
+            // Get data from data source
             var dataGroups = App.DataSource.GetGroups((List<string>)e.NavigationParameter);
             this.DefaultViewModel["GroupsCollection"] = dataGroups;
 
@@ -171,7 +167,7 @@ namespace ClumsyWordsUniversal
             }
 
             // Format as valid html
-            //definitionsString = HtmlFormatHelper.CreateHtmlFormat(definitionsString);
+            definitionsString = HtmlFormatHelper.CreateHtmlFormat(definitionsString);
 
             // Set share content
             request.Data.SetHtmlFormat(definitionsString);

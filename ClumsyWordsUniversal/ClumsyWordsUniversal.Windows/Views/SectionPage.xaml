@@ -79,7 +79,7 @@
             Visibility="Collapsed"
             Padding="70,0,0,60"
             ItemsSource="{Binding Source={StaticResource itemsViewSource}}"
-            ItemTemplate="{StaticResource Standard80ItemTemplate}"
+            ItemTemplate="{StaticResource StandardListItemTemplate}"
             SelectionMode="Multiple"
             IsSwipeEnabled="True"
             IsItemClickEnabled="True"

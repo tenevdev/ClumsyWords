@@ -147,7 +147,7 @@
                 Margin="70,-10,0,0"
                 Padding="10,0,0,60"
                 ItemsSource="{Binding Source={StaticResource groupedItemsViewSource}}"
-                ItemTemplate="{StaticResource StandardListItemTemplate}"
+                ItemTemplate="{StaticResource Standard120ItemTemplate}"
                 SelectionMode="Multiple"
                 SelectionChanged="OnListViewSelectionChanged"
                 IsSwipeEnabled="True">
